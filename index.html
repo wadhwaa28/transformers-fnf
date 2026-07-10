@@ -72,6 +72,25 @@ const SONGS=[
      ["C","o","bhk"],["C","p","bhk"],["C","d","bhk"],["C","d","bhk"]]
 },
 {
+ title:"COLD LOGIC", opp:"shockwave", oppName:"SHOCKWAVE", bpm:146, root:65, intro:4, outro:2,
+ speed:1.15, stars:4, stage:4, flavor:"Shockwave has computed your defeat.",
+ kick:[0,7,8,10], introStyle:"pulse",
+ phrases:{
+  A:{ch:[0,3],ch2:[5,3],mel:[0,0,1, 1,0,1, 2,3,1, 3,0,1, 4,5,2, 6,4,1, 7,3,1, 8,0,1, 9,0,1, 10,3,1, 11,4,1, 12,5,2, 14,4,1, 15,3,1, 16,2,1, 17,2,1, 18,5,1, 19,2,1, 20,6,2, 22,5,1, 23,4,1, 24,2,1, 25,3,1, 26,4,1, 27,5,1, 28,4,2, 30,2,1, 31,0,1]},
+  B:{ch:[3,4],ch2:[6,4],mel:[0,4,1, 1,4,1, 2,5,1, 3,6,1, 4,7,2, 6,6,1, 7,5,1, 8,4,1, 9,5,1, 10,6,1, 11,7,1, 12,8,2, 14,7,1, 15,6,1, 16,5,1, 17,5,1, 18,6,1, 19,7,1, 20,8,2, 22,7,1, 23,8,1, 24,9,1, 25,8,1, 26,7,1, 27,6,1, 28,7,2, 30,5,1, 31,4,1]},
+  C:{ch:[5,6],ch2:[0,6],mel:[0,7,2, 2,7,1, 3,8,1, 4,9,2, 6,8,1, 7,7,1, 8,10,2, 10,9,1, 11,8,1, 12,7,2, 14,8,1, 15,9,1, 16,7,1, 17,7,1, 18,8,1, 19,9,1, 20,10,2, 22,9,1, 23,10,1, 24,11,2, 26,10,1, 27,9,1, 28,7,4]},
+  D:{ch:[1,4],ch2:[3,6],mel:[1,7,1, 2,7,1, 4,10,1, 5,9,1, 7,7,1, 9,5,1, 10,7,1, 12,9,2, 15,8,1, 17,7,1, 18,7,1, 20,10,1, 21,9,1, 23,7,1, 24,5,1, 26,7,1, 27,9,1, 28,10,2, 30,7,1, 31,5,1]}
+ },
+ st:[["A","o"],["A","p"],["B","o"],["B","p"],["C","o","bh"],["C","p","bh"],
+     ["A","o","q"],["A","p","q"],
+     ["D","o"],["D","p"],["C","o","bh"],["C","p","bh"],
+     ["B","o"],["B","p"],["A","o"],["A","p"],
+     ["D","o","q"],["D","p","q"],
+     ["C","o","bh"],["C","p","bh"],["C","d","bh"],["C","d","bh"],
+     ["D","o"],["D","p"],["B","o"],["B","p"],
+     ["C","o","bhk"],["C","p","bhk"],["C","d","bhk"],["C","d","bhk"]]
+},
+{
  title:"MORE THAN MEETS THE EYE", opp:"optimus", oppName:"OPTIMUS PRIME", bpm:152, root:60, intro:8, outro:2,
  speed:1.2, stars:5, stage:3, flavor:"FINALE — Optimus Prime himself. A 4½-minute gauntlet.",
  kick:[0,6,8,10], introStyle:"cine",
@@ -95,7 +114,7 @@ const SONGS=[
 (function(){
  const o=(p,f)=>[[p,"o",f||""],[p,"p",f||""]];
  const d=(p,f)=>[[p,"d",f||""],[p,"d",f||""]];
- SONGS[3].st=[].concat(
+ SONGS[4].st=[].concat(
   o("A"),o("B"),o("D","bh"),
   o("C","a"),o("A"),o("G"),d("D","bh"),
   o("E","qa"),
@@ -210,6 +229,12 @@ function buildSong(def){
     for(let j=0;j<8;j++)audio.push({t:bt+j*2*sd,f:"pluck",m:def.root+d2s(cd+ar[j%4])+(j>=4?12:0),d:2*sd});
     if(ib>=2)audio.push({t:bt,f:"bass",m:br,d:16*sd*0.95});
     if(last)for(let s=0;s<16;s+=2)audio.push({t:bt+s*sd,f:"snare"});
+   }else if(def.introStyle==="pulse"){ // mechanical sub-bass pulse (Shockwave)
+    for(let j=0;j<8;j++)audio.push({t:bt+j*2*sd,f:"bass",m:br-12+(j%4===3?7:0),d:2*sd*0.9});
+    for(let s=2;s<16;s+=4)audio.push({t:bt+s*sd,f:"hat"});
+    audio.push({t:bt,f:"pluck",m:def.root+12+d2s(cd),d:sd*3});
+    if(ib>=2)for(const k of def.kick)audio.push({t:bt+k*sd,f:"kick"});
+    if(last)for(let s=8;s<16;s++)audio.push({t:bt+s*sd,f:"snare"});
    }else{ // "cine"
     audio.push({t:bt,f:"bass",m:br-12,d:16*sd*0.98});
     if(ib>=4){
@@ -596,6 +621,20 @@ const OPTIMUS_POSES={
 HOTROD.poses=HOTROD_POSES;
 OPTIMUS.poses=OPTIMUS_POSES;
 OPTIMUS.blaster=true;
+// Shockwave (Cyberverse): hexagonal single-eye head, glowing core, arm cannon.
+// Every sing direction aims and FIRES the cannon; side poses add an eye scan
+// beam; down pose hovers on leg thrusters.
+const SHOCKWAVE={c1:"#6b34b8",c2:"#3f1e78",c3:"#c8a2ff",metal:"#8d84a8",face:"#1a1030",eyes:"#ffd84a",
+ legT:"#5a2ba8",legS:"#3f1e78",head:"shockwave",chest:"core",wings:false};
+const SHOCKWAVE_POSES={
+ idle:{lean:0,crouch:0,aL:-0.55,aR:0.25,head:0,mouth:0,cAng:2.4},
+ left:{lean:-0.18,crouch:6,aL:-1.8,aR:0.35,head:-0.15,mouth:1,cAng:Math.PI,scan:1},
+ right:{lean:0.18,crouch:6,aL:1.1,aR:1.7,head:0.15,mouth:1,cAng:0.05,scan:1},
+ up:{lean:0,crouch:-14,aL:-2.9,aR:0.4,head:-0.25,mouth:1,cAng:-Math.PI/2},
+ down:{lean:0,crouch:30,aL:-0.9,aR:0.9,head:0.22,mouth:1,cAng:0.9,hover:1}
+};
+SHOCKWAVE.poses=SHOCKWAVE_POSES;
+SHOCKWAVE.cannon=true;
 
 function rr(g,x,y,w,h,r){g.beginPath();g.roundRect(x,y,w,h,r);}
 function drawArm(g,sx,sy,a,spec){
@@ -679,9 +718,19 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge){
   g.fillStyle=spec.metal;rr(g,-26,-164+ty,52,20,3);g.fill();
   g.fillStyle="#5a6272";
   for(let i=0;i<4;i++){rr(g,-22+i*12,-160+ty,7,12,2);g.fill();}
+ }else if(spec.chest==="core"){ // glowing reactor core
+  g.shadowColor=spec.c3;g.shadowBlur=P.mouth?16:9;
+  g.fillStyle=spec.c3;
+  g.beginPath();g.arc(0,-168+ty,(P.mouth?16:13)+Math.sin(fxT*4)*1.5,0,TAU);g.fill();
+  g.shadowBlur=0;
+  g.strokeStyle=spec.metal;g.lineWidth=4;
+  g.beginPath();g.arc(0,-168+ty,19,0,TAU);g.stroke();
+  g.fillStyle=spec.c2;
+  rr(g,-36,-198+ty,22,10,3);g.fill();rr(g,14,-198+ty,22,10,3);g.fill();
  }
- // autobot badge
- g.fillStyle="#e33";g.beginPath();g.moveTo(0,-134+ty);g.lineTo(-7,-124+q*0.7);g.lineTo(7,-124+q*0.7);g.closePath();g.fill();
+ // faction badge
+ g.fillStyle=spec.cannon?"#a06aff":"#e33";
+ g.beginPath();g.moveTo(0,-134+ty);g.lineTo(-7,-124+q*0.7);g.lineTo(7,-124+q*0.7);g.closePath();g.fill();
  // shoulders + arms (capture hand positions for props/fx)
  const hL=drawArm(g,-58,-192+ty,P.aL,spec);
  const hR=drawArm(g,58,-192+ty,P.aR,spec);
@@ -708,6 +757,33 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge){
    g.fillStyle="#fff";g.beginPath();g.arc(46,-1,3.5,0,TAU);g.fill();
   }
   g.restore();
+ }
+ // Shockwave arm cannon (left arm) — fires a purple energy beam when singing
+ if(spec.cannon){
+  const cAng=P.cAng!==undefined?P.cAng:2.4;
+  g.save();g.translate(hL[0],hL[1]);g.rotate(cAng);
+  const recoil=(P.mouth&&poseAge<0.12)?-5:0;
+  g.translate(recoil,0);
+  g.fillStyle=spec.c2;rr(g,-12,-10,42,20,5);g.fill();
+  g.fillStyle=spec.metal;rr(g,28,-7,24,14,4);g.fill();
+  g.fillStyle="#1a1030";g.beginPath();g.arc(52,0,5,0,TAU);g.fill();
+  if(P.mouth&&poseAge<0.22){
+   g.shadowColor="#c8a2ff";g.shadowBlur=16;
+   const bg2=g.createLinearGradient(52,0,155,0);
+   bg2.addColorStop(0,"rgba(200,162,255,0.95)");bg2.addColorStop(1,"rgba(200,162,255,0)");
+   g.fillStyle=bg2;rr(g,52,-4,100,8,4);g.fill();
+   g.fillStyle="#fff";g.beginPath();g.arc(52,0,6,0,TAU);g.fill();
+   g.shadowBlur=0;
+  }
+  g.restore();
+ }
+ // Shockwave hover thrusters (down pose)
+ if(P.hover){
+  for(const s of [-1,1]){
+   const fl=4+3*Math.sin(fxT*26+s);
+   g.fillStyle="rgba(200,162,255,0.55)";
+   g.beginPath();g.ellipse(s*26,3,12,5+fl*0.6,0,0,TAU);g.fill();
+  }
  }
  // Hot Rod wrist-exhaust flames (up pose)
  if(P.flames){
@@ -747,6 +823,19 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge){
   g.fillStyle="#3a4150";
   if(P.mouth)rr(g,-6,5,12,9,2);else rr(g,-7,8,14,3,1);
   g.fill();
+ }else if(spec.head==="shockwave"){
+  // hexagonal head with a single glowing eye
+  g.fillStyle=spec.c1;
+  g.beginPath();
+  g.moveTo(-22,0);g.lineTo(-13,-22);g.lineTo(13,-22);g.lineTo(22,0);g.lineTo(13,16);g.lineTo(-13,16);
+  g.closePath();g.fill();
+  g.fillStyle=spec.c2;
+  g.beginPath();g.moveTo(-13,-22);g.lineTo(-19,-35);g.lineTo(-9,-24);g.closePath();g.fill();
+  g.beginPath();g.moveTo(13,-22);g.lineTo(19,-35);g.lineTo(9,-24);g.closePath();g.fill();
+  g.shadowColor=spec.eyes;g.shadowBlur=P.mouth?16:8;
+  g.fillStyle=spec.eyes;g.beginPath();g.arc(0,-4,P.mouth?10:8,0,TAU);g.fill();
+  g.shadowBlur=0;
+  g.fillStyle="#7a5a10";g.beginPath();g.arc(0,-4,3,0,TAU);g.fill();
  }else{
   g.fillStyle=spec.c2;rr(g,-19,-28,38,42,6);g.fill();
   g.shadowColor=spec.eyes;g.shadowBlur=P.mouth?12:8;
@@ -761,6 +850,15 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge){
   g.beginPath();g.moveTo(19,-26);g.lineTo(27,-38);g.lineTo(15,-30);g.closePath();g.fill();
  }
  g.restore();
+ // Shockwave eye scan beam (side poses)
+ if(P.scan){
+  const dir=P.lean<0?-1:1;
+  g.save();g.translate(0,hy-4);g.scale(dir,1);
+  const sgd=g.createLinearGradient(20,0,155,0);
+  sgd.addColorStop(0,"rgba(255,216,74,0.65)");sgd.addColorStop(1,"rgba(255,216,74,0)");
+  g.fillStyle=sgd;rr(g,20,-3,130,6,3);g.fill();
+  g.restore();
+ }
  if(tint>0){
   g.globalAlpha=tint*0.4;g.globalCompositeOperation="source-atop";
   g.fillStyle="#f33";g.fillRect(-110,-280,220,300);
@@ -871,6 +969,23 @@ function makeIcon(who,st){
   g.beginPath();g.moveTo(-8,5);g.lineTo(8,5);g.moveTo(-8,10);g.lineTo(8,10);g.stroke();
   if(st==="lose"){g.strokeStyle="rgba(10,10,20,0.8)";g.lineWidth=2;
    g.beginPath();g.moveTo(14,-24);g.lineTo(4,-8);g.lineTo(10,6);g.stroke();}
+ }else if(who==="shockwave"){
+  g.fillStyle=col("#6b34b8");
+  g.beginPath();g.moveTo(-20,2);g.lineTo(-12,-20);g.lineTo(12,-20);g.lineTo(20,2);g.lineTo(12,16);g.lineTo(-12,16);g.closePath();g.fill();
+  g.fillStyle=col("#3f1e78");
+  g.beginPath();g.moveTo(-12,-20);g.lineTo(-17,-32);g.lineTo(-9,-23);g.closePath();g.fill();
+  g.beginPath();g.moveTo(12,-20);g.lineTo(17,-32);g.lineTo(9,-23);g.closePath();g.fill();
+  if(st==="lose"){
+   g.fillStyle=col("#7a6420");g.beginPath();g.arc(0,-2,8,0,TAU);g.fill();
+   g.strokeStyle="rgba(10,5,20,0.9)";g.lineWidth=2;
+   g.beginPath();g.moveTo(-6,-8);g.lineTo(6,4);g.moveTo(4,-9);g.lineTo(-3,6);g.stroke();
+  }else{
+   g.fillStyle=col("#ffd84a");g.beginPath();g.arc(0,-2,st==="win"?10:8,0,TAU);g.fill();
+   g.fillStyle=col("#7a5a10");g.beginPath();g.arc(0,-2,3,0,TAU);g.fill();
+   if(st==="win"){g.strokeStyle=col("#ffd84a");g.lineWidth=2;
+    for(let a=0;a<6;a++){const th=a*Math.PI/3;
+     g.beginPath();g.moveTo(Math.cos(th)*13,-2+Math.sin(th)*13);g.lineTo(Math.cos(th)*17,-2+Math.sin(th)*17);g.stroke();}}
+  }
  }else{ // kid
   g.fillStyle=col("#e8b48c");g.beginPath();g.arc(0,0,20,0,TAU);g.fill();
   g.fillStyle=col("#3a2a1c");g.beginPath();g.arc(0,-6,20,Math.PI,0);g.fill();
@@ -890,7 +1005,7 @@ function makeIcon(who,st){
  }
  return c;
 }
-for(const w of ["hotrod","optimus","kid"])
+for(const w of ["hotrod","optimus","shockwave","kid"])
  for(const s of ["norm","win","lose"])
   ICONS[w+"_"+s]=makeIcon(w,s);
 
@@ -1095,7 +1210,52 @@ function stageAutobotCity(g,t,pulse){
  g.globalAlpha=1;
  drawFloor(g,"#241016","#7c2836",pulse);
 }
-const STAGES=[stageArk,stageHighway,stageCybertron,stageAutobotCity];
+function stageShockLab(g,t,pulse){
+ let gr=g.createLinearGradient(0,0,0,H);
+ gr.addColorStop(0,"#0d0618");gr.addColorStop(1,"#28104a");
+ g.fillStyle=gr;g.fillRect(0,0,W,H);
+ // flickering data columns
+ for(let i=0;i<14;i++){
+  const x=40+i*66;
+  g.fillStyle="rgba(160,120,255,0.13)";
+  for(let j=0;j<10;j++)
+   if(hashRand(i*37+j+Math.floor(t*3))>0.55)g.fillRect(x,50+j*26,26,14);
+ }
+ // giant analysis screen
+ g.fillStyle="#120a24";g.fillRect(310,70,340,150);
+ g.strokeStyle="#5a3cc8";g.lineWidth=3;g.strokeRect(310,70,340,150);
+ g.strokeStyle="rgba(200,162,255,0.8)";g.lineWidth=2;
+ g.beginPath();
+ for(let x=0;x<=340;x+=8){
+  const y=145+Math.sin(x*0.06+t*2.4)*26*Math.sin(t*0.5+x*0.02);
+  if(x===0)g.moveTo(310+x,y);else g.lineTo(310+x,y);
+ }
+ g.stroke();
+ // Decepticon-style emblem
+ g.save();g.translate(480,46);
+ g.fillStyle="rgba(160,90,255,"+(0.5+pulse*0.3)+")";
+ g.beginPath();
+ g.moveTo(0,-15);g.lineTo(-20,-5);g.lineTo(-12,14);g.lineTo(-4,4);g.lineTo(0,10);g.lineTo(4,4);g.lineTo(12,14);g.lineTo(20,-5);g.closePath();g.fill();
+ g.restore();
+ // specimen tubes with rising bubbles
+ for(const tx of [120,840]){
+  g.fillStyle="rgba(90,60,200,0.25)";rr(g,tx-28,140,56,220,12);g.fill();
+  g.strokeStyle="#5a3cc8";g.lineWidth=3;rr(g,tx-28,140,56,220,12);g.stroke();
+  g.fillStyle="rgba(200,162,255,0.5)";
+  for(let b=0;b<5;b++){
+   const by=350-((t*30+b*44+hashRand(b+tx)*40)%200);
+   g.beginPath();g.arc(tx+((b%3)-1)*10,by,3+(b%2),0,TAU);g.fill();
+  }
+  g.fillStyle="#2a1650";rr(g,tx-34,128,68,16,5);g.fill();rr(g,tx-34,356,68,16,5);g.fill();
+ }
+ // scanning beam sweep
+ const sx=((t*180)%1200)-120;
+ const sg2=g.createLinearGradient(sx-40,0,sx+40,0);
+ sg2.addColorStop(0,"rgba(200,162,255,0)");sg2.addColorStop(0.5,"rgba(200,162,255,0.12)");sg2.addColorStop(1,"rgba(200,162,255,0)");
+ g.fillStyle=sg2;g.fillRect(sx-40,0,80,430);
+ drawFloor(g,"#160b22","#6a3cc8",pulse);
+}
+const STAGES=[stageArk,stageHighway,stageCybertron,stageAutobotCity,stageShockLab];
 
 // ============ arrows / notes ============
 function drawArrow(g,x,y,lane,fill,alpha,scale,glow){
@@ -1413,7 +1573,7 @@ function renderMenu(t){
    const s=SONGS[i];
    ctx.textAlign="left";ctx.fillStyle=sel?"#fff":"#cbc5dd";
    ctx.font="900 19px 'Arial Black',Arial";
-   ctx.fillText((i===3?"★ FINALE — ":"")+s.title,190,y-2);
+   ctx.fillText((s.opp==="optimus"?"★ FINALE — ":"")+s.title,190,y-2);
    ctx.font="12px Arial";ctx.fillStyle=sel?"#f7d8a0":"#988fb0";
    ctx.fillText("vs "+s.oppName,190,y+16);
    ctx.textAlign="right";ctx.font="17px Arial";ctx.fillStyle="#ffd84a";
@@ -1475,7 +1635,7 @@ function renderPause(t){
  sg.addColorStop(0,"rgba(255,230,170,0.20)");sg.addColorStop(1,"rgba(0,0,0,0)");
  ctx.fillStyle=sg;ctx.fillRect(0,20,540,520);
  // dramatic opponent portrait with live effects (blaster flash / wrist flames)
- const spec=def.opp==="optimus"?OPTIMUS:HOTROD;
+ const spec=def.opp==="optimus"?OPTIMUS:def.opp==="shockwave"?SHOCKWAVE:HOTROD;
  drawBot(ctx,spec,"up",270,505,1.55,Math.sin(t*2)*3,0,t,0.05);
  metalText(ctx,"PAUSED",700,116,46,"#8090b0","#c03040");
  ctx.font="bold 21px Arial";ctx.fillStyle="#ffd84a";ctx.textAlign="center";
@@ -1549,8 +1709,8 @@ function renderPlay(t){
  const oAge=now-oppPoseT,pAge=now-plrPoseT;
  const oPose=oAge<0.35?oppPose:"idle";
  const pPose=pAge<0.35?plrPose:"idle";
- const spec=def.opp==="optimus"?OPTIMUS:HOTROD;
- const oScale=def.opp==="optimus"?1.02:0.92;
+ const spec=def.opp==="optimus"?OPTIMUS:def.opp==="shockwave"?SHOCKWAVE:HOTROD;
+ const oScale=def.opp==="optimus"?1.02:def.opp==="shockwave"?1.0:0.92;
  drawBot(ctx,spec,oPose,300,468,oScale,oPose==="idle"?bob:0,0,now,oAge);
  drawKid(ctx,pPose,672,468,1.0,pPose==="idle"?bob:0,Math.max(0,1-(now-plrMissT)*3));
  ctx.restore();
@@ -1602,7 +1762,7 @@ function renderPlay(t){
  const bx=280,bw=400,by=498;
  ctx.fillStyle="rgba(0,0,0,0.7)";rr(ctx,bx-5,by-5,bw+10,22,10);ctx.fill();
  ctx.strokeStyle="rgba(255,255,255,0.35)";ctx.lineWidth=2;rr(ctx,bx-5,by-5,bw+10,22,10);ctx.stroke();
- const oc=def.opp==="optimus"?"#c03048":"#c8264a";
+ const oc=def.opp==="optimus"?"#c03048":def.opp==="shockwave"?"#7a3cc8":"#c8264a";
  let og=ctx.createLinearGradient(0,by,0,by+12);
  og.addColorStop(0,shade(oc,1.4));og.addColorStop(1,shade(oc,0.7));
  ctx.fillStyle=og;rr(ctx,bx,by,bw*(1-health),12,5);ctx.fill();
@@ -1691,7 +1851,7 @@ function renderGameOver(t){
  metalText(ctx,"STASIS LOCK",480,140,52,"#607090","#3050a0");
  ctx.font="bold 18px Arial";ctx.textAlign="center";
  ctx.fillStyle="#aab";
- ctx.fillText('"'+(def&&def.opp==="optimus"?"You fought bravely. Rise, and try again.":"Not bad, kid — wanna go again?")+'"',480,180);
+ ctx.fillText('"'+(def&&def.opp==="optimus"?"You fought bravely. Rise, and try again.":def&&def.opp==="shockwave"?"As calculated. Your victory probability remains negligible.":"Not bad, kid — wanna go again?")+'"',480,180);
  ctx.font="16px Arial";ctx.fillStyle="#889";
  ctx.fillText(isTouchUI()?"Tap — retry":"Enter — retry    •    Esc — menu",480,480);
 }
