@@ -150,6 +150,63 @@ const SONGS=[
   G:{ch:[5,4],ch2:[3,6],mel:[1,7,1, 3,5,1, 5,7,1, 7,8,1, 9,7,1, 11,5,1, 12,4,2, 15,3,1, 17,4,1, 19,6,1, 21,7,1, 23,9,1, 24,8,2, 27,7,1, 28,5,2, 31,4,1]}
  },
  st:[]
+},
+{
+ // SECRET BOSS. Almost the whole song is two parts at once: whoever has the
+ // melody, the other side answers with the counter-line ("c"/"C" trades).
+ // Exactly ONE opponent solo, ONE player solo, and a short mirrored unison end.
+ title:"PEACE THROUGH TYRANNY", opp:"megatron", oppName:"MEGATRON", bpm:154, root:57, intro:6, outro:2,
+ speed:1.22, stars:5, stage:7, locked:true, heavy:true, flavor:"You fight for the weak. That is why you lose.",
+ kick:[0,4,8,12], introStyle:"march",
+ phrases:{
+  A:{ch:[0,5],ch2:[3,5],mel:[0,0,1, 1,0,1, 2,0,1, 3,3,1, 4,2,1, 5,3,1, 6,4,1, 8,0,1, 9,0,1, 10,4,1, 11,3,1, 12,5,2, 14,4,1, 16,0,1, 17,0,1, 18,3,1, 19,4,1, 20,5,1, 21,4,1, 22,3,1, 24,4,2, 26,3,1, 27,2,1, 28,3,2, 30,2,1, 31,0,1],
+     cm:[1,7,1, 3,9,1, 4,7,2, 7,9,1, 8,11,1, 12,7,2, 15,9,1, 16,11,1, 18,9,2, 21,11,1, 24,9,2, 27,11,1, 28,12,2, 31,9,1]},
+  B:{ch:[3,4],ch2:[6,4],mel:[0,4,1, 1,4,1, 2,5,1, 3,6,1, 4,7,2, 6,7,1, 7,8,1, 8,7,1, 9,7,1, 10,8,1, 11,9,1, 12,10,2, 14,9,1, 15,8,1, 16,5,1, 17,5,1, 18,7,1, 20,9,1, 21,8,1, 22,9,1, 23,10,1, 24,11,2, 26,10,1, 28,10,2, 30,9,1, 31,8,1],
+     cm:[2,12,1, 4,11,2, 6,12,1, 8,14,1, 10,12,2, 14,12,1, 16,12,1, 18,11,2, 21,12,1, 22,14,1, 24,12,2, 27,14,1, 28,12,2, 31,11,1]},
+  C:{ch:[5,6],ch2:[0,4],mel:[0,7,2, 2,7,1, 3,8,1, 4,10,2, 6,9,1, 7,8,1, 8,7,1, 9,8,1, 10,9,1, 11,10,1, 12,11,2, 14,10,1, 16,7,1, 17,7,1, 18,8,1, 19,9,1, 20,10,2, 22,11,1, 23,12,1, 24,10,2, 26,9,1, 27,8,1, 28,7,4],
+     cm:[1,12,1, 3,14,1, 4,12,2, 7,11,1, 8,12,1, 10,14,2, 13,12,1, 14,11,1, 16,11,2, 19,12,1, 22,12,1, 24,14,2, 28,11,2, 31,12,1]},
+  D:{ch:[1,6],ch2:[3,4],mel:[0,7,1, 1,5,1, 2,7,1, 3,9,1, 4,7,1, 5,9,1, 6,10,1, 7,9,1, 8,7,1, 10,9,1, 11,10,1, 12,11,1, 13,10,1, 14,9,1, 15,8,1, 16,7,1, 18,7,1, 19,5,1, 20,7,1, 21,8,1, 22,9,1, 23,10,1, 24,11,1, 26,11,1, 27,12,1, 28,11,2, 30,9,1],
+     cm:[1,12,1, 3,11,1, 5,12,1, 7,14,1, 9,12,1, 11,14,1, 13,12,1, 15,11,1, 17,12,1, 19,14,1, 23,14,1, 25,12,1, 27,11,1, 29,12,2]},
+  Z:{ch:[0,0],mel:[0,0,2, 2,3,1, 3,4,1, 4,7,2, 6,9,1, 7,10,1, 8,12,8]}
+ },
+ st:[["A","o"],
+     ["A","C"],["A","c"],
+     ["B","c","b"],["B","C","b"],
+     ["C","c","bh"],["C","C","bh"],
+     ["D","c","b"],["D","C","b"],
+     ["A","c","s"],["A","C","s"],
+     ["B","c","s"],["B","C","s"],
+     ["C","c","bh"],["C","C","bh"],
+     ["D","c","bh"],["D","C","bh"],
+     ["A","c","b"],["A","C","b"],
+     ["B","c","bh"],["B","C","bh"],
+     ["C","c","bh"],["C","C","bh"],
+     ["D","c","bh"],["D","C","bh"],
+     ["B","p","b"],
+     ["A","c","b"],["A","C","b"],
+     ["C","c","bh"],["C","C","bh"],
+     ["B","c","b"],["B","C","b"],
+     ["D","c","bh"],["D","C","bh"],
+     ["A","c","s"],["A","C","s"],
+     ["C","c","bh"],["C","C","bh"],
+     ["D","c","b"],["D","C","b"],
+     ["B","c","bh"],["B","C","bh"],
+     ["C","c","bh"],["C","C","bh"],
+     ["A","c","bk"],["A","C","bk"],
+     ["B","c","bk"],["B","C","bk"],
+     ["D","c","bk"],["D","C","bk"],
+     ["C","c","bhk"],["C","C","bhk"],
+     ["A","c","bhk"],["A","C","bhk"],
+     ["D","c","bhk"],["D","C","bhk"],
+     ["B","c","bhk"],["B","C","bhk"],
+     ["C","c","bhk"],["C","C","bhk"],
+     ["D","c","bhk"],["D","C","bhk"],
+     ["A","c","bhk"],["A","C","bhk"],
+     ["B","c","bhk"],["B","C","bhk"],
+     ["D","c","bhk"],["D","C","bhk"],
+     ["C","c","bhk"],["C","C","bhk"],
+     ["C","d","bhk"],
+     ["Z","d","bhk"],["Z","d","bhk"]]
 }
 ];
 
@@ -201,19 +258,19 @@ const SONGS=[
  P(4).Z={ch:[6,4],mel:[0,9,1, 3,7,1, 7,5,1, 12,4,2, 20,2,6]};    // EJ: tape runout
  P(6).Z={ch:[0,0],mel:[0,0,2, 2,4,2, 4,7,2, 6,12,16]};           // finale: grand ascent-hold
  P(5).S={ch:[0,3],ch2:[5,3],mel:[0,0,1, 1,0,1, 2,3,1, 3,0,1, 4,5,1, 5,7,1, 6,4,1, 7,3,1, 8,0,1, 9,0,1, 10,3,1, 11,4,1, 12,5,1, 13,7,1, 14,4,1, 15,3,1, 16,2,1, 17,2,1, 18,5,1, 19,2,1, 20,6,1, 21,7,1, 22,5,1, 23,4,1, 24,2,1, 25,3,1, 26,4,1, 27,5,1, 28,7,1, 29,5,1, 30,2,1, 31,0,1]};
- P(1).A.cm=[4,7,2, 8,9,4, 14,7,2, 20,9,2, 24,11,4, 30,9,2];
- P(1).C.cm=[0,14,4, 8,12,4, 16,11,4, 24,9,4, 30,11,2];
- P(2).A.cm=[2,9,2, 6,7,2, 10,9,2, 14,11,2, 18,9,2, 22,7,2, 26,9,2, 30,11,2];
- P(2).C.cm=[0,11,4, 8,14,4, 16,12,4, 24,11,2, 28,12,4];
- P(3).A.cm=[6,7,2, 14,9,2, 22,7,2, 30,9,2];
- P(3).D.cm=[2,12,1, 4,11,2, 10,12,1, 12,14,2, 18,12,1, 20,11,2, 26,12,1, 28,14,2];
- P(4).A.cm=[3,9,1, 7,11,1, 11,9,1, 15,12,1, 19,9,1, 23,11,1, 27,12,1, 31,9,1];
+ P(1).A.cm=[0,7,2, 3,9,1, 4,7,1, 6,9,2, 8,11,1, 10,9,1, 12,7,2, 15,9,1, 16,11,2, 19,9,1, 20,7,1, 22,9,2, 24,11,1, 26,12,2, 28,11,2, 30,9,1];
+ P(1).C.cm=[0,14,2, 3,12,1, 4,11,2, 7,12,1, 8,14,2, 11,12,1, 12,11,1, 14,9,2, 16,11,2, 19,12,1, 20,14,1, 22,12,1, 24,9,2, 27,11,1, 28,12,2, 30,11,1];
+ P(2).A.cm=[2,9,1, 3,11,1, 4,9,2, 6,7,1, 8,9,1, 9,11,1, 10,9,2, 14,11,1, 16,9,1, 17,7,1, 18,9,2, 22,11,1, 24,12,2, 27,11,1, 28,9,2, 30,11,1];
+ P(2).C.cm=[0,11,2, 3,12,1, 4,14,2, 7,12,1, 8,11,1, 10,12,2, 12,14,1, 14,12,1, 16,12,2, 19,11,1, 20,12,1, 22,14,2, 24,12,1, 26,11,1, 28,12,4];
+ P(3).A.cm=[2,7,1, 4,9,2, 6,7,1, 8,11,1, 10,9,2, 12,7,1, 14,9,1, 16,7,2, 19,9,1, 20,11,1, 22,9,2, 24,12,1, 26,11,1, 28,9,2, 30,7,1];
+ P(3).D.cm=[2,12,1, 4,11,2, 6,12,1, 8,14,1, 10,12,1, 12,14,2, 15,12,1, 18,12,1, 20,11,2, 23,12,1, 26,12,1, 28,14,2, 30,12,1];
+ P(4).A.cm=[1,9,1, 3,11,1, 5,9,1, 7,12,1, 9,9,1, 11,11,1, 13,12,1, 15,9,1, 17,11,1, 19,12,1, 21,11,1, 23,12,1, 25,14,1, 27,12,1, 29,11,1, 31,9,1];
  P(4).C.cm=[2,12,2, 6,11,2, 10,12,2, 14,14,2, 18,12,2, 22,11,2, 26,12,2, 30,14,1];
- P(4).D.cm=[1,11,1, 5,12,1, 9,11,1, 13,14,1, 17,11,1, 21,12,1, 25,14,1, 29,12,1];
- P(5).A.cm=[4,9,2, 12,11,2, 20,9,2, 28,11,2];
+ P(4).D.cm=[1,11,1, 3,12,1, 5,11,1, 7,14,1, 9,11,1, 11,12,1, 13,14,1, 15,12,1, 17,11,1, 19,12,1, 21,14,1, 23,12,1, 25,14,1, 27,12,1, 29,11,1];
+ P(5).A.cm=[1,9,1, 4,9,2, 7,11,1, 8,9,1, 11,11,1, 12,9,2, 15,11,1, 16,12,1, 19,9,1, 20,11,2, 23,12,1, 24,9,1, 26,11,1, 28,12,2, 31,9,1];
  P(5).C.cm=[0,12,4, 8,11,4, 16,14,4, 24,12,4];
- P(6).A.cm=[8,9,4, 24,11,4];
- P(6).D.cm=[2,11,2, 6,12,2, 10,14,2, 14,12,2, 18,11,2, 22,12,2, 26,14,4];
+ P(6).A.cm=[2,9,1, 4,7,2, 7,9,1, 8,11,1, 10,9,1, 12,11,2, 15,9,1, 16,7,1, 18,9,2, 21,11,1, 22,12,1, 24,11,2, 27,9,1, 28,11,2];
+ P(6).D.cm=[1,11,1, 2,12,1, 4,11,2, 6,12,1, 8,14,1, 10,12,2, 13,11,1, 14,12,1, 16,14,2, 19,12,1, 20,11,1, 22,12,2, 24,14,1, 26,12,2];
  // Each song gets its OWN energy arc — only the finale rides the rollercoaster.
  // HOT STREAK — continuous acceleration: soft start, builds nonstop,
  // zero breakdowns, zero duets, ends at peak
@@ -260,7 +317,7 @@ const SONGS=[
   ["N","o","b"],["N","p"],
   ["C","o","bh"],["C","p","bh"],
   ["D","c","b"],["D","C"],["A","o","bk"],["A","p","k"],
-  ["C","o","bhk"],["C","p","bhk"],["Z","o","bk"]];
+  ["C","o","bhk"],["C","p","bhk"],["Z","d","bk"]];
  // DUAL FREQUENCY — conversation arc: peaks whenever the two sing together,
  // a single Soundwave hush, and the Decepticons alone get the last word
  SONGS[5].st=[["A","o","1"],["A","p"],
@@ -277,7 +334,7 @@ const SONGS=[
   ["D","o","1"],["D","p"],["D","o","2"],["D","p"],
   ["D","o","bh"],["C","d","bh"],
   ["C","o","bhk"],["C","d","bhk"],["S","d","bhk"],["C","d","bhk"],
-  ["C","o","bhk"],["D","o","bhk"]];
+  ["C","d","bhk"],["D","d","bhk"]];
 })();
 const BASSPAT=[0,0,7,0,12,0,7,0];
 const BIGBASS=[0,12,0,12,0,12,7,12];
@@ -375,6 +432,12 @@ function buildSong(def){
     for(let j=0;j<8;j++)audio.push({t:bt+j*2*sd,f:"pluck",m:def.root+d2s(cd+ar[j%4])+(j>=4?12:0),d:2*sd});
     if(ib>=2)audio.push({t:bt,f:"bass",m:br,d:16*sd*0.95});
     if(last)for(let s=0;s<16;s+=2)audio.push({t:bt+s*sd,f:"snare"});
+   }else if(def.introStyle==="march"){ // war drums (Megatron)
+    audio.push({t:bt,f:"bass",m:br-12,d:16*sd*0.98});
+    for(let s=0;s<16;s+=4)audio.push({t:bt+s*sd,f:"kick"});
+    if(ib>=1)for(let s=2;s<16;s+=4)audio.push({t:bt+s*sd,f:"snare"});
+    if(ib>=2)for(const s of [0,3,6,8,11,14])audio.push({t:bt+s*sd,f:"pluck",m:def.root-12+d2s(cd)+(s%2?1:0),d:sd*1.2});
+    if(last)for(let s=0;s<16;s++)audio.push({t:bt+s*sd,f:"snare"});
    }else if(def.introStyle==="radio"){ // morse-code transmission (Soundwave)
     audio.push({t:bt,f:"bass",m:br-12,d:16*sd*0.98});
     for(const s2 of [0,1,3,8,9,10,11,14])audio.push({t:bt+s2*sd,f:"pluck",m:def.root+12,d:sd*0.8});
@@ -415,6 +478,14 @@ function buildSong(def){
    for(let s=0;s<16;s+=big?1:2)audio.push({t:bt+s*sdl,f:"hat"});
    const pat=big?BIGBASS:BASSPAT;
    for(let j=0;j<8;j++)audio.push({t:bt+j*2*sdl,f:"bass",m:br+pat[j],d:2*sdl*0.9});
+   if(def.heavy){ // cinematic weight under the voices: low choir pad, sub drone,
+    // orchestral chord stabs, extra march snare
+    audio.push({t:bt,f:"pad",ms:[def.root-24+d2s(cd)+tr,def.root-24+d2s(cd+2)+tr,def.root-24+d2s(cd+4)+tr],d:16*sdl});
+    audio.push({t:bt,f:"bass",m:br-12,d:16*sdl*0.95});
+    audio.push({t:bt,f:"pluck",m:def.root+12+d2s(cd)+tr,d:sdl*4});
+    audio.push({t:bt+8*sdl,f:"pluck",m:def.root+12+d2s(cd+4)+tr,d:sdl*4});
+    audio.push({t:bt+14*sdl,f:"snare"});
+   }
   }
  }
  // melodies -> charts + vocals (harmony 3rds, chorus octave sparkle, final key change)
@@ -576,6 +647,20 @@ function buildSong(def){
    last[n.lane]=n.t;
   }
  }
+ // RULE: ending unison duets — the opponent mirrors the finished player chart
+ // exactly (player lane L, opponent lane 3-L, identical times)
+ {
+  const nSl=def.st.length;
+  def.st.forEach((sl,i)=>{
+   if(sl[1]!=="d"||i<nSl-2)return;
+   const t0=barStart[def.intro+i*2];
+   const t1=(def.intro+i*2+2<barStart.length)?barStart[def.intro+i*2+2]:(totalT+99);
+   const pN=plr.filter(n=>n.t>=t0-1e-6&&n.t<t1-1e-6);
+   opp=opp.filter(n=>!(n.t>=t0-1e-6&&n.t<t1-1e-6));
+   for(const n of pN)opp.push({t:n.t,lane:3-n.lane,dur:n.dur,midi:n.midi,hit:false,missed:false,holding:false,grp:n.grp,who2:3});
+  });
+  opp.sort((a,b)=>a.t-b.t);
+ }
  audio.sort((a,b)=>a.t-b.t);
  return {audio,opp,plr,total:totalT,sd,beat:sd*4,bars:{start:barStart,spd:barInfo.map(x=>x.spd)}};
 }
@@ -615,6 +700,14 @@ try{const s=localStorage.getItem("tfg1_binds");if(s){const b=JSON.parse(s);if(Ar
 function saveBinds(){try{localStorage.setItem("tfg1_binds",JSON.stringify(BINDS));}catch(e){}}
 function keyName(k){if(!k)return "—";const m={"arrowleft":"←","arrowdown":"↓","arrowup":"↑","arrowright":"→"," ":"SPACE"};return m[k]||k.toUpperCase();}
 let bindSel=0,bindWait=false;
+// song-clear tracking (persisted) — the boss unlocks after clearing everything else
+let cleared={};
+try{const c=localStorage.getItem("tfg1_clear");if(c)cleared=JSON.parse(c)||{};}catch(e){}
+function saveClear(){try{localStorage.setItem("tfg1_clear",JSON.stringify(cleared));}catch(e){}}
+function isLocked(i){
+ if(!SONGS[i]||!SONGS[i].locked)return false;
+ return !SONGS.every((s,j)=>j===i||cleared[s.title]);
+}
 
 // ---- visual helpers ----
 function shade(hex,f){const n=parseInt(hex.slice(1),16);
@@ -852,6 +945,19 @@ const SOUNDWAVE_POSES={
 };
 SOUNDWAVE.poses=SOUNDWAVE_POSES;
 SOUNDWAVE.sCannon=true;
+// MEGATRON (live action): jagged gunmetal shards, burning eyes, fusion cannon.
+// Every move is a threat — cannon blasts, claw slashes, sky-charge, ground slam.
+const MEGATRON={c1:"#8a8f98",c2:"#4a4e58",c3:"#b8341f",metal:"#6a6f7a",face:"#1a181c",eyes:"#ff2020",
+ legT:"#7a7f88",legS:"#4a4e58",head:"megatron",chest:"scar",wings:false};
+const MEGATRON_POSES={
+ idle:{lean:0,crouch:0,aL:-0.35,aR:0.5,head:0,mouth:0,fAng:0.7},
+ left:{lean:-0.2,crouch:8,aL:-0.6,aR:-1.45,head:-0.15,mouth:1,fAng:Math.PI},
+ right:{lean:0.22,crouch:6,aL:-1.6,aR:1.9,head:0.15,mouth:1,fAng:0.15,slash:1},
+ up:{lean:-0.06,crouch:-16,aL:-0.7,aR:2.95,head:-0.28,mouth:1,fAng:-Math.PI/2,skyfire:1},
+ down:{lean:0.05,crouch:36,aL:-1.1,aR:1.35,head:0.24,mouth:1,fAng:0.9,slam:1}
+};
+MEGATRON.poses=MEGATRON_POSES;
+MEGATRON.fusion=true;
 
 function rr(g,x,y,w,h,r){g.beginPath();g.roundRect(x,y,w,h,r);}
 function drawArm(g,sx,sy,a,spec,w){
@@ -966,6 +1072,17 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge,fc){
   }
   g.fillStyle=spec.c3; // button row (play / rew / ff / stop / rec)
   for(let i=0;i<5;i++){rr(g,-27+i*12,-156+ty,8,8,2);g.fill();}
+ }else if(spec.chest==="scar"){ // Megatron: jagged plates + burning core fissure
+  g.fillStyle=spec.c2;
+  g.beginPath();g.moveTo(-40,-200+ty);g.lineTo(-8,-192+ty);g.lineTo(-16,-168+ty);g.lineTo(-38,-172+ty);g.closePath();g.fill();
+  g.beginPath();g.moveTo(40,-200+ty);g.lineTo(8,-192+ty);g.lineTo(16,-168+ty);g.lineTo(38,-172+ty);g.closePath();g.fill();
+  g.shadowColor="#ff3820";g.shadowBlur=P.mouth?18:8;
+  g.strokeStyle="rgba(255,70,30,"+(P.mouth?0.95:0.5)+")";g.lineWidth=4;
+  g.beginPath();g.moveTo(0,-198+ty);g.lineTo(-4,-184+ty);g.lineTo(3,-172+ty);g.lineTo(-2,-158+ty);g.lineTo(2,-146+ty);g.stroke();
+  g.shadowBlur=0;
+  g.fillStyle=spec.metal;
+  g.beginPath();g.moveTo(-30,-160+ty);g.lineTo(-6,-152+ty);g.lineTo(-10,-140+ty);g.lineTo(-28,-146+ty);g.closePath();g.fill();
+  g.beginPath();g.moveTo(30,-160+ty);g.lineTo(6,-152+ty);g.lineTo(10,-140+ty);g.lineTo(28,-146+ty);g.closePath();g.fill();
  }else if(spec.chest==="core"){ // glowing reactor core
   g.shadowColor=spec.c3;g.shadowBlur=P.mouth?16:9;
   g.fillStyle=spec.c3;
@@ -978,7 +1095,7 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge,fc){
  }
  g.restore();
  // faction badge
- g.fillStyle=spec.cannon?"#a06aff":"#e33";
+ g.fillStyle=(spec.cannon||spec.fusion)?"#a06aff":"#e33";
  g.beginPath();g.moveTo(0,-134+ty);g.lineTo(-7,-124+q*0.7);g.lineTo(7,-124+q*0.7);g.closePath();g.fill();
  // shoulders + arms (capture hand positions for props/fx)
  const hL=drawArm(g,-58,-192+ty,P.aL,spec,fc<0?19:15);
@@ -1027,6 +1144,59 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge,fc){
    g.shadowBlur=0;
   }
   g.restore();
+ }
+ // Megatron's fusion cannon (right forearm) — fires with recoil + shockwave ring
+ if(spec.fusion){
+  const fAng=P.fAng!==undefined?P.fAng:0.7;
+  g.save();g.translate(hR[0],hR[1]);g.rotate(fAng);
+  const rec=(P.mouth&&poseAge<0.15)?-8:0;
+  g.translate(rec,0);
+  g.fillStyle=spec.c2;rr(g,-14,-13,52,26,8);g.fill();
+  g.fillStyle="rgba(255,255,255,0.15)";rr(g,-14,-13,52,8,8);g.fill();
+  g.fillStyle=spec.metal;rr(g,30,-10,26,20,6);g.fill();
+  g.fillStyle="#1a1418";g.beginPath();g.arc(58,0,8,0,TAU);g.fill();
+  g.fillStyle="rgba(255,60,30,"+(P.mouth?0.9:0.35)+")";g.beginPath();g.arc(58,0,4,0,TAU);g.fill();
+  if(P.mouth&&poseAge<0.25){
+   g.shadowColor="#ff3820";g.shadowBlur=22;
+   const bg4=g.createLinearGradient(58,0,190,0);
+   bg4.addColorStop(0,"rgba(255,90,40,0.95)");bg4.addColorStop(1,"rgba(255,90,40,0)");
+   g.fillStyle=bg4;rr(g,58,-6,130,12,6);g.fill();
+   g.fillStyle="#fff";g.beginPath();g.arc(58,0,9,0,TAU);g.fill();
+   g.shadowBlur=0;
+   g.strokeStyle="rgba(255,120,60,"+Math.max(0,0.8-poseAge*3)+")";g.lineWidth=4;
+   g.beginPath();g.arc(58,0,10+poseAge*260,0,TAU);g.stroke();
+  }
+  g.restore();
+ }
+ // Megatron claw-slash trails (right pose)
+ if(P.slash){
+  g.lineWidth=5;g.lineCap="round";
+  for(let i=0;i<3;i++){
+   g.strokeStyle="rgba(255,60,40,"+(0.7-i*0.2)+")";
+   g.beginPath();g.arc(hR[0]-10-i*10,hR[1]-6,34+i*12,-1.1,0.5);g.stroke();
+  }
+ }
+ // Megatron sky-charge column (up pose)
+ if(P.skyfire&&P.mouth){
+  const a2=Math.max(0,0.7-poseAge*1.2);
+  const cg=g.createLinearGradient(0,hR[1]-310,0,hR[1]);
+  cg.addColorStop(0,"rgba(255,120,50,0)");cg.addColorStop(1,"rgba(255,120,50,"+a2+")");
+  g.fillStyle=cg;rr(g,hR[0]-14,hR[1]-310,28,300,12);g.fill();
+ }
+ // Megatron ground slam (down pose): cracks + dust
+ if(P.slam){
+  g.strokeStyle="rgba(40,30,26,0.8)";g.lineWidth=3;
+  for(let i=0;i<5;i++){
+   const a3=(i-2)*0.5;
+   g.beginPath();g.moveTo(hR[0],2);
+   g.lineTo(hR[0]+Math.cos(a3+0.3)*40,6+Math.abs(Math.sin(a3))*6);
+   g.lineTo(hR[0]+Math.cos(a3)*74,10);g.stroke();
+  }
+  for(let i=0;i<4;i++){
+   const ph2=(fxT*2+i*0.25)%1;
+   g.fillStyle="rgba(120,105,90,"+(0.4*(1-ph2))+")";
+   g.beginPath();g.arc(hR[0]-30+i*20,-ph2*30,6+ph2*8,0,TAU);g.fill();
+  }
  }
  // Soundwave shoulder cannon (always mounted)
  if(spec.sCannon){
@@ -1111,6 +1281,21 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge,fc){
   g.fillStyle="#3a4150";
   if(P.mouth)rr(g,-6,5,12,9,2);else rr(g,-7,8,14,3,1);
   g.fill();
+ }else if(spec.head==="megatron"){
+  // jagged crowned helm, burning eyes, gritted mouth plate
+  g.fillStyle=spec.c1;
+  g.beginPath();
+  g.moveTo(-20,14);g.lineTo(-24,-8);g.lineTo(-14,-26);g.lineTo(-6,-20);g.lineTo(0,-30);g.lineTo(6,-20);g.lineTo(14,-26);g.lineTo(24,-8);g.lineTo(20,14);
+  g.closePath();g.fill();
+  g.fillStyle=spec.c2;
+  g.beginPath();g.moveTo(-18,-8);g.lineTo(-4,-12);g.lineTo(4,-12);g.lineTo(18,-8);g.lineTo(14,-2);g.lineTo(-14,-2);g.closePath();g.fill();
+  g.shadowColor=spec.eyes;g.shadowBlur=P.mouth?18:9;
+  g.fillStyle=spec.eyes;
+  rr(g,-13,-8,9,4,2);g.fill();rr(g,4,-8,9,4,2);g.fill();
+  g.shadowBlur=0;
+  g.fillStyle=spec.metal;rr(g,-11,2,22,12,3);g.fill();
+  g.strokeStyle=P.mouth?"#ffb0a0":"#3a3e46";g.lineWidth=2;
+  for(let i=-6;i<=6;i+=4){g.beginPath();g.moveTo(i,4);g.lineTo(i,12);g.stroke();}
  }else if(spec.head==="soundwave"){
   // boxy helmet with full red visor and chin guard
   g.fillStyle=spec.c1;rr(g,-19,-26,38,42,5);g.fill();
@@ -1172,12 +1357,14 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge,fc){
  }
  g.restore();
 }
-function drawKid(g,poseName,x,y,scale,bob,tint,fc){
+function drawKid(g,poseName,x,y,scale,bob,tint,fc,scared){
  if(fc===undefined)fc=-1; // the kid faces the opponents by default
+ if(scared===undefined)scared=0; // >0 = time value; he trembles before the giant
  const P=POSES[poseName]||POSES.idle;
  g.save();g.translate(x,y);g.scale(scale,scale);
  g.fillStyle="rgba(0,0,0,0.35)";g.beginPath();g.ellipse(0,6,55,10,0,0,TAU);g.fill();
  g.rotate(P.lean*0.5+fc*0.05);
+ if(scared)g.translate(Math.sin(scared*43)*1.4,0); // trembling
  const q=P.crouch*0.8,ty=q+bob;
  // legs
  const axL=fc<0?4:-3,axR=fc>0?4:-3; // stance stagger
@@ -1233,11 +1420,25 @@ function drawKid(g,poseName,x,y,scale,bob,tint,fc){
  // headphones
  g.strokeStyle="#222";g.lineWidth=4;g.beginPath();g.arc(0,-4,23,Math.PI*1.15,Math.PI*1.85);g.stroke();
  g.fillStyle="#222";rr(g,-27,-8,8,14,3);g.fill();rr(g,19,-8,8,14,3);g.fill();
- g.fillStyle="#222";
- rr(g,-11,-2,6,3,1);g.fill();rr(g,5,-2,6,3,1);g.fill(); // eyes
- g.fillStyle="#a33";
- if(P.mouth){g.beginPath();g.ellipse(0,9,5,6,0,0,TAU);g.fill();}
- else{rr(g,-5,8,10,3,1);g.fill();}
+ if(scared){ // wide terrified eyes fixed UP on the giant, worried brows, sweat
+  g.fillStyle="#fff";
+  g.beginPath();g.arc(-8,-1,4.5,0,TAU);g.fill();g.beginPath();g.arc(8,-1,4.5,0,TAU);g.fill();
+  g.fillStyle="#222";
+  g.beginPath();g.arc(-9,-3,1.8,0,TAU);g.fill();g.beginPath();g.arc(7,-3,1.8,0,TAU);g.fill();
+  g.strokeStyle="#5a3a28";g.lineWidth=2;
+  g.beginPath();g.moveTo(-13,-9);g.lineTo(-4,-12);g.stroke();
+  g.beginPath();g.moveTo(4,-12);g.lineTo(13,-9);g.stroke();
+  g.fillStyle="#7ac8ff";
+  g.beginPath();g.ellipse(14,-4+((scared*26)%14),2,3.2,0,0,TAU);g.fill();
+  g.fillStyle="#a33";
+  g.beginPath();g.ellipse(0,10,3.5+Math.sin(scared*30),4.5,0,0,TAU);g.fill();
+ }else{
+  g.fillStyle="#222";
+  rr(g,-11,-2,6,3,1);g.fill();rr(g,5,-2,6,3,1);g.fill(); // eyes
+  g.fillStyle="#a33";
+  if(P.mouth){g.beginPath();g.ellipse(0,9,5,6,0,0,TAU);g.fill();}
+  else{rr(g,-5,8,10,3,1);g.fill();}
+ }
  // sphere glare + chin shade (3D)
  {const kg3=g.createRadialGradient(-6,-8,2,0,-2,22);
   kg3.addColorStop(0,"rgba(255,255,255,0.25)");kg3.addColorStop(1,"rgba(255,255,255,0)");
@@ -1295,6 +1496,24 @@ function makeIcon(who,st){
   g.beginPath();g.moveTo(-8,5);g.lineTo(8,5);g.moveTo(-8,10);g.lineTo(8,10);g.stroke();
   if(st==="lose"){g.strokeStyle="rgba(10,10,20,0.8)";g.lineWidth=2;
    g.beginPath();g.moveTo(14,-24);g.lineTo(4,-8);g.lineTo(10,6);g.stroke();}
+ }else if(who==="megatron"){
+  g.fillStyle=col("#8a8f98");
+  g.beginPath();g.moveTo(-18,14);g.lineTo(-22,-6);g.lineTo(-12,-24);g.lineTo(-5,-18);g.lineTo(0,-28);g.lineTo(5,-18);g.lineTo(12,-24);g.lineTo(22,-6);g.lineTo(18,14);g.closePath();g.fill();
+  if(st==="lose"){
+   g.strokeStyle=col("#ff2020");g.lineWidth=3;
+   g.beginPath();g.moveTo(-13,-9);g.lineTo(-4,-3);g.moveTo(-4,-9);g.lineTo(-13,-3);g.stroke();
+   g.beginPath();g.moveTo(4,-9);g.lineTo(13,-3);g.moveTo(13,-9);g.lineTo(4,-3);g.stroke();
+   g.strokeStyle="rgba(10,8,10,0.9)";g.lineWidth=2;
+   g.beginPath();g.moveTo(-16,-20);g.lineTo(-4,-2);g.lineTo(-10,12);g.stroke();
+  }else{
+   if(st==="win"){g.shadowColor=col("#ff2020");g.shadowBlur=8;}
+   g.fillStyle=col("#ff2020");
+   rr(g,-12,-8,8,4,2);g.fill();rr(g,4,-8,8,4,2);g.fill();
+   g.shadowBlur=0;
+  }
+  g.fillStyle=col("#6a6f7a");rr(g,-10,2,20,11,3);g.fill();
+  g.strokeStyle=st==="win"?"#ffd0c0":col("#3a3e46");g.lineWidth=2;
+  for(let i=-5;i<=5;i+=5){g.beginPath();g.moveTo(i,4);g.lineTo(i,11);g.stroke();}
  }else if(who==="soundwave"){
   g.fillStyle=col("#2b5fc7");rr(g,-19,-24,38,42,5);g.fill();
   g.fillStyle=col("#1a3a86");rr(g,-19,-24,38,10,4);g.fill();
@@ -1348,7 +1567,7 @@ function makeIcon(who,st){
  }
  return c;
 }
-for(const w of ["hotrod","optimus","shockwave","soundwave","kid"])
+for(const w of ["hotrod","optimus","shockwave","soundwave","megatron","kid"])
  for(const s of ["norm","win","lose"])
   ICONS[w+"_"+s]=makeIcon(w,s);
 
@@ -1706,7 +1925,48 @@ function stageNemesis(g,t,pulse){
  g.restore();
  drawFloor(g,"#08182a","#2a6a9a",pulse);
 }
-const STAGES=[stageArk,stageHighway,stageCybertron,stageAutobotCity,stageShockLab,stageComms,stageNemesis];
+function stageRuins(g,t,pulse){ // live-action battlefield: burning city, ash, searchlights
+ let gr=g.createLinearGradient(0,0,0,H);
+ gr.addColorStop(0,"#1a0e08");gr.addColorStop(0.6,"#3a1a0c");gr.addColorStop(1,"#241008");
+ g.fillStyle=gr;g.fillRect(0,0,W,H);
+ for(let i=0;i<9;i++){
+  const bx=i*115-20,bw=70+hashRand(i+11)*40,bh=120+hashRand(i+23)*200;
+  g.fillStyle="#170c08";
+  g.beginPath();
+  g.moveTo(bx,430);g.lineTo(bx,430-bh);
+  g.lineTo(bx+bw*0.3,430-bh-20*hashRand(i));g.lineTo(bx+bw*0.55,430-bh+26);
+  g.lineTo(bx+bw,430-bh*0.8);g.lineTo(bx+bw,430);g.closePath();g.fill();
+  g.strokeStyle="#2c1810";g.lineWidth=3;
+  g.beginPath();g.moveTo(bx+bw*0.55,430-bh+26);g.lineTo(bx+bw*0.55,430-bh-8);g.stroke();
+  if(hashRand(i+40)>0.45){
+   const fx3=bx+bw*0.5,fy3=432-bh*0.8;
+   g.fillStyle="rgba(255,"+Math.floor(110+70*Math.sin(t*8+i))+",30,0.85)";
+   g.beginPath();g.ellipse(fx3,fy3,10,14+6*Math.sin(t*10+i*2),0,0,TAU);g.fill();
+  }
+ }
+ g.fillStyle="rgba(50,38,32,0.5)";
+ for(let i=0;i<6;i++){
+  const x=((t*18+i*230)%1300)-170;
+  g.beginPath();g.ellipse(x,80+i*36,120,24,0,0,TAU);g.fill();
+ }
+ for(const s of [[140,0.7],[820,-0.5]]){
+  g.save();g.translate(s[0],440);g.rotate(Math.sin(t*0.5*s[1])*0.55);
+  g.globalAlpha=0.10+pulse*0.06;
+  g.fillStyle="#ffd8a0";
+  g.beginPath();g.moveTo(0,0);g.lineTo(-60,-520);g.lineTo(60,-520);g.closePath();g.fill();
+  g.restore();g.globalAlpha=1;
+ }
+ g.fillStyle="rgba(220,210,200,0.5)";
+ for(let i=0;i<24;i++){
+  const y=((t*26+hashRand(i)*540+i*29)%560)-10;
+  const x=hashRand(i+31)*W+Math.sin(t*1.2+i)*20;
+  g.globalAlpha=0.2+0.4*hashRand(i+7);
+  g.fillRect(x,y,2,2);
+ }
+ g.globalAlpha=1;
+ drawFloor(g,"#1c110b","#5a3220",pulse);
+}
+const STAGES=[stageArk,stageHighway,stageCybertron,stageAutobotCity,stageShockLab,stageComms,stageNemesis,stageRuins];
 
 // ============ arrows / notes ============
 function drawArrow(g,x,y,lane,fill,alpha,scale,glow){
@@ -1757,6 +2017,7 @@ function endSong(){
  if(misses===0&&acc>=0.97)rank="S+";
  else if(acc>=0.95)rank="S";else if(acc>=0.9)rank="A";
  else if(acc>=0.8)rank="B";else if(acc>=0.7)rank="C";
+ cleared[def.title]=true;saveClear();
  resultData={score,acc,maxCombo,sicks,goods,bads,misses,rank,title:def.title};
  state="results";
 }
@@ -1816,7 +2077,7 @@ window.addEventListener("keydown",e=>{
   else if(e.key==="ArrowDown"||e.key.toLowerCase()==="s")selIdx=(selIdx+1)%N;
   else if(e.key==="Enter"){
    if(selIdx===SONGS.length){bindsReturn="menu";state="binds";bindSel=0;bindWait=false;}
-   else startSong(selIdx);
+   else if(!isLocked(selIdx))startSong(selIdx);
   }
  }else if(state==="binds"){
   const k=e.key.toLowerCase();
@@ -1886,10 +2147,10 @@ function pointerAt(mx,my){
  if(ac&&ac.state==="suspended"&&!pausedCtx)ac.resume();
  if(state==="menu"){
   for(let i=0;i<=SONGS.length;i++){
-   const y=186+i*44;
-   if(my>y-19&&my<y+19){
+   const y=182+i*40;
+   if(my>y-17&&my<y+17){
     if(i===SONGS.length){bindsReturn="menu";state="binds";bindSel=0;bindWait=false;}
-    else if(selIdx===i)startSong(i);
+    else if(selIdx===i&&!isLocked(i))startSong(i);
     else selIdx=i;
    }
   }
@@ -2016,24 +2277,34 @@ function renderMenu(t){
   ctx.fillText("⟳  Rotate your device to landscape for the best experience",480,168);
  }
  for(let i=0;i<=SONGS.length;i++){
-  const y=186+i*44,sel=i===selIdx,isCtl=i===SONGS.length;
-  ctx.globalAlpha=sel?1:0.78;
-  if(sel){ctx.shadowColor="#ffd84a";ctx.shadowBlur=16;}
-  ctx.fillStyle=sel?"rgba(96,42,150,0.95)":"rgba(28,22,48,0.88)";
-  rr(ctx,170,y-19,620,38,9);ctx.fill();ctx.shadowBlur=0;
-  if(sel){ctx.strokeStyle="#ffd84a";ctx.lineWidth=2.5;rr(ctx,170,y-19,620,38,9);ctx.stroke();}
+  const y=182+i*40,sel=i===selIdx,isCtl=i===SONGS.length;
+  const lk=!isCtl&&isLocked(i);
+  ctx.globalAlpha=sel?1:(lk?0.55:0.78);
+  if(sel){ctx.shadowColor=lk?"#803040":"#ffd84a";ctx.shadowBlur=16;}
+  ctx.fillStyle=sel?(lk?"rgba(70,20,26,0.95)":"rgba(96,42,150,0.95)"):(lk?"rgba(26,14,16,0.9)":"rgba(28,22,48,0.88)");
+  rr(ctx,170,y-17,620,34,8);ctx.fill();ctx.shadowBlur=0;
+  if(sel){ctx.strokeStyle=lk?"#c84050":"#ffd84a";ctx.lineWidth=2.5;rr(ctx,170,y-17,620,34,8);ctx.stroke();}
   if(isCtl){
    ctx.textAlign="center";ctx.fillStyle=sel?"#fff":"#cbc5dd";
-   ctx.font="900 16px 'Arial Black',Arial";
-   ctx.fillText("⚙  CONTROLS — rebind keys",480,y+6);
+   ctx.font="900 15px 'Arial Black',Arial";
+   ctx.fillText("⚙  CONTROLS — rebind keys",480,y+5);
+  }else if(lk){
+   const s=SONGS[i];
+   ctx.textAlign="left";ctx.fillStyle=sel?"#ff9aa4":"#8a6a70";
+   ctx.font="900 14px 'Arial Black',Arial";
+   ctx.fillText("🔒 "+s.title,190,y-3);
+   ctx.font="9px Arial";ctx.fillStyle="#8a6a70";
+   ctx.fillText("LOCKED — clear every other song to face "+s.oppName,190,y+11);
+   ctx.textAlign="right";ctx.font="12px Arial";ctx.fillStyle="#8a6a70";
+   ctx.fillText("★★★★★",772,y+4);
   }else{
    const s=SONGS[i];
    ctx.textAlign="left";ctx.fillStyle=sel?"#fff":"#cbc5dd";
-   ctx.font="900 15px 'Arial Black',Arial";
-   ctx.fillText((s.opp==="optimus"?"★ FINALE — ":"")+s.title,190,y-3);
-   ctx.font="10px Arial";ctx.fillStyle=sel?"#f7d8a0":"#988fb0";
-   ctx.fillText("vs "+s.oppName,190,y+12);
-   ctx.textAlign="right";ctx.font="14px Arial";ctx.fillStyle="#ffd84a";
+   ctx.font="900 14px 'Arial Black',Arial";
+   ctx.fillText((s.opp==="optimus"?"★ FINALE — ":"")+(s.locked?"☠ BOSS — ":"")+s.title,190,y-3);
+   ctx.font="9px Arial";ctx.fillStyle=sel?"#f7d8a0":"#988fb0";
+   ctx.fillText("vs "+s.oppName,190,y+11);
+   ctx.textAlign="right";ctx.font="12px Arial";ctx.fillStyle="#ffd84a";
    ctx.fillText("★".repeat(s.stars)+"☆".repeat(5-s.stars),772,y+4);
   }
   ctx.globalAlpha=1;
@@ -2113,6 +2384,8 @@ function renderPause(t){
  if(def.opp==="duo"){
   drawBot(ctx,SHOCKWAVE,"up",170,505,1.15,Math.sin(t*2)*3,0,t,0.05,1);
   drawBot(ctx,SOUNDWAVE,"up",370,505,1.15,Math.sin(t*2+1.5)*3,0,t,0.05,1);
+ }else if(def.opp==="megatron"){
+  drawBot(ctx,MEGATRON,"up",270,538,1.9,Math.sin(t*2)*3,0,t,0.05,1);
  }else{
   const spec=def.opp==="optimus"?OPTIMUS:def.opp==="shockwave"?SHOCKWAVE:def.opp==="soundwave"?SOUNDWAVE:HOTROD;
   drawBot(ctx,spec,"up",270,505,1.55,Math.sin(t*2)*3,0,t,0.05,1);
@@ -2183,7 +2456,12 @@ function renderPlay(t){
  const beatDur=4*song.sd*(song.bars.spd[songBarIdx]||1);
  const beatPh=(((now-song.bars.start[songBarIdx])/beatDur)%1+1)%1;
  const pulse=Math.max(0,1-beatPh*3);
- // bg
+ // bg (with impact shake when Megatron strikes)
+ ctx.save();
+ if(def.opp==="megatron"){
+  const sh=Math.max(0,0.3-(now-oppPoseT))*20;
+  if(sh>0.5)ctx.translate((hashRand(Math.floor(now*60))-0.5)*sh,(hashRand(Math.floor(now*60)+7)-0.5)*sh);
+ }
  STAGES[def.stage](ctx,Math.max(0,now),pulse);
  // camera bump
  ctx.save();
@@ -2198,6 +2476,11 @@ function renderPlay(t){
   const p1=a1<0.35?duoPose1:"idle",p2=a2<0.35?duoPose2:"idle";
   drawBot(ctx,SHOCKWAVE,p1,188,468,0.78,p1==="idle"?bob:0,0,now,a1,1);
   drawBot(ctx,SOUNDWAVE,p2,384,468,0.78,p2==="idle"?-bob:0,0,now,a2,1);
+ }else if(def.opp==="megatron"){
+  // he TOWERS — feet at the stage floor, head brushing the sky
+  const oAge=now-oppPoseT;
+  const oPose=oAge<0.4?oppPose:"idle";
+  drawBot(ctx,MEGATRON,oPose,205,540,2.15,oPose==="idle"?bob*1.6:0,0,now,oAge,1);
  }else{
   const oAge=now-oppPoseT;
   const oPose=oAge<0.35?oppPose:"idle";
@@ -2205,8 +2488,9 @@ function renderPlay(t){
   const oScale=def.opp==="optimus"?1.02:(def.opp==="shockwave"||def.opp==="soundwave")?1.0:0.92;
   drawBot(ctx,spec,oPose,300,468,oScale,oPose==="idle"?bob:0,0,now,oAge,1);
  }
- drawKid(ctx,pPose,672,468,1.0,pPose==="idle"?bob:0,Math.max(0,1-(now-plrMissT)*3),-1);
+ drawKid(ctx,pPose,def.opp==="megatron"?830:672,468,1.0,pPose==="idle"?bob:0,Math.max(0,1-(now-plrMissT)*3),-1,def.opp==="megatron"?now:0);
  ctx.restore();
+ ctx.restore(); // impact-shake frame
  vignette(ctx);
  // translucent lane panels
  ctx.fillStyle="rgba(5,5,14,0.34)";
@@ -2274,7 +2558,7 @@ function renderPlay(t){
  const bx=280,bw=400,by=498;
  ctx.fillStyle="rgba(0,0,0,0.7)";rr(ctx,bx-5,by-5,bw+10,22,10);ctx.fill();
  ctx.strokeStyle="rgba(255,255,255,0.35)";ctx.lineWidth=2;rr(ctx,bx-5,by-5,bw+10,22,10);ctx.stroke();
- const oc=def.opp==="optimus"?"#c03048":def.opp==="shockwave"?"#7a3cc8":def.opp==="soundwave"?"#2b5fc7":def.opp==="duo"?"#4d49c8":"#c8264a";
+ const oc=def.opp==="optimus"?"#c03048":def.opp==="shockwave"?"#7a3cc8":def.opp==="soundwave"?"#2b5fc7":def.opp==="duo"?"#4d49c8":def.opp==="megatron"?"#7a1420":"#c8264a";
  let og=ctx.createLinearGradient(0,by,0,by+12);
  og.addColorStop(0,shade(oc,1.4));og.addColorStop(1,shade(oc,0.7));
  ctx.fillStyle=og;rr(ctx,bx,by,bw*(1-health),12,5);ctx.fill();
@@ -2364,7 +2648,7 @@ function renderGameOver(t){
  metalText(ctx,"STASIS LOCK",480,140,52,"#607090","#3050a0");
  ctx.font="bold 18px Arial";ctx.textAlign="center";
  ctx.fillStyle="#aab";
- ctx.fillText('"'+(def&&def.opp==="optimus"?"You fought bravely. Rise, and try again.":def&&def.opp==="shockwave"?"As calculated. Your victory probability remains negligible.":def&&def.opp==="soundwave"?"Soundwave superior. Challenger inferior. Rewind and retry.":def&&def.opp==="duo"?"Two channels. Zero chance. Transmission ends.":"Not bad, kid — wanna go again?")+'"',480,180);
+ ctx.fillText('"'+(def&&def.opp==="optimus"?"You fought bravely. Rise, and try again.":def&&def.opp==="shockwave"?"As calculated. Your victory probability remains negligible.":def&&def.opp==="soundwave"?"Soundwave superior. Challenger inferior. Rewind and retry.":def&&def.opp==="duo"?"Two channels. Zero chance. Transmission ends.":def&&def.opp==="megatron"?"You fight for the weak. That is why you lose.":"Not bad, kid — wanna go again?")+'"',480,180);
  ctx.font="16px Arial";ctx.fillStyle="#889";
  ctx.fillText(isTouchUI()?"Tap — retry":"Enter — retry    •    Esc — menu",480,480);
 }
