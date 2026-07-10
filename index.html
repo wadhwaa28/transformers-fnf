@@ -408,6 +408,9 @@ let ctrlMode="auto"; // "auto" | "pc" | "mobile"
 try{const m=localStorage.getItem("tfg1_ctrl");if(m==="pc"||m==="mobile"||m==="auto")ctrlMode=m;}catch(e){}
 function saveCtrl(){try{localStorage.setItem("tfg1_ctrl",ctrlMode);}catch(e){}}
 function isTouchUI(){return ctrlMode==="mobile"||(ctrlMode==="auto"&&TOUCH_AUTO);}
+let laneTint="on"; // colored lane-track tint (helps mobile players)
+try{const lt=localStorage.getItem("tfg1_tint");if(lt==="on"||lt==="off")laneTint=lt;}catch(e){}
+function saveTint(){try{localStorage.setItem("tfg1_tint",laneTint);}catch(e){}}
 let lastTouchT=0;
 const activeTouches=new Map();
 
@@ -1378,6 +1381,7 @@ window.addEventListener("keydown",e=>{
   }else if(k==="escape"){state=bindsReturn;bindsReturn="menu";}
   else if(k==="r"){BINDS=DEFBINDS.map(r=>r.slice());saveBinds();}
   else if(k==="m"){ctrlMode=ctrlMode==="auto"?"pc":ctrlMode==="pc"?"mobile":"auto";saveCtrl();}
+  else if(k==="l"){laneTint=laneTint==="on"?"off":"on";saveTint();}
   else if(k==="enter")bindWait=true;
   else if(k==="arrowup")bindSel=(bindSel+6)%8;
   else if(k==="arrowdown")bindSel=(bindSel+2)%8;
@@ -1450,7 +1454,10 @@ function pointerAt(mx,my){
     else{ac.resume();stopSong();state="menu";}
    }
   }
- }else if(state==="binds"&&!bindWait){
+ }else if(state==="binds"&&bindWait){
+  bindWait=false; // tap anywhere cancels key capture (mobile has no Esc)
+ }else if(state==="binds"){
+  if(mx<140&&my<62){state=bindsReturn;bindsReturn="menu";return;}
   for(let i=0;i<4;i++)for(let c=0;c<2;c++){
    const x=470+c*180,y=180+i*74;
    if(mx>x&&mx<x+150&&my>y-24&&my<y+24){
@@ -1458,9 +1465,10 @@ function pointerAt(mx,my){
    }
   }
   for(let mi=0;mi<3;mi++){
-   const x=330+mi*160;
+   const x=240+mi*145;
    if(mx>x-65&&mx<x+65&&my>456&&my<490){ctrlMode=["auto","pc","mobile"][mi];saveCtrl();}
   }
+  if(mx>700&&mx<830&&my>456&&my<490){laneTint=laneTint==="on"?"off":"on";saveTint();}
  }else if(state==="results")state="menu";
  else if(state==="gameover")startSong(SONGS.indexOf(def));
  else if(state==="play"&&inPauseBtn(mx,my))doPause();
@@ -1588,9 +1596,14 @@ function renderMenu(t){
 function renderBinds(t){
  menuBg(t);
  metalText(ctx,"CONTROLS",480,84,46,"#8090b0","#c03040");
+ // back / close button (tap-friendly)
+ ctx.fillStyle="rgba(28,22,48,0.92)";rr(ctx,14,14,120,42,10);ctx.fill();
+ ctx.strokeStyle="rgba(255,255,255,0.4)";ctx.lineWidth=2;rr(ctx,14,14,120,42,10);ctx.stroke();
+ ctx.fillStyle="#fff";ctx.font="900 17px 'Arial Black',Arial";ctx.textAlign="center";
+ ctx.fillText("← BACK",74,42);
  ctx.font="15px Arial";ctx.textAlign="center";
  ctx.fillStyle=bindWait?"#ffd84a":"#9aa";
- ctx.fillText(bindWait?"PRESS A KEY…  (Esc — cancel)":"Arrows — choose slot  •  Enter / click — rebind  •  R — reset  •  M — mode  •  Esc — back",480,120);
+ ctx.fillText(bindWait?"PRESS A KEY…  (Esc — cancel)":"Arrows — choose slot  •  Enter / click — rebind  •  R — reset  •  M — mode  •  L — tint  •  Esc — back",480,120);
  const names=["LEFT","DOWN","UP","RIGHT"];
  for(let i=0;i<4;i++){
   const y=180+i*74;
@@ -1607,18 +1620,31 @@ function renderBinds(t){
    ctx.fillText(sel&&bindWait?"_":keyName(BINDS[i][c]),x+75,y+8);
   }
  }
- // control mode toggle (PC / mobile UI)
+ // control mode toggle (PC / mobile UI) + lane tint toggle
  ctx.font="bold 14px Arial";ctx.textAlign="center";ctx.fillStyle="#9aa";
- ctx.fillText("CONTROL MODE",480,448);
+ ctx.fillText("CONTROL MODE",385,448);
+ ctx.fillText("LANE TINT",765,448);
  const cmModes=["auto","pc","mobile"],cmLabels=["AUTO","PC","MOBILE"];
  for(let mi=0;mi<3;mi++){
-  const x=330+mi*160,selM=ctrlMode===cmModes[mi];
+  const x=240+mi*145,selM=ctrlMode===cmModes[mi];
   if(selM){ctx.shadowColor="#ffd84a";ctx.shadowBlur=10;}
   ctx.fillStyle=selM?"rgba(96,42,150,0.95)":"rgba(28,22,48,0.88)";
   rr(ctx,x-65,456,130,34,8);ctx.fill();ctx.shadowBlur=0;
   if(selM){ctx.strokeStyle="#ffd84a";ctx.lineWidth=2;rr(ctx,x-65,456,130,34,8);ctx.stroke();}
   ctx.fillStyle=selM?"#fff":"#cbc5dd";ctx.font="bold 14px Arial";
   ctx.fillText(cmLabels[mi]+(cmModes[mi]==="auto"?(TOUCH_AUTO?" → mobile":" → pc"):""),x,478);
+ }
+ {
+  const on=laneTint==="on";
+  if(on){ctx.shadowColor="#ffd84a";ctx.shadowBlur=10;}
+  ctx.fillStyle=on?"rgba(96,42,150,0.95)":"rgba(28,22,48,0.88)";
+  rr(ctx,700,456,130,34,8);ctx.fill();ctx.shadowBlur=0;
+  ctx.strokeStyle=on?"#ffd84a":"rgba(255,255,255,0.25)";ctx.lineWidth=2;rr(ctx,700,456,130,34,8);ctx.stroke();
+  // mini lane-color preview inside the button
+  for(let l=0;l<4;l++){ctx.globalAlpha=on?0.9:0.3;ctx.fillStyle=LANECOL[l];rr(ctx,708+l*14,462,10,22,3);ctx.fill();}
+  ctx.globalAlpha=1;
+  ctx.fillStyle=on?"#fff":"#cbc5dd";ctx.font="bold 14px Arial";ctx.textAlign="left";
+  ctx.fillText(on?"ON":"OFF",772,478);ctx.textAlign="center";
  }
  ctx.font="12px Arial";ctx.fillStyle="#776f8f";ctx.textAlign="center";
  ctx.fillText("Binds save automatically  •  Ghosting keyboards: bind letters like D F J K  •  Mobile mode shows touch lanes & hints",480,514);
@@ -1719,6 +1745,25 @@ function renderPlay(t){
  ctx.fillStyle="rgba(5,5,14,0.34)";
  rr(ctx,OPPX[0]-46,42,OPPX[3]-OPPX[0]+92,478,14);ctx.fill();
  rr(ctx,PLRX[0]-46,42,PLRX[3]-PLRX[0]+92,478,14);ctx.fill();
+ // lane-color tint (togglable in settings) — helps track which lane is which
+ if(laneTint==="on"){
+  if(isTouchUI()){
+   for(let l=0;l<4;l++){
+    ctx.globalAlpha=heldKeys[l]?0.16:0.07;
+    ctx.fillStyle=LANECOL[l];
+    ctx.fillRect(l*W/4,0,W/4,H);
+   }
+  }else{
+   for(let l=0;l<4;l++){
+    ctx.globalAlpha=heldKeys[l]?0.18:0.09;
+    ctx.fillStyle=LANECOL[l];
+    rr(ctx,PLRX[l]-34,46,68,470,10);ctx.fill();
+    ctx.globalAlpha=0.06;
+    rr(ctx,OPPX[l]-34,46,68,470,10);ctx.fill();
+   }
+  }
+  ctx.globalAlpha=1;
+ }
  // receptors
  for(let l=0;l<4;l++){
   const of=Math.min(1,Math.max(0,1-(now-flashes[0][l])*6));
