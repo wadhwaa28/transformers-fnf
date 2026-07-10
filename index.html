@@ -160,6 +160,7 @@ const SONGS=[
 (function(){
  const o=(p,f)=>[[p,"o",f||""],[p,"p",f||""]];
  const d=(p,f)=>[[p,"d",f||""],[p,"d",f||""]];
+ const c=(p,f)=>[[p,"c",f||""],[p,"C",f||""]];
  SONGS[6].st=[].concat(
   o("A"),o("B"),o("D","bh"),
   o("C","a"),o("A"),o("G"),d("D","bh"),
@@ -170,15 +171,114 @@ const SONGS=[
   o("A","a"),o("C"),d("C","hxa"),
   o("E","qa"),o("G","a"),
   d("D","bhx"),o("F","a"),d("D","bh"),
-  o("A"),o("F"),o("C","a"),d("D","bhx"),
+  c("A"),o("F"),o("C","a"),d("D","bhx"),
   o("G","a"),o("B","a"),d("C","hx"),
   o("E","qa"),o("E","qa"),
-  o("B","ta"),o("D","bht"),o("G","ta"),d("F","txa"),
+  o("B","ta"),c("D","bht"),o("G","ta"),d("F","txa"),
   o("A","ta"),d("D","bhtx"),o("C","ta"),
-  o("F","ta"),d("D","bhtx")
+  o("F","ta"),d("D","bhtx"),
+  d("Z","bh")
  );
 })();
 
+// Counter-melodies (audio-only bell lines) and UNIQUE part progressions —
+// every song gets its own flow of ideas. Roll Out is left untouched.
+(function(){
+ const P=i=>SONGS[i].phrases;
+ // NEW unique ideas — one per song, used nowhere else:
+ P(1).N={ch:[5,3],ch2:[2,6],mel:[0,4,2, 3,4,1, 4,7,2, 7,5,1, 8,4,2, 11,2,1, 12,4,4, 16,5,2, 19,5,1, 20,8,2, 23,7,1, 24,5,2, 27,4,1, 28,5,4]}; // swagger bridge
+ P(2).N={ch:[3,6],ch2:[5,4],mel:[0,0,1, 1,2,1, 2,3,1, 3,4,1, 4,5,1, 5,6,1, 6,7,1, 7,8,1, 8,7,2, 10,8,1, 11,9,1, 12,10,2, 14,9,1, 15,8,1, 16,2,1, 17,3,1, 18,4,1, 19,5,1, 20,6,1, 21,7,1, 22,8,1, 23,9,1, 24,10,2, 26,11,1, 27,10,1, 28,11,4]}; // overdrive climb
+ P(3).N={ch:[0,4],ch2:[5,1],mel:[0,0,1, 1,4,1, 2,7,1, 3,4,1, 4,9,2, 6,7,1, 7,4,1, 8,0,1, 9,4,1, 10,7,1, 11,9,1, 12,11,2, 14,9,1, 15,7,1, 16,2,1, 17,5,1, 18,9,1, 19,5,1, 20,10,2, 22,9,1, 23,7,1, 24,2,1, 25,5,1, 26,9,1, 27,10,1, 28,12,4]}; // theorem arpeggio
+ P(4).N={ch:[6,4],ch2:[3,6],mel:[0,11,1, 1,11,1, 2,9,2, 4,10,1, 5,10,1, 6,8,2, 8,9,1, 9,9,1, 10,7,2, 12,8,1, 13,8,1, 14,5,2, 16,7,1, 17,7,1, 18,4,2, 20,5,1, 21,5,1, 22,2,2, 24,4,1, 25,4,1, 26,2,1, 27,4,1, 28,0,4]}; // rewind descent
+ // Sanctioned exception: DUAL FREQUENCY quotes Cold Logic's opening verse,
+ // remixed into a relentless 16th stream (harder), transposed to its key:
+ // length-varying new section: RODIMUS "drafting weave" (register leaps)
+ P(2).M={ch:[0,6],ch2:[3,4],mel:[0,4,1, 1,8,1, 2,4,1, 3,8,1, 4,5,1, 5,9,1, 6,5,1, 7,9,1, 8,6,1, 9,10,1, 10,6,1, 11,10,1, 12,7,2, 14,8,1, 15,9,1, 16,4,1, 17,8,1, 18,4,1, 19,8,1, 20,5,1, 21,9,1, 22,5,1, 23,9,1, 24,7,1, 25,8,1, 26,9,1, 27,10,1, 28,11,4]};
+ // unique CODAS — a closing part per song:
+ P(1).Z={ch:[0,6],mel:[0,7,1, 2,5,1, 4,4,1, 8,7,8]};             // HS: redline burst
+ P(2).Z={ch:[0,0],mel:[0,11,2, 4,10,2, 8,9,2, 12,11,12]};        // RR: victory lap
+ P(3).Z={ch:[0,0],mel:[0,0,12]};                                 // CL: ONE shared note
+ P(4).Z={ch:[6,4],mel:[0,9,1, 3,7,1, 7,5,1, 12,4,2, 20,2,6]};    // EJ: tape runout
+ P(6).Z={ch:[0,0],mel:[0,0,2, 2,4,2, 4,7,2, 6,12,16]};           // finale: grand ascent-hold
+ P(5).S={ch:[0,3],ch2:[5,3],mel:[0,0,1, 1,0,1, 2,3,1, 3,0,1, 4,5,1, 5,7,1, 6,4,1, 7,3,1, 8,0,1, 9,0,1, 10,3,1, 11,4,1, 12,5,1, 13,7,1, 14,4,1, 15,3,1, 16,2,1, 17,2,1, 18,5,1, 19,2,1, 20,6,1, 21,7,1, 22,5,1, 23,4,1, 24,2,1, 25,3,1, 26,4,1, 27,5,1, 28,7,1, 29,5,1, 30,2,1, 31,0,1]};
+ P(1).A.cm=[4,7,2, 8,9,4, 14,7,2, 20,9,2, 24,11,4, 30,9,2];
+ P(1).C.cm=[0,14,4, 8,12,4, 16,11,4, 24,9,4, 30,11,2];
+ P(2).A.cm=[2,9,2, 6,7,2, 10,9,2, 14,11,2, 18,9,2, 22,7,2, 26,9,2, 30,11,2];
+ P(2).C.cm=[0,11,4, 8,14,4, 16,12,4, 24,11,2, 28,12,4];
+ P(3).A.cm=[6,7,2, 14,9,2, 22,7,2, 30,9,2];
+ P(3).D.cm=[2,12,1, 4,11,2, 10,12,1, 12,14,2, 18,12,1, 20,11,2, 26,12,1, 28,14,2];
+ P(4).A.cm=[3,9,1, 7,11,1, 11,9,1, 15,12,1, 19,9,1, 23,11,1, 27,12,1, 31,9,1];
+ P(4).C.cm=[2,12,2, 6,11,2, 10,12,2, 14,14,2, 18,12,2, 22,11,2, 26,12,2, 30,14,1];
+ P(4).D.cm=[1,11,1, 5,12,1, 9,11,1, 13,14,1, 17,11,1, 21,12,1, 25,14,1, 29,12,1];
+ P(5).A.cm=[4,9,2, 12,11,2, 20,9,2, 28,11,2];
+ P(5).C.cm=[0,12,4, 8,11,4, 16,14,4, 24,12,4];
+ P(6).A.cm=[8,9,4, 24,11,4];
+ P(6).D.cm=[2,11,2, 6,12,2, 10,14,2, 14,12,2, 18,11,2, 22,12,2, 26,14,4];
+ // Each song gets its OWN energy arc — only the finale rides the rollercoaster.
+ // HOT STREAK — continuous acceleration: soft start, builds nonstop,
+ // zero breakdowns, zero duets, ends at peak
+ SONGS[1].st=[["A","o"],["A","p"],["B","o"],["B","p"],
+  ["N","o"],["N","p"],
+  ["A","c"],["A","C"],["C","o"],["C","p"],
+  ["N","o","b"],["N","p","b"],
+  ["B","o","bh"],["B","p","bh"],
+  ["C","c","bh"],["C","C","bh"],["C","o","bh"],["C","p","bh"],
+  ["Z","d","bh"]];
+ // RODIMUS RISING — flat-out sprint: opens at full tilt, ONE stumble,
+ // mid-race key change, never slows again
+ SONGS[2].st=[["A","o"],["A","p"],
+  ["C","o","bh"],["C","p","bh"],["B","o","bh"],["B","p","bh"],
+  ["N","o","b"],["N","p","b"],
+  ["C","d","bh"],["C","d","bh"],
+  ["M","o","b"],["M","p","b"],
+  ["A","o","q"],["A","p","q"],
+  ["N","o","bhk"],["N","p","bhk"],
+  ["M","o","bk"],["M","p","bk"],
+  ["C","o","bhk"],["C","p","bhk"],["A","c","bk"],["A","C","bk"],
+  ["B","o","bk"],["B","p","bk"],["C","o","bhk"],["C","p","bhk"],
+  ["Z","p","bk"]];
+ // COLD LOGIC — decay: peaks instantly (early duet!), strips down layer by
+ // layer until it ends in near-silence; no key change, no drama — entropy
+ SONGS[3].st=[["A","o"],["A","p"],["B","o"],["B","p"],
+  ["D","o","bh"],["D","d","bh"],["D","d","bh"],
+  ["C","o","bh"],["C","p","bh"],["C","d","bh"],["C","d","bh"],
+  ["D","d","bh"],["D","d","bh"],
+  ["N","o","b"],["N","p","b"],
+  ["D","c"],["D","C"],
+  ["A","c"],["A","C"],
+  ["N","o","s"],["N","p","s"],
+  ["C","o","q"],["C","p","q"],
+  ["A","o","q"],["A","p","q"],
+  ["Z","d","q"]];
+ // EJECT — strobe: constant high energy, texture flickers pair to pair,
+ // NO quiet anywhere, ends on an abrupt opponent tape-stop
+ SONGS[4].st=[["A","o"],["A","p"],["D","o","b"],["D","p"],
+  ["B","o","b"],["B","p"],
+  ["N","o","bh"],["N","p","bh"],
+  ["C","o","bh"],["C","p","bh"],["D","d","bh"],["D","d","bh"],
+  ["A","c"],["A","C","b"],
+  ["N","o","b"],["N","p"],
+  ["C","o","bh"],["C","p","bh"],
+  ["D","c","b"],["D","C"],["A","o","bk"],["A","p","k"],
+  ["C","o","bhk"],["C","p","bhk"],["Z","o","bk"]];
+ // DUAL FREQUENCY — conversation arc: peaks whenever the two sing together,
+ // a single Soundwave hush, and the Decepticons alone get the last word
+ SONGS[5].st=[["A","o","1"],["A","p"],
+  ["A","o","2"],["A","p"],
+  ["B","o","1"],["D","o","2"],
+  ["C","o","bh"],["C","d","bh"],["C","d","bh"],
+  ["B","o","q2"],["B","p","q"],
+  ["S","o","1"],["S","p"],
+  ["D","o","1"],["D","p"],["D","o","2"],["D","p"],
+  ["C","o","2"],["C","d","bh"],["C","d","bh"],
+  ["S","o","b"],["S","p","b"],
+  ["B","o","1"],["B","p"],["B","o","2"],["B","p"],
+  ["A","c","1"],["A","C","1"],["A","c","2"],["A","C","2"],
+  ["D","o","1"],["D","p"],["D","o","2"],["D","p"],
+  ["D","o","bh"],["C","d","bh"],
+  ["C","o","bhk"],["C","d","bhk"],["S","d","bhk"],["C","d","bhk"],
+  ["C","o","bhk"],["D","o","bhk"]];
+})();
 const BASSPAT=[0,0,7,0,12,0,7,0];
 const BIGBASS=[0,12,0,12,0,12,7,12];
 
@@ -298,7 +398,13 @@ function buildSong(def){
    }
    continue;
   }
-  if(bi.opts.indexOf("q")>=0){
+  if(bi.opts.indexOf("s")>=0){
+   // soft tier: kick+snare skeleton, no hats, long bass (the build-up sound)
+   audio.push({t:bt,f:"kick"});audio.push({t:bt+8*sdl,f:"kick"});
+   audio.push({t:bt+12*sdl,f:"snare"});
+   audio.push({t:bt,f:"bass",m:br,d:8*sdl*0.95});
+   audio.push({t:bt+8*sdl,f:"bass",m:br,d:8*sdl*0.95});
+  }else if(bi.opts.indexOf("q")>=0){
    // quiet breakdown: pad + long bass only
    audio.push({t:bt,f:"bass",m:br,d:8*sd*0.95});
    audio.push({t:bt+8*sd,f:"bass",m:br,d:8*sd*0.95});
@@ -315,7 +421,12 @@ function buildSong(def){
  const cntP={};
  def.st.forEach((sl,i)=>{
   const base=barStart[def.intro+i*2];
-  const ph=def.phrases[sl[0]],who=sl[1],opts=sl[2]||"";
+  const ph=def.phrases[sl[0]];let who=sl[1];const opts=sl[2]||"";
+  // counterpoint slots: "c" = opponent sings the melody while the PLAYER plays
+  // the counter-line; "C" = swapped. Both sides perform at the same time.
+  const isC=(who==="c"||who==="C")&&ph.cm;
+  const cmOpp=who==="C";
+  if(isC)who=cmOpp?"p":"o"; // main melody side
   const tr=(opts.indexOf("t")>=0||opts.indexOf("k")>=0)?2:0; // "k" = key change w/o tempo change
   const harm=opts.indexOf("h")>=0;
   const big=opts.indexOf("b")>=0;
@@ -323,6 +434,22 @@ function buildSong(def){
   cntP[sl[0]]=(cntP[sl[0]]||0)+1;
   let mel=varyMel(ph.mel,Math.floor((cntP[sl[0]]-1)/2));
   if(sdl<sd)mel=halfTime(mel);
+  if(isC){ // the OTHER side plays/sings the counter-line as their chart
+   const s2c=opts.indexOf("2")>=0?2:opts.indexOf("1")>=0?1:3;
+   for(let k2=0;k2<ph.cm.length;k2+=3){
+    const st3=ph.cm[k2],dg3=ph.cm[k2+1],ln3=ph.cm[k2+2];
+    const t3=base+st3*sdl,midi3=def.root+d2s(dg3)+tr;
+    const lane3=((dg3%4)+4)%4,dur3=ln3>=4?ln3*sdl:0;
+    if(cmOpp){
+     opp.push({t:t3,lane:lane3,dur:dur3,midi:midi3,hit:false,missed:false,holding:false,who2:s2c});
+     audio.push({t:t3,f:"vox",m:midi3-12,d:Math.max(ln3*sdl,0.2),w:"opp",g:0.8});
+    }else plr.push({t:t3,lane:lane3,dur:dur3,midi:midi3,hit:false,missed:false,holding:false});
+   }
+  }
+  if(ph.cm&&opts.indexOf("q")<0&&!isC){ // ambient counter-melody (audio only)
+   for(let k2=0;k2<ph.cm.length;k2+=3)
+    audio.push({t:base+ph.cm[k2]*sdl,f:"cm",m:def.root+12+d2s(ph.cm[k2+1])+tr,d:Math.max(ph.cm[k2+2]*sdl,0.15)});
+  }
   const quadSteps=new Set();let skipUntil=-1;
   // anchor holds ("a"): a lane holds long notes while the melody plays elsewhere.
   // Gentle in quiet sections (one 14-step hold per bar); HARD elsewhere: the anchor
@@ -605,6 +732,16 @@ function sMiss(){
  g.gain.setValueAtTime(0.12,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.2);
  o.connect(g);g.connect(masterGain);o.start(t);o.stop(t+0.22);
 }
+function sBell(t,m,d,dest){ // counter-melody voice: soft bell above the vocals
+ const o=ac.createOscillator(),o2=ac.createOscillator(),g=ac.createGain(),f=ac.createBiquadFilter();
+ o.type="triangle";o.frequency.value=m2f(m);
+ o2.type="sine";o2.frequency.value=m2f(m)*2.01;
+ f.type="lowpass";f.frequency.value=3000;
+ g.gain.setValueAtTime(0.055,t);g.gain.exponentialRampToValueAtTime(0.001,t+Math.max(d,0.25));
+ const g2=ac.createGain();g2.gain.value=0.3;o2.connect(g2);g2.connect(f);
+ o.connect(f);f.connect(g);g.connect(dest||songGain);
+ o.start(t);o.stop(t+d+0.3);o2.start(t);o2.stop(t+d+0.3);
+}
 function sPluck(t,m,d,dest){
  const o=ac.createOscillator(),g=ac.createGain(),f=ac.createBiquadFilter();
  o.type="triangle";o.frequency.value=m2f(m);
@@ -648,6 +785,7 @@ function schedEvent(e){
  else if(e.f==="bass")sBass(t,e.m,e.d);
  else if(e.f==="pad")sPad(t,e.ms,e.d);
  else if(e.f==="pluck")sPluck(t,e.m,e.d);
+ else if(e.f==="cm")sBell(t,e.m,e.d);
  else if(e.f==="vox")sVox(t,e.m,e.d,e.w,e.g);
 }
 
@@ -716,27 +854,35 @@ SOUNDWAVE.poses=SOUNDWAVE_POSES;
 SOUNDWAVE.sCannon=true;
 
 function rr(g,x,y,w,h,r){g.beginPath();g.roundRect(x,y,w,h,r);}
-function drawArm(g,sx,sy,a,spec){
+function drawArm(g,sx,sy,a,spec,w){
+ w=w||17; // width varies for near/far arm foreshortening
  const ux=Math.sin(a)*42,uy=Math.cos(a)*42;
  const bend=a*0.35+(a<0?-0.25:0.25);
  const fx=Math.sin(a+bend)*38,fy=Math.cos(a+bend)*38;
  g.lineCap="round";
- g.strokeStyle=spec.c1;g.lineWidth=17;
+ g.strokeStyle=spec.c1;g.lineWidth=w;
  g.beginPath();g.moveTo(sx,sy);g.lineTo(sx+ux,sy+uy);g.stroke();
- g.strokeStyle=spec.metal;g.lineWidth=13;
+ g.strokeStyle="rgba(0,0,0,0.25)";g.lineWidth=w*0.45; // 3D underside
+ g.beginPath();g.moveTo(sx+2,sy+3);g.lineTo(sx+ux+2,sy+uy+3);g.stroke();
+ g.strokeStyle=spec.metal;g.lineWidth=w*0.76;
  g.beginPath();g.moveTo(sx+ux,sy+uy);g.lineTo(sx+ux+fx,sy+uy+fy);g.stroke();
+ g.strokeStyle="rgba(0,0,0,0.22)";g.lineWidth=w*0.34;
+ g.beginPath();g.moveTo(sx+ux+2,sy+uy+3);g.lineTo(sx+ux+fx+2,sy+uy+fy+3);g.stroke();
  g.fillStyle=spec.c2;
- g.beginPath();g.arc(sx+ux+fx,sy+uy+fy,11,0,TAU);g.fill();
+ g.beginPath();g.arc(sx+ux+fx,sy+uy+fy,w*0.65,0,TAU);g.fill();
+ g.fillStyle="rgba(255,255,255,0.35)";
+ g.beginPath();g.arc(sx+ux+fx-2,sy+uy+fy-3,w*0.22,0,TAU);g.fill(); // fist highlight
  return [sx+ux+fx,sy+uy+fy];
 }
-function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge){
+function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge,fc){
  if(fxT===undefined)fxT=0;
  if(poseAge===undefined)poseAge=9;
+ if(fc===undefined)fc=1; // facing: +1 toward the player, -1 the other way
  const P=(spec.poses&&spec.poses[poseName])||POSES[poseName]||POSES.idle;
  g.save();g.translate(x,y);g.scale(scale,scale);
  // shadow
  g.fillStyle="rgba(0,0,0,0.35)";g.beginPath();g.ellipse(0,6,70,12,0,0,TAU);g.fill();
- g.rotate(P.lean*0.5);
+ g.rotate(P.lean*0.5+fc*0.05); // cheat-in toward the other performer
  const q=P.crouch,ty=q+bob;
  // dash speed lines (Hot Rod racer crouch)
  if(P.dash){
@@ -748,14 +894,16 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge){
  }
  // legs
  for(const s of [-1,1]){
-  const lg1=g.createLinearGradient(s*26-15,0,s*26+15,0);
-  lg1.addColorStop(0,shade(spec.legT,1.35));lg1.addColorStop(1,shade(spec.legT,0.65));
-  g.fillStyle=lg1;rr(g,s*26-15,-122+q*0.7,30,62,7);g.fill();
-  const lg2=g.createLinearGradient(s*26-13,0,s*26+13,0);
-  lg2.addColorStop(0,shade(spec.legS,1.35));lg2.addColorStop(1,shade(spec.legS,0.65));
-  g.fillStyle=lg2;rr(g,s*26-13,-66+q*0.35,26,58,6);g.fill();
-  g.fillStyle=spec.c2;rr(g,s*26-21,-12,42,14,4);g.fill();
-  g.fillStyle="rgba(255,255,255,0.18)";rr(g,s*26-19,-10,42,3,2);g.fill();
+  const ax=(s===fc?4:-3); // stance stagger toward the facing side
+  const lg1=g.createLinearGradient(s*26-15+ax,0,s*26+15+ax,0);
+  lg1.addColorStop(0,shade(spec.legT,1.45));lg1.addColorStop(0.55,spec.legT);lg1.addColorStop(1,shade(spec.legT,0.5));
+  g.fillStyle=lg1;rr(g,s*26-15+ax,-122+q*0.7,30,62,7);g.fill();
+  const lg2=g.createLinearGradient(s*26-13+ax,0,s*26+13+ax,0);
+  lg2.addColorStop(0,shade(spec.legS,1.45));lg2.addColorStop(0.55,spec.legS);lg2.addColorStop(1,shade(spec.legS,0.5));
+  g.fillStyle=lg2;rr(g,s*26-13+ax,-66+q*0.35,26,58,6);g.fill();
+  g.fillStyle=spec.c2;rr(g,s*26-21+ax,-12,42,14,4);g.fill();
+  g.fillStyle="rgba(0,0,0,0.22)";rr(g,s*26-21+ax,-4,42,6,3);g.fill();
+  g.fillStyle="rgba(255,255,255,0.22)";rr(g,s*26-19+ax,-10,42,3,2);g.fill();
  }
  // spoiler wings (Hot Rod)
  if(spec.wings){
@@ -775,9 +923,17 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge){
  g.lineTo(52,-206+ty);g.lineTo(-52,-206+ty);g.closePath();g.fill();
  g.fillStyle="rgba(255,255,255,0.14)";
  g.beginPath();g.moveTo(-48,-204+ty);g.lineTo(48,-204+ty);g.lineTo(44,-192+ty);g.lineTo(-44,-192+ty);g.closePath();g.fill();
+ // diagonal form shading (3D illusion: light from upper-left)
+ {const dg3=g.createLinearGradient(-52,-206+ty,52,-112+q*0.7);
+  dg3.addColorStop(0,"rgba(255,255,255,0.15)");dg3.addColorStop(0.5,"rgba(0,0,0,0)");dg3.addColorStop(1,"rgba(0,0,0,0.28)");
+  g.fillStyle=dg3;
+  g.beginPath();
+  g.moveTo(-36,-112+q*0.7);g.lineTo(36,-112+q*0.7);
+  g.lineTo(52,-206+ty);g.lineTo(-52,-206+ty);g.closePath();g.fill();}
  // waist
  g.fillStyle=spec.c2;rr(g,-30,-124+q*0.7,60,16,4);g.fill();
- // chest decor
+ // chest decor (nudged toward the facing side)
+ g.save();g.translate(fc*4,0);
  if(spec.chest==="flame"){
   g.fillStyle=spec.c3;
   g.beginPath();
@@ -820,13 +976,16 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge){
   g.fillStyle=spec.c2;
   rr(g,-36,-198+ty,22,10,3);g.fill();rr(g,14,-198+ty,22,10,3);g.fill();
  }
+ g.restore();
  // faction badge
  g.fillStyle=spec.cannon?"#a06aff":"#e33";
  g.beginPath();g.moveTo(0,-134+ty);g.lineTo(-7,-124+q*0.7);g.lineTo(7,-124+q*0.7);g.closePath();g.fill();
  // shoulders + arms (capture hand positions for props/fx)
- const hL=drawArm(g,-58,-192+ty,P.aL,spec);
- const hR=drawArm(g,58,-192+ty,P.aR,spec);
+ const hL=drawArm(g,-58,-192+ty,P.aL,spec,fc<0?19:15);
+ const hR=drawArm(g,58,-192+ty,P.aR,spec,fc>0?19:15);
  g.fillStyle=spec.c1;rr(g,-76,-208+ty,34,30,8);g.fill();rr(g,42,-208+ty,34,30,8);g.fill();
+ g.fillStyle="rgba(255,255,255,0.18)";rr(g,-76,-208+ty,34,9,8);g.fill();rr(g,42,-208+ty,34,9,8);g.fill();
+ g.fillStyle="rgba(0,0,0,0.22)";rr(g,-76,-186+ty,34,8,8);g.fill();rr(g,42,-186+ty,34,8,8);g.fill();
  if(spec.head==="optimus"){
   g.fillStyle=spec.metal;rr(g,-70,-234+ty,20,30,4);g.fill();rr(g,50,-234+ty,20,30,4);g.fill();
  }
@@ -935,7 +1094,8 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge){
  }
  // head
  const hy=-232+ty;
- g.save();g.translate(0,hy);g.rotate(P.head);
+ g.fillStyle="rgba(0,0,0,0.3)";g.beginPath();g.ellipse(fc*6,-204+ty,13,5,0,0,TAU);g.fill(); // neck shadow
+ g.save();g.translate(fc*6,hy);g.rotate(P.head); // head cheats toward the facing side
  if(spec.head==="hotrod"){
   g.fillStyle=spec.face;rr(g,-17,-16,34,34,6);g.fill();
   g.fillStyle=spec.c1;rr(g,-22,-26,44,16,5);g.fill();
@@ -990,6 +1150,11 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge){
   g.beginPath();g.moveTo(-19,-26);g.lineTo(-27,-38);g.lineTo(-15,-30);g.closePath();g.fill();
   g.beginPath();g.moveTo(19,-26);g.lineTo(27,-38);g.lineTo(15,-30);g.closePath();g.fill();
  }
+ // sphere glare + chin shade (3D)
+ {const hg3=g.createRadialGradient(-7,-16,3,0,-6,26);
+  hg3.addColorStop(0,"rgba(255,255,255,0.22)");hg3.addColorStop(1,"rgba(255,255,255,0)");
+  g.fillStyle=hg3;g.beginPath();g.ellipse(0,-6,23,25,0,0,TAU);g.fill();
+  g.fillStyle="rgba(0,0,0,0.18)";g.beginPath();g.ellipse(3,13,10,4,0,0,TAU);g.fill();}
  g.restore();
  // Shockwave eye scan beam (side poses)
  if(P.scan){
@@ -1007,45 +1172,60 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge){
  }
  g.restore();
 }
-function drawKid(g,poseName,x,y,scale,bob,tint){
+function drawKid(g,poseName,x,y,scale,bob,tint,fc){
+ if(fc===undefined)fc=-1; // the kid faces the opponents by default
  const P=POSES[poseName]||POSES.idle;
  g.save();g.translate(x,y);g.scale(scale,scale);
  g.fillStyle="rgba(0,0,0,0.35)";g.beginPath();g.ellipse(0,6,55,10,0,0,TAU);g.fill();
- g.rotate(P.lean*0.5);
+ g.rotate(P.lean*0.5+fc*0.05);
  const q=P.crouch*0.8,ty=q+bob;
  // legs
+ const axL=fc<0?4:-3,axR=fc>0?4:-3; // stance stagger
  g.fillStyle="#2e3a5c";
- rr(g,-24,-104+q*0.7,20,100,6);g.fill();rr(g,4,-104+q*0.7,20,100,6);g.fill();
- g.fillStyle="#eee";rr(g,-30,-12,30,14,5);g.fill();rr(g,0,-12,30,14,5);g.fill();
- g.fillStyle="#d22";rr(g,-30,-8,30,4,2);g.fill();rr(g,0,-8,30,4,2);g.fill();
+ rr(g,-24+axL,-104+q*0.7,20,100,6);g.fill();rr(g,4+axR,-104+q*0.7,20,100,6);g.fill();
+ g.fillStyle="rgba(0,0,0,0.2)";
+ rr(g,-12+axL,-104+q*0.7,7,100,3);g.fill();rr(g,16+axR,-104+q*0.7,7,100,3);g.fill();
+ g.fillStyle="rgba(255,255,255,0.14)";
+ rr(g,-24+axL,-104+q*0.7,6,100,3);g.fill();rr(g,4+axR,-104+q*0.7,6,100,3);g.fill();
+ g.fillStyle="#eee";rr(g,-30+axL,-12,30,14,5);g.fill();rr(g,0+axR,-12,30,14,5);g.fill();
+ g.fillStyle="#d22";rr(g,-30+axL,-8,30,4,2);g.fill();rr(g,0+axR,-8,30,4,2);g.fill();
  // hoodie torso
  {const hg=g.createLinearGradient(0,-168+ty,0,-100+q*0.7);
   hg.addColorStop(0,shade("#18a8a0",1.35));hg.addColorStop(1,shade("#18a8a0",0.65));
   g.fillStyle=hg;}
  g.beginPath();g.moveTo(-30,-100+q*0.7);g.lineTo(30,-100+q*0.7);g.lineTo(38,-168+ty);g.lineTo(-38,-168+ty);g.closePath();g.fill();
  g.fillStyle="#0f7f78";rr(g,-14,-158+ty,28,34,4);g.fill(); // pocket/zip
+ // diagonal form shading (3D)
+ {const dk3=g.createLinearGradient(-38,-168+ty,38,-100+q*0.7);
+  dk3.addColorStop(0,"rgba(255,255,255,0.16)");dk3.addColorStop(0.5,"rgba(0,0,0,0)");dk3.addColorStop(1,"rgba(0,0,0,0.24)");
+  g.fillStyle=dk3;
+  g.beginPath();g.moveTo(-30,-100+q*0.7);g.lineTo(30,-100+q*0.7);g.lineTo(38,-168+ty);g.lineTo(-38,-168+ty);g.closePath();g.fill();}
  // arms
  g.lineCap="round";
  g.strokeStyle="#18a8a0";g.lineWidth=14;
- const drawA=(sx,a)=>{
+ const drawA=(sx,a,w)=>{
   const ux=Math.sin(a)*34,uy=Math.cos(a)*34;
   const bend=a*0.35+(a<0?-0.25:0.25);
   const fx=Math.sin(a+bend)*30,fy=Math.cos(a+bend)*30;
-  g.strokeStyle="#18a8a0";g.lineWidth=14;
+  g.strokeStyle="#18a8a0";g.lineWidth=w;
   g.beginPath();g.moveTo(sx,-158+ty);g.lineTo(sx+ux,-158+ty+uy);g.stroke();
-  g.strokeStyle="#12c0b6";g.lineWidth=11;
+  g.strokeStyle="rgba(0,0,0,0.22)";g.lineWidth=w*0.4; // 3D underside
+  g.beginPath();g.moveTo(sx+2,-155+ty);g.lineTo(sx+ux+2,-155+ty+uy);g.stroke();
+  g.strokeStyle="#12c0b6";g.lineWidth=w*0.78;
   g.beginPath();g.moveTo(sx+ux,-158+ty+uy);g.lineTo(sx+ux+fx,-158+ty+uy+fy);g.stroke();
-  g.fillStyle="#e8b48c";g.beginPath();g.arc(sx+ux+fx,-158+ty+uy+fy,9,0,TAU);g.fill();
+  g.fillStyle="#e8b48c";g.beginPath();g.arc(sx+ux+fx,-158+ty+uy+fy,w*0.64,0,TAU);g.fill();
+  g.fillStyle="rgba(255,255,255,0.35)";g.beginPath();g.arc(sx+ux+fx-2,-160+ty+uy+fy,w*0.2,0,TAU);g.fill();
   return [sx+ux+fx,-158+ty+uy+fy];
  };
- drawA(-36,P.aL);
- const hR=drawA(36,P.aR);
+ drawA(-36,P.aL,fc<0?16:12);
+ const hR=drawA(36,P.aR,fc>0?16:12);
  // mic in right hand
  g.fillStyle="#333";rr(g,hR[0]-4,hR[1]-2,8,20,3);g.fill();
  g.fillStyle="#999";g.beginPath();g.arc(hR[0],hR[1]-8,8,0,TAU);g.fill();
  // head
  const hy=-186+ty;
- g.save();g.translate(0,hy);g.rotate(P.head);
+ g.fillStyle="rgba(0,0,0,0.25)";g.beginPath();g.ellipse(fc*5,-166+ty,11,4,0,0,TAU);g.fill(); // neck shadow
+ g.save();g.translate(fc*5,hy);g.rotate(P.head);
  g.fillStyle="#e8b48c";g.beginPath();g.arc(0,0,20,0,TAU);g.fill();
  g.fillStyle="#3a2a1c";g.beginPath();g.arc(0,-6,20,Math.PI,0);g.fill(); // hair
  g.fillStyle="#d22";rr(g,-22,-18,44,10,4);g.fill(); // cap band
@@ -1058,6 +1238,11 @@ function drawKid(g,poseName,x,y,scale,bob,tint){
  g.fillStyle="#a33";
  if(P.mouth){g.beginPath();g.ellipse(0,9,5,6,0,0,TAU);g.fill();}
  else{rr(g,-5,8,10,3,1);g.fill();}
+ // sphere glare + chin shade (3D)
+ {const kg3=g.createRadialGradient(-6,-8,2,0,-2,22);
+  kg3.addColorStop(0,"rgba(255,255,255,0.25)");kg3.addColorStop(1,"rgba(255,255,255,0)");
+  g.fillStyle=kg3;g.beginPath();g.arc(0,0,20,0,TAU);g.fill();
+  g.fillStyle="rgba(0,0,0,0.15)";g.beginPath();g.ellipse(4,14,9,4,0,0,TAU);g.fill();}
  g.restore();
  if(tint>0){
   g.globalAlpha=tint*0.4;g.globalCompositeOperation="source-atop";
@@ -1926,11 +2111,11 @@ function renderPause(t){
  ctx.fillStyle=sg;ctx.fillRect(0,20,540,520);
  // dramatic opponent portrait with live effects (blaster flash / wrist flames)
  if(def.opp==="duo"){
-  drawBot(ctx,SHOCKWAVE,"up",170,505,1.15,Math.sin(t*2)*3,0,t,0.05);
-  drawBot(ctx,SOUNDWAVE,"up",370,505,1.15,Math.sin(t*2+1.5)*3,0,t,0.05);
+  drawBot(ctx,SHOCKWAVE,"up",170,505,1.15,Math.sin(t*2)*3,0,t,0.05,1);
+  drawBot(ctx,SOUNDWAVE,"up",370,505,1.15,Math.sin(t*2+1.5)*3,0,t,0.05,1);
  }else{
   const spec=def.opp==="optimus"?OPTIMUS:def.opp==="shockwave"?SHOCKWAVE:def.opp==="soundwave"?SOUNDWAVE:HOTROD;
-  drawBot(ctx,spec,"up",270,505,1.55,Math.sin(t*2)*3,0,t,0.05);
+  drawBot(ctx,spec,"up",270,505,1.55,Math.sin(t*2)*3,0,t,0.05,1);
  }
  metalText(ctx,"PAUSED",700,116,46,"#8090b0","#c03040");
  ctx.font="bold 21px Arial";ctx.fillStyle="#ffd84a";ctx.textAlign="center";
@@ -2011,16 +2196,16 @@ function renderPlay(t){
  if(def.opp==="duo"){
   const a1=now-duoPoseT1,a2=now-duoPoseT2;
   const p1=a1<0.35?duoPose1:"idle",p2=a2<0.35?duoPose2:"idle";
-  drawBot(ctx,SHOCKWAVE,p1,188,468,0.78,p1==="idle"?bob:0,0,now,a1);
-  drawBot(ctx,SOUNDWAVE,p2,384,468,0.78,p2==="idle"?-bob:0,0,now,a2);
+  drawBot(ctx,SHOCKWAVE,p1,188,468,0.78,p1==="idle"?bob:0,0,now,a1,1);
+  drawBot(ctx,SOUNDWAVE,p2,384,468,0.78,p2==="idle"?-bob:0,0,now,a2,1);
  }else{
   const oAge=now-oppPoseT;
   const oPose=oAge<0.35?oppPose:"idle";
   const spec=def.opp==="optimus"?OPTIMUS:def.opp==="shockwave"?SHOCKWAVE:def.opp==="soundwave"?SOUNDWAVE:HOTROD;
   const oScale=def.opp==="optimus"?1.02:(def.opp==="shockwave"||def.opp==="soundwave")?1.0:0.92;
-  drawBot(ctx,spec,oPose,300,468,oScale,oPose==="idle"?bob:0,0,now,oAge);
+  drawBot(ctx,spec,oPose,300,468,oScale,oPose==="idle"?bob:0,0,now,oAge,1);
  }
- drawKid(ctx,pPose,672,468,1.0,pPose==="idle"?bob:0,Math.max(0,1-(now-plrMissT)*3));
+ drawKid(ctx,pPose,672,468,1.0,pPose==="idle"?bob:0,Math.max(0,1-(now-plrMissT)*3),-1);
  ctx.restore();
  vignette(ctx);
  // translucent lane panels
@@ -2175,7 +2360,7 @@ function renderGameOver(t){
   ctx.fillStyle="#456";ctx.fillRect(hashRand(i)*W,hashRand(i+9)*H,2,2);
  }
  ctx.globalAlpha=1;
- drawKid(ctx,"down",480,400,1.1,Math.sin(t*4)*3,0.4);
+ drawKid(ctx,"down",480,400,1.1,Math.sin(t*4)*3,0.4,0);
  metalText(ctx,"STASIS LOCK",480,140,52,"#607090","#3050a0");
  ctx.font="bold 18px Arial";ctx.textAlign="center";
  ctx.fillStyle="#aab";
