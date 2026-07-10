@@ -91,6 +91,52 @@ const SONGS=[
      ["C","o","bhk"],["C","p","bhk"],["C","d","bhk"],["C","d","bhk"]]
 },
 {
+ title:"EJECT", opp:"soundwave", oppName:"SOUNDWAVE", bpm:149, root:67, intro:4, outro:2,
+ speed:1.18, stars:4, stage:5, flavor:"Soundwave superior. Your rhythm inferior.",
+ kick:[0,4,8,12], introStyle:"radio",
+ phrases:{
+  A:{ch:[0,5],ch2:[3,5],mel:[0,0,1, 1,0,1, 2,0,1, 3,2,1, 4,3,1, 5,2,1, 6,3,1, 7,4,1, 8,2,1, 9,2,1, 10,4,1, 11,3,1, 12,5,2, 14,4,1, 15,3,1, 16,0,1, 17,0,1, 18,2,1, 19,3,1, 20,4,1, 21,3,1, 22,4,1, 23,5,1, 24,6,2, 26,5,1, 27,4,1, 28,3,2, 30,2,1, 31,0,1]},
+  B:{ch:[3,4],ch2:[6,4],mel:[0,4,1, 1,5,1, 2,4,1, 3,5,1, 4,6,2, 6,5,1, 7,6,1, 8,7,1, 9,6,1, 10,7,1, 11,8,1, 12,9,2, 14,8,1, 15,7,1, 16,5,1, 17,6,1, 18,5,1, 19,6,1, 20,7,2, 22,8,1, 23,9,1, 24,10,1, 25,9,1, 26,8,1, 27,7,1, 28,8,2, 30,6,1, 31,5,1]},
+  C:{ch:[5,6],ch2:[0,4],mel:[0,7,1, 1,7,1, 2,9,2, 4,10,2, 6,9,1, 7,8,1, 8,7,2, 10,9,1, 11,10,1, 12,11,2, 14,10,1, 15,9,1, 16,8,1, 17,8,1, 18,9,1, 19,10,1, 20,11,1, 21,10,1, 22,9,1, 23,8,1, 24,9,2, 26,10,1, 27,11,1, 28,9,4]},
+  D:{ch:[1,4],ch2:[3,6],mel:[0,7,1, 1,7,1, 3,9,1, 4,9,1, 6,7,1, 7,7,1, 9,10,1, 10,10,1, 12,11,2, 14,9,1, 15,9,1, 16,7,1, 17,7,1, 19,5,1, 20,5,1, 22,9,1, 23,9,1, 24,10,2, 26,9,1, 27,7,1, 28,5,2, 30,7,1, 31,9,1]}
+ },
+ st:[["A","o"],["A","p"],["B","o"],["B","p"],["C","o","bh"],["C","p","bh"],
+     ["A","o","q"],["A","p","q"],
+     ["D","o"],["D","p"],["C","o","bh"],["C","p","bh"],
+     ["B","o"],["B","p"],["A","o"],["A","p"],
+     ["D","o","q"],["D","p","q"],
+     ["C","o","bh"],["C","p","bh"],["C","d","bh"],["C","d","bh"],
+     ["D","o"],["D","p"],["B","o"],["B","p"],
+     ["C","o","bhk"],["C","p","bhk"],["C","d","bhk"],["C","d","bhk"]]
+},
+{
+ // Duet opponents. Slot digit flags pick the singer: "1"=Shockwave, "2"=Soundwave,
+ // no digit = BOTH sing together (auto-harmonized). Through-composed structure:
+ // solo trades, a no-echo argument, duets, and a key-change finish.
+ title:"DUAL FREQUENCY", opp:"duo", oppName:"SHOCKWAVE & SOUNDWAVE", bpm:156, root:64, intro:4, outro:2,
+ speed:1.2, stars:5, stage:6, flavor:"Two channels. Zero chance.",
+ kick:[0,4,8,10], introStyle:"drums",
+ phrases:{
+  A:{ch:[0,3],ch2:[5,3],mel:[0,0,1, 1,2,1, 2,0,1, 3,2,1, 4,4,1, 5,3,1, 6,4,1, 7,5,1, 8,4,2, 10,3,1, 11,2,1, 12,4,1, 13,5,1, 14,7,1, 15,5,1, 16,4,1, 17,2,1, 18,4,1, 19,2,1, 20,5,1, 21,4,1, 22,5,1, 23,7,1, 24,5,2, 26,4,1, 27,2,1, 28,4,1, 29,2,1, 30,0,2]},
+  B:{ch:[3,6],ch2:[6,4],mel:[0,4,1, 1,5,1, 2,4,1, 3,5,1, 4,7,2, 6,8,1, 7,7,1, 8,5,1, 9,7,1, 10,8,1, 11,9,1, 12,8,2, 14,7,1, 15,5,1, 16,4,1, 17,5,1, 18,7,1, 19,8,1, 20,7,1, 21,5,1, 22,7,1, 23,8,1, 24,9,1, 25,8,1, 26,9,1, 27,10,1, 28,9,2, 30,8,1, 31,7,1]},
+  C:{ch:[5,6],ch2:[0,4],mel:[0,7,1, 1,7,1, 2,8,1, 3,9,1, 4,10,2, 6,9,1, 7,8,1, 8,9,1, 9,10,1, 10,9,1, 11,8,1, 12,7,2, 14,8,1, 15,9,1, 16,11,2, 18,10,1, 19,9,1, 20,8,1, 21,9,1, 22,10,1, 23,9,1, 24,7,2, 26,8,1, 27,9,1, 28,7,4]},
+  D:{ch:[1,6],ch2:[3,4],mel:[0,7,1, 1,5,1, 2,7,1, 3,8,1, 4,7,1, 5,5,1, 6,4,1, 7,5,1, 8,7,1, 9,8,1, 10,9,1, 11,8,1, 12,10,1, 13,9,1, 14,8,1, 15,7,1, 16,8,1, 17,7,1, 18,5,1, 19,7,1, 20,8,1, 21,9,1, 22,10,1, 23,9,1, 24,11,1, 25,10,1, 26,9,1, 27,8,1, 28,9,2, 30,7,1, 31,5,1]}
+ },
+ st:[["A","o","1"],["A","p"],
+     ["A","o","2"],["A","p"],
+     ["B","o","1"],["D","o","2"],
+     ["C","o","bh"],["C","d","bh"],["C","d","bh"],
+     ["B","o","q2"],["B","p","q"],
+     ["D","o","1"],["D","p"],["D","o","2"],["D","p"],
+     ["C","o","2"],["C","d","bh"],["C","d","bh"],
+     ["A","o","q"],["A","p","q"],
+     ["B","o","1"],["B","p"],["B","o","2"],["B","p"],
+     ["A","o","1"],["A","p"],["A","o","2"],["A","p"],
+     ["D","o","1"],["D","p"],["D","o","2"],["D","p"],
+     ["D","o","bh"],["C","d","bh"],
+     ["C","o","bhk"],["C","d","bhk"],["D","d","bhk"],["C","d","bhk"],["D","d","bhk"]]
+},
+{
  title:"MORE THAN MEETS THE EYE", opp:"optimus", oppName:"OPTIMUS PRIME", bpm:152, root:60, intro:8, outro:2,
  speed:1.2, stars:5, stage:3, flavor:"FINALE — Optimus Prime himself. A 4½-minute gauntlet.",
  kick:[0,6,8,10], introStyle:"cine",
@@ -114,7 +160,7 @@ const SONGS=[
 (function(){
  const o=(p,f)=>[[p,"o",f||""],[p,"p",f||""]];
  const d=(p,f)=>[[p,"d",f||""],[p,"d",f||""]];
- SONGS[4].st=[].concat(
+ SONGS[6].st=[].concat(
   o("A"),o("B"),o("D","bh"),
   o("C","a"),o("A"),o("G"),d("D","bh"),
   o("E","qa"),
@@ -229,6 +275,12 @@ function buildSong(def){
     for(let j=0;j<8;j++)audio.push({t:bt+j*2*sd,f:"pluck",m:def.root+d2s(cd+ar[j%4])+(j>=4?12:0),d:2*sd});
     if(ib>=2)audio.push({t:bt,f:"bass",m:br,d:16*sd*0.95});
     if(last)for(let s=0;s<16;s+=2)audio.push({t:bt+s*sd,f:"snare"});
+   }else if(def.introStyle==="radio"){ // morse-code transmission (Soundwave)
+    audio.push({t:bt,f:"bass",m:br-12,d:16*sd*0.98});
+    for(const s2 of [0,1,3,8,9,10,11,14])audio.push({t:bt+s2*sd,f:"pluck",m:def.root+12,d:sd*0.8});
+    if(ib>=1)for(let s=0;s<16;s+=2)audio.push({t:bt+s*sd,f:"hat"});
+    if(ib>=2)for(const k of def.kick)audio.push({t:bt+k*sd,f:"kick"});
+    if(last)for(let s=8;s<16;s++)audio.push({t:bt+s*sd,f:"snare"});
    }else if(def.introStyle==="pulse"){ // mechanical sub-bass pulse (Shockwave)
     for(let j=0;j<8;j++)audio.push({t:bt+j*2*sd,f:"bass",m:br-12+(j%4===3?7:0),d:2*sd*0.9});
     for(let s=2;s<16;s+=4)audio.push({t:bt+s*sd,f:"hat"});
@@ -305,6 +357,8 @@ function buildSong(def){
     lane=oth[((dg%oth.length)+oth.length)%oth.length];
    }
    let dur=ln>=4?ln*sdl:0;
+   // duo songs: digit flags pick the opponent singer (1/2), none = both together
+   const s2=opts.indexOf("2")>=0?2:opts.indexOf("1")>=0?1:3;
    // chord mode ("x"): strong beats become 3-lane stamps; sustains become 4-lane
    // ROLLED holds (staggered starts, shared ending) — pressed one at a time, ending
    // with all 4 keys held. grp links chord members for ghosting forgiveness.
@@ -330,10 +384,17 @@ function buildSong(def){
     const roll=(chordN===4&&dur>0)?ci*sdl*0.5:0;
     const t2=t+roll,dur2=dur>0?Math.max(dur-roll,2*sdl):0;
     if(who==="o"||who==="d"){
-     opp.push({t:t2,lane:lane2,dur:dur2,midi:midi2,hit:false,missed:false,holding:false,grp:gid});
+     opp.push({t:t2,lane:lane2,dur:dur2,midi:midi2,hit:false,missed:false,holding:false,grp:gid,who2:s2});
      if(ci===0){
-      audio.push({t,f:"vox",m:midi-12,d:Math.max(ln*sdl,0.2),w:"opp"});
-      if(harm)audio.push({t,f:"vox",m:def.root+d2s(dg+2)+tr-12,d:Math.max(ln*sdl,0.2),w:"opp",g:0.45});
+      const vd=Math.max(ln*sdl,0.2);
+      if(def.opp==="duo"){
+       // Shockwave sings deep, Soundwave a fifth higher; together = harmonized
+       if(s2!==2)audio.push({t,f:"vox",m:midi-12,d:vd,w:"opp"});
+       if(s2!==1)audio.push({t,f:"vox",m:s2===3?def.root+d2s(dg+2)+tr-12:midi-5,d:vd,w:"opp",g:s2===3?0.7:1});
+      }else{
+       audio.push({t,f:"vox",m:midi-12,d:vd,w:"opp"});
+       if(harm)audio.push({t,f:"vox",m:def.root+d2s(dg+2)+tr-12,d:vd,w:"opp",g:0.45});
+      }
      }
     }
     if(who==="p"||who==="d"){
@@ -402,6 +463,7 @@ let song=null,def=null,songStartAbs=0,aidx=0,playing=false;
 let health=0.5,score=0,combo=0,maxCombo=0,sicks=0,goods=0,bads=0,misses=0,accSum=0,accN=0;
 let popups=[],flashes=[[0,0,0,0],[0,0,0,0]];
 let oppPose="idle",oppPoseT=-9,plrPose="idle",plrPoseT=-9,plrMissT=-9;
+let duoPose1="idle",duoPose2="idle",duoPoseT1=-9,duoPoseT2=-9,duoIcon=1;
 let resultData=null,lastNow=0,songBarIdx=0,pauseSel=0,bindsReturn="menu";
 const TOUCH_AUTO=("ontouchstart" in window)||(typeof navigator!=="undefined"&&navigator.maxTouchPoints>0);
 let ctrlMode="auto"; // "auto" | "pc" | "mobile"
@@ -638,6 +700,20 @@ const SHOCKWAVE_POSES={
 };
 SHOCKWAVE.poses=SHOCKWAVE_POSES;
 SHOCKWAVE.cannon=true;
+// Soundwave (G1): cassette-deck chest, red visor, shoulder cannon. Up notes
+// OPEN the tape door and eject Laserbeak; side notes emit sonic wave rings;
+// down notes crouch and thump bass rings out of the floor.
+const SOUNDWAVE={c1:"#2b5fc7",c2:"#1a3a86",c3:"#f2c33c",metal:"#9aa2b2",face:"#141a30",eyes:"#ff3040",
+ legT:"#2b5fc7",legS:"#1a3a86",head:"soundwave",chest:"deck",wings:false};
+const SOUNDWAVE_POSES={
+ idle:{lean:0,crouch:0,aL:-0.25,aR:0.25,head:0,mouth:0},
+ left:{lean:-0.18,crouch:5,aL:-1.9,aR:0.3,head:-0.12,mouth:1,waves:-1},
+ right:{lean:0.18,crouch:5,aL:-0.3,aR:1.9,head:0.12,mouth:1,waves:1},
+ up:{lean:0,crouch:-12,aL:-0.4,aR:2.9,head:-0.2,mouth:1,eject:1},
+ down:{lean:0,crouch:30,aL:-0.7,aR:1.3,head:0.2,mouth:1,brings:1}
+};
+SOUNDWAVE.poses=SOUNDWAVE_POSES;
+SOUNDWAVE.sCannon=true;
 
 function rr(g,x,y,w,h,r){g.beginPath();g.roundRect(x,y,w,h,r);}
 function drawArm(g,sx,sy,a,spec){
@@ -721,6 +797,19 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge){
   g.fillStyle=spec.metal;rr(g,-26,-164+ty,52,20,3);g.fill();
   g.fillStyle="#5a6272";
   for(let i=0;i<4;i++){rr(g,-22+i*12,-160+ty,7,12,2);g.fill();}
+ }else if(spec.chest==="deck"){ // cassette deck with gold door + button row
+  g.fillStyle="#10182e";rr(g,-30,-198+ty,60,34,4);g.fill();
+  g.strokeStyle=spec.c3;g.lineWidth=3;rr(g,-30,-198+ty,60,34,4);g.stroke();
+  if(!P.eject){ // cassette visible behind the door
+   g.fillStyle="#2a2a34";rr(g,-24,-192+ty,48,22,3);g.fill();
+   g.strokeStyle="#8890a8";g.lineWidth=2;
+   g.beginPath();g.arc(-12,-181+ty,5,0,TAU);g.moveTo(17,-181+ty);g.arc(12,-181+ty,5,0,TAU);g.stroke();
+  }else{ // door flipped open, deck empty & glowing
+   g.fillStyle=spec.c3;rr(g,-30,-210+ty,60,8,3);g.fill();
+   g.fillStyle="rgba(255,214,74,0.25)";rr(g,-24,-192+ty,48,22,3);g.fill();
+  }
+  g.fillStyle=spec.c3; // button row (play / rew / ff / stop / rec)
+  for(let i=0;i<5;i++){rr(g,-27+i*12,-156+ty,8,8,2);g.fill();}
  }else if(spec.chest==="core"){ // glowing reactor core
   g.shadowColor=spec.c3;g.shadowBlur=P.mouth?16:9;
   g.fillStyle=spec.c3;
@@ -780,6 +869,42 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge){
   }
   g.restore();
  }
+ // Soundwave shoulder cannon (always mounted)
+ if(spec.sCannon){
+  g.fillStyle=spec.metal;rr(g,40,-236+ty,30,10,3);g.fill();
+  g.fillStyle=spec.c2;rr(g,66,-234+ty,10,6,2);g.fill();
+ }
+ // Soundwave sonic wave rings (side poses)
+ if(P.waves){
+  const dir=P.waves;
+  g.lineWidth=3;g.lineCap="round";
+  for(let i=0;i<3;i++){
+   const r=28+i*20+((fxT*110)%20);
+   g.strokeStyle="rgba(242,195,60,"+(0.55-i*0.15)+")";
+   g.beginPath();g.arc(dir*30,-176+ty,r,dir>0?-0.6:Math.PI-0.6,dir>0?0.6:Math.PI+0.6);g.stroke();
+  }
+ }
+ // Soundwave EJECT — cassette door opens and Laserbeak launches (up pose)
+ if(P.eject){
+  const fl=Math.sin(fxT*22);
+  g.save();g.translate(8,-296+ty);
+  g.fillStyle="#c8202a";
+  g.beginPath();g.moveTo(0,7);g.lineTo(-6,-4);g.lineTo(6,-4);g.closePath();g.fill();
+  g.fillStyle="#2a2a34";
+  g.beginPath();g.moveTo(-4,-2);g.lineTo(-26,-8-8*fl);g.lineTo(-6,5);g.closePath();g.fill();
+  g.beginPath();g.moveTo(4,-2);g.lineTo(26,-8+8*fl);g.lineTo(6,5);g.closePath();g.fill();
+  g.fillStyle="#ffd84a";g.beginPath();g.arc(0,-6,2.5,0,TAU);g.fill();
+  g.restore();
+ }
+ // Soundwave floor-shaking bass rings (down pose)
+ if(P.brings){
+  for(let i=0;i<2;i++){
+   const r=((fxT*70+i*20)%40);
+   g.strokeStyle="rgba(242,195,60,"+(0.6*(1-r/40))+")";
+   g.lineWidth=3;
+   g.beginPath();g.ellipse(0,4,32+r*2.2,8+r*0.5,0,0,TAU);g.stroke();
+  }
+ }
  // Shockwave hover thrusters (down pose)
  if(P.hover){
   for(const s of [-1,1]){
@@ -826,6 +951,19 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge){
   g.fillStyle="#3a4150";
   if(P.mouth)rr(g,-6,5,12,9,2);else rr(g,-7,8,14,3,1);
   g.fill();
+ }else if(spec.head==="soundwave"){
+  // boxy helmet with full red visor and chin guard
+  g.fillStyle=spec.c1;rr(g,-19,-26,38,42,5);g.fill();
+  g.fillStyle=spec.c2;rr(g,-19,-26,38,10,4);g.fill();
+  g.shadowColor=spec.eyes;g.shadowBlur=P.mouth?14:7;
+  g.fillStyle=spec.eyes;rr(g,-15,-12,30,9,3);g.fill();
+  g.shadowBlur=0;
+  g.fillStyle="rgba(255,255,255,"+(P.mouth?0.55:0.25)+")";
+  rr(g,-13+(P.mouth?((fxT*60)%22):4),-10,6,5,2);g.fill(); // visor shimmer
+  g.fillStyle=spec.metal;rr(g,-13,0,26,14,3);g.fill(); // chin guard
+  g.strokeStyle=P.mouth?"#ffd0d4":"#5a6272";g.lineWidth=2;
+  g.beginPath();g.moveTo(-8,7);g.lineTo(8,7);g.stroke();
+  g.fillStyle=spec.c3;rr(g,-3,-33,6,8,2);g.fill(); // antenna
  }else if(spec.head==="shockwave"){
   // hexagonal head with a single glowing eye
   g.fillStyle=spec.c1;
@@ -972,6 +1110,23 @@ function makeIcon(who,st){
   g.beginPath();g.moveTo(-8,5);g.lineTo(8,5);g.moveTo(-8,10);g.lineTo(8,10);g.stroke();
   if(st==="lose"){g.strokeStyle="rgba(10,10,20,0.8)";g.lineWidth=2;
    g.beginPath();g.moveTo(14,-24);g.lineTo(4,-8);g.lineTo(10,6);g.stroke();}
+ }else if(who==="soundwave"){
+  g.fillStyle=col("#2b5fc7");rr(g,-19,-24,38,42,5);g.fill();
+  g.fillStyle=col("#1a3a86");rr(g,-19,-24,38,10,4);g.fill();
+  if(st==="lose"){
+   g.fillStyle=col("#7a2020");rr(g,-15,-10,30,9,3);g.fill();
+   g.strokeStyle="rgba(10,10,25,0.9)";g.lineWidth=2;
+   g.beginPath();g.moveTo(-12,-12);g.lineTo(0,-2);g.moveTo(2,-12);g.lineTo(12,-3);g.stroke();
+   g.fillStyle=col("#f2c33c");rr(g,-1,-33,6,8,2);g.fill(); // bent antenna
+  }else{
+   g.fillStyle=col("#ff3040");rr(g,-15,-10,30,9,3);g.fill();
+   g.fillStyle="rgba(255,255,255,"+(st==="win"?0.8:0.35)+")";rr(g,-10,-8,7,5,2);g.fill();
+   g.fillStyle=col("#f2c33c");rr(g,-3,-31,6,8,2);g.fill();
+   if(st==="win"){g.strokeStyle=col("#f2c33c");g.lineWidth=2;
+    g.beginPath();g.arc(24,-4,7,-0.7,0.7);g.stroke();
+    g.beginPath();g.arc(24,-4,12,-0.6,0.6);g.stroke();}
+  }
+  g.fillStyle=col("#9aa2b2");rr(g,-11,2,22,12,3);g.fill();
  }else if(who==="shockwave"){
   g.fillStyle=col("#6b34b8");
   g.beginPath();g.moveTo(-20,2);g.lineTo(-12,-20);g.lineTo(12,-20);g.lineTo(20,2);g.lineTo(12,16);g.lineTo(-12,16);g.closePath();g.fill();
@@ -1008,7 +1163,7 @@ function makeIcon(who,st){
  }
  return c;
 }
-for(const w of ["hotrod","optimus","shockwave","kid"])
+for(const w of ["hotrod","optimus","shockwave","soundwave","kid"])
  for(const s of ["norm","win","lose"])
   ICONS[w+"_"+s]=makeIcon(w,s);
 
@@ -1258,7 +1413,115 @@ function stageShockLab(g,t,pulse){
  g.fillStyle=sg2;g.fillRect(sx-40,0,80,430);
  drawFloor(g,"#160b22","#6a3cc8",pulse);
 }
-const STAGES=[stageArk,stageHighway,stageCybertron,stageAutobotCity,stageShockLab];
+function stageComms(g,t,pulse){
+ let gr=g.createLinearGradient(0,0,0,H);
+ gr.addColorStop(0,"#060a18");gr.addColorStop(1,"#122448");
+ g.fillStyle=gr;g.fillRect(0,0,W,H);
+ // radio tower silhouettes with blinking tips
+ for(const txr of [[70,120],[890,150]]){
+  g.strokeStyle="#1c2c50";g.lineWidth=5;
+  g.beginPath();g.moveTo(txr[0]-30,430);g.lineTo(txr[0],txr[1]);g.lineTo(txr[0]+30,430);g.stroke();
+  g.strokeStyle="#16233f";g.lineWidth=2;
+  for(let i=1;i<5;i++){const y=txr[1]+(430-txr[1])*i/5,w2=30*i/5;
+   g.beginPath();g.moveTo(txr[0]-w2,y);g.lineTo(txr[0]+w2,y);g.stroke();}
+  g.fillStyle=Math.sin(t*4+txr[0])>0?"#ff3040":"#401018";
+  g.beginPath();g.arc(txr[0],txr[1]-6,5,0,TAU);g.fill();
+ }
+ // Laserbeak perched on the left tower
+ {const bob2=Math.sin(t*2)*2;
+  g.save();g.translate(70,116+bob2);
+  g.fillStyle="#c8202a";g.beginPath();g.moveTo(0,6);g.lineTo(-5,-4);g.lineTo(5,-4);g.closePath();g.fill();
+  g.fillStyle="#2a2a34";g.beginPath();g.moveTo(-3,-2);g.lineTo(-14,-6);g.lineTo(-4,3);g.closePath();g.fill();
+  g.restore();}
+ // giant speaker stacks that pump with the beat
+ for(const sx2 of [200,760]){
+  g.fillStyle="#0e1830";rr(g,sx2-70,150,140,282,10);g.fill();
+  g.strokeStyle="#28407a";g.lineWidth=3;rr(g,sx2-70,150,140,282,10);g.stroke();
+  for(let i=0;i<2;i++){
+   const cy=214+i*130,r=42+pulse*5;
+   g.fillStyle="#060c1c";g.beginPath();g.arc(sx2,cy,r+8,0,TAU);g.fill();
+   g.fillStyle="#1c2c55";g.beginPath();g.arc(sx2,cy,r,0,TAU);g.fill();
+   g.fillStyle="#3c5cA8";g.beginPath();g.arc(sx2,cy,r*0.4,0,TAU);g.fill();
+  }
+ }
+ // central console with equalizer bars dancing to the beat
+ g.fillStyle="#0a1226";g.fillRect(340,190,280,150);
+ g.strokeStyle="#28407a";g.lineWidth=3;g.strokeRect(340,190,280,150);
+ for(let i=0;i<14;i++){
+  const hgt2=20+hashRand(i+Math.floor(t*7))*80*(0.5+pulse*0.6);
+  g.fillStyle=i%3===0?"#f2c33c":"#3c7cf0";
+  g.fillRect(352+i*19,334-hgt2,12,hgt2);
+ }
+ // decepticon-style emblem
+ g.save();g.translate(480,150);
+ g.fillStyle="rgba(90,140,255,"+(0.5+pulse*0.3)+")";
+ g.beginPath();
+ g.moveTo(0,-15);g.lineTo(-20,-5);g.lineTo(-12,14);g.lineTo(-4,4);g.lineTo(0,10);g.lineTo(4,4);g.lineTo(12,14);g.lineTo(20,-5);g.closePath();g.fill();
+ g.restore();
+ // cassette rack
+ for(let i=0;i<6;i++){
+  g.fillStyle="#1a2440";rr(g,368+i*38,362,30,44,4);g.fill();
+  g.fillStyle="rgba(242,195,60,0.5)";rr(g,372+i*38,370,22,12,2);g.fill();
+ }
+ drawFloor(g,"#0c1428","#3c6ac8",pulse);
+}
+function stageNemesis(g,t,pulse){
+ let gr=g.createLinearGradient(0,0,0,H);
+ gr.addColorStop(0,"#041420");gr.addColorStop(1,"#0a3450");
+ g.fillStyle=gr;g.fillRect(0,0,W,H);
+ // giant viewport into the ocean
+ g.fillStyle="#062a42";
+ g.beginPath();g.moveTo(160,430);g.lineTo(160,140);g.quadraticCurveTo(480,40,800,140);g.lineTo(800,430);g.closePath();g.fill();
+ g.save();
+ g.beginPath();g.moveTo(168,430);g.lineTo(168,146);g.quadraticCurveTo(480,52,792,146);g.lineTo(792,430);g.closePath();g.clip();
+ const wg=g.createLinearGradient(0,52,0,430);
+ wg.addColorStop(0,"#0e4a6a");wg.addColorStop(1,"#062436");
+ g.fillStyle=wg;g.fillRect(160,40,640,400);
+ // caustic light ripples
+ g.strokeStyle="rgba(120,220,255,0.18)";g.lineWidth=2;
+ for(let j=0;j<5;j++){
+  g.beginPath();
+  for(let x=168;x<=792;x+=16){
+   const y=110+j*64+Math.sin(x*0.03+t*1.6+j*2)*10;
+   if(x===168)g.moveTo(x,y);else g.lineTo(x,y);
+  }
+  g.stroke();
+ }
+ // rising bubbles
+ g.fillStyle="rgba(180,230,255,0.5)";
+ for(let i=0;i<16;i++){
+  const by=430-((t*36+hashRand(i)*380+i*31)%380);
+  const bx2=200+hashRand(i+70)*560+Math.sin(t*1.4+i)*8;
+  g.beginPath();g.arc(bx2,by,2+hashRand(i+3)*3,0,TAU);g.fill();
+ }
+ // passing fish silhouettes
+ for(let i=0;i<3;i++){
+  const fx2=((t*(26+i*10)+i*400)%900)+30;
+  const fy2=140+i*80+Math.sin(t*2+i)*8;
+  g.fillStyle="rgba(6,20,34,0.85)";
+  g.beginPath();g.ellipse(fx2,fy2,16,5,0,0,TAU);g.fill();
+  g.beginPath();g.moveTo(fx2-14,fy2);g.lineTo(fx2-24,fy2-6);g.lineTo(fx2-24,fy2+6);g.closePath();g.fill();
+ }
+ g.restore();
+ // viewport ribs
+ g.strokeStyle="#123a55";g.lineWidth=8;
+ for(const rx of [320,480,640]){g.beginPath();g.moveTo(rx,430);g.lineTo(rx,80);g.stroke();}
+ g.strokeStyle="#1a4a68";g.lineWidth=6;
+ g.beginPath();g.moveTo(160,430);g.lineTo(160,140);g.quadraticCurveTo(480,40,800,140);g.lineTo(800,430);g.stroke();
+ // his-and-his consoles: purple (Shockwave) and gold (Soundwave)
+ g.fillStyle="#0c1c30";rr(g,40,300,110,130,8);g.fill();
+ g.fillStyle="rgba(160,90,255,"+(0.4+pulse*0.35)+")";rr(g,52,312,86,30,4);g.fill();
+ g.fillStyle="#0c1c30";rr(g,810,300,110,130,8);g.fill();
+ g.fillStyle="rgba(242,195,60,"+(0.4+pulse*0.35)+")";rr(g,822,312,86,30,4);g.fill();
+ // emblem
+ g.save();g.translate(480,62);
+ g.fillStyle="rgba(90,180,255,"+(0.5+pulse*0.3)+")";
+ g.beginPath();
+ g.moveTo(0,-13);g.lineTo(-18,-4);g.lineTo(-11,12);g.lineTo(-4,4);g.lineTo(0,9);g.lineTo(4,4);g.lineTo(11,12);g.lineTo(18,-4);g.closePath();g.fill();
+ g.restore();
+ drawFloor(g,"#08182a","#2a6a9a",pulse);
+}
+const STAGES=[stageArk,stageHighway,stageCybertron,stageAutobotCity,stageShockLab,stageComms,stageNemesis];
 
 // ============ arrows / notes ============
 function drawArrow(g,x,y,lane,fill,alpha,scale,glow){
@@ -1295,6 +1558,7 @@ function startSong(i){
  health=0.5;score=0;combo=0;maxCombo=0;sicks=0;goods=0;bads=0;misses=0;accSum=0;accN=0;
  popups=[];parts=[];flashes=[[-9,-9,-9,-9],[-9,-9,-9,-9]];songBarIdx=0;
  oppPose="idle";plrPose="idle";oppPoseT=-9;plrPoseT=-9;plrMissT=-9;
+ duoPose1="idle";duoPose2="idle";duoPoseT1=-9;duoPoseT2=-9;duoIcon=1;
  playing=true;state="play";
 }
 function stopSong(){
@@ -1437,8 +1701,8 @@ function pointerAt(mx,my){
  if(ac&&ac.state==="suspended"&&!pausedCtx)ac.resume();
  if(state==="menu"){
   for(let i=0;i<=SONGS.length;i++){
-   const y=196+i*58;
-   if(my>y-24&&my<y+24){
+   const y=186+i*44;
+   if(my>y-19&&my<y+19){
     if(i===SONGS.length){bindsReturn="menu";state="binds";bindSel=0;bindWait=false;}
     else if(selIdx===i)startSong(i);
     else selIdx=i;
@@ -1567,25 +1831,25 @@ function renderMenu(t){
   ctx.fillText("⟳  Rotate your device to landscape for the best experience",480,168);
  }
  for(let i=0;i<=SONGS.length;i++){
-  const y=196+i*58,sel=i===selIdx,isCtl=i===SONGS.length;
+  const y=186+i*44,sel=i===selIdx,isCtl=i===SONGS.length;
   ctx.globalAlpha=sel?1:0.78;
   if(sel){ctx.shadowColor="#ffd84a";ctx.shadowBlur=16;}
   ctx.fillStyle=sel?"rgba(96,42,150,0.95)":"rgba(28,22,48,0.88)";
-  rr(ctx,170,y-24,620,48,10);ctx.fill();ctx.shadowBlur=0;
-  if(sel){ctx.strokeStyle="#ffd84a";ctx.lineWidth=2.5;rr(ctx,170,y-24,620,48,10);ctx.stroke();}
+  rr(ctx,170,y-19,620,38,9);ctx.fill();ctx.shadowBlur=0;
+  if(sel){ctx.strokeStyle="#ffd84a";ctx.lineWidth=2.5;rr(ctx,170,y-19,620,38,9);ctx.stroke();}
   if(isCtl){
    ctx.textAlign="center";ctx.fillStyle=sel?"#fff":"#cbc5dd";
-   ctx.font="900 19px 'Arial Black',Arial";
-   ctx.fillText("⚙  CONTROLS — rebind keys",480,y+7);
+   ctx.font="900 16px 'Arial Black',Arial";
+   ctx.fillText("⚙  CONTROLS — rebind keys",480,y+6);
   }else{
    const s=SONGS[i];
    ctx.textAlign="left";ctx.fillStyle=sel?"#fff":"#cbc5dd";
-   ctx.font="900 19px 'Arial Black',Arial";
-   ctx.fillText((s.opp==="optimus"?"★ FINALE — ":"")+s.title,190,y-2);
-   ctx.font="12px Arial";ctx.fillStyle=sel?"#f7d8a0":"#988fb0";
-   ctx.fillText("vs "+s.oppName,190,y+16);
-   ctx.textAlign="right";ctx.font="17px Arial";ctx.fillStyle="#ffd84a";
-   ctx.fillText("★".repeat(s.stars)+"☆".repeat(5-s.stars),772,y+6);
+   ctx.font="900 15px 'Arial Black',Arial";
+   ctx.fillText((s.opp==="optimus"?"★ FINALE — ":"")+s.title,190,y-3);
+   ctx.font="10px Arial";ctx.fillStyle=sel?"#f7d8a0":"#988fb0";
+   ctx.fillText("vs "+s.oppName,190,y+12);
+   ctx.textAlign="right";ctx.font="14px Arial";ctx.fillStyle="#ffd84a";
+   ctx.fillText("★".repeat(s.stars)+"☆".repeat(5-s.stars),772,y+4);
   }
   ctx.globalAlpha=1;
  }
@@ -1661,8 +1925,13 @@ function renderPause(t){
  sg.addColorStop(0,"rgba(255,230,170,0.20)");sg.addColorStop(1,"rgba(0,0,0,0)");
  ctx.fillStyle=sg;ctx.fillRect(0,20,540,520);
  // dramatic opponent portrait with live effects (blaster flash / wrist flames)
- const spec=def.opp==="optimus"?OPTIMUS:def.opp==="shockwave"?SHOCKWAVE:HOTROD;
- drawBot(ctx,spec,"up",270,505,1.55,Math.sin(t*2)*3,0,t,0.05);
+ if(def.opp==="duo"){
+  drawBot(ctx,SHOCKWAVE,"up",170,505,1.15,Math.sin(t*2)*3,0,t,0.05);
+  drawBot(ctx,SOUNDWAVE,"up",370,505,1.15,Math.sin(t*2+1.5)*3,0,t,0.05);
+ }else{
+  const spec=def.opp==="optimus"?OPTIMUS:def.opp==="shockwave"?SHOCKWAVE:def.opp==="soundwave"?SOUNDWAVE:HOTROD;
+  drawBot(ctx,spec,"up",270,505,1.55,Math.sin(t*2)*3,0,t,0.05);
+ }
  metalText(ctx,"PAUSED",700,116,46,"#8090b0","#c03040");
  ctx.font="bold 21px Arial";ctx.fillStyle="#ffd84a";ctx.textAlign="center";
  ctx.fillText(def.title,700,158);
@@ -1692,7 +1961,12 @@ function renderPlay(t){
   if(!n.hit&&n.t<=now){
    n.hit=true;
    flashes[0][n.lane]=now;
-   oppPose=["left","down","up","right"][n.lane];oppPoseT=now;
+   const dirN=["left","down","up","right"][n.lane];
+   if(def.opp==="duo"){
+    if(n.who2&1){duoPose1=dirN;duoPoseT1=now;}
+    if(n.who2&2){duoPose2=dirN;duoPoseT2=now;}
+    duoIcon=n.who2===3?(duoIcon===1?2:1):n.who2;
+   }else{oppPose=dirN;oppPoseT=now;}
   }
  }
  // player miss detection — with chord forgiveness: if you hit ANY member of a
@@ -1732,12 +2006,20 @@ function renderPlay(t){
  ctx.translate(W/2,H/2);ctx.scale(z,z);ctx.translate(-W/2,-H/2);
  // characters
  const bob=Math.sin(beatPh*Math.PI)*4;
- const oAge=now-oppPoseT,pAge=now-plrPoseT;
- const oPose=oAge<0.35?oppPose:"idle";
+ const pAge=now-plrPoseT;
  const pPose=pAge<0.35?plrPose:"idle";
- const spec=def.opp==="optimus"?OPTIMUS:def.opp==="shockwave"?SHOCKWAVE:HOTROD;
- const oScale=def.opp==="optimus"?1.02:def.opp==="shockwave"?1.0:0.92;
- drawBot(ctx,spec,oPose,300,468,oScale,oPose==="idle"?bob:0,0,now,oAge);
+ if(def.opp==="duo"){
+  const a1=now-duoPoseT1,a2=now-duoPoseT2;
+  const p1=a1<0.35?duoPose1:"idle",p2=a2<0.35?duoPose2:"idle";
+  drawBot(ctx,SHOCKWAVE,p1,188,468,0.78,p1==="idle"?bob:0,0,now,a1);
+  drawBot(ctx,SOUNDWAVE,p2,384,468,0.78,p2==="idle"?-bob:0,0,now,a2);
+ }else{
+  const oAge=now-oppPoseT;
+  const oPose=oAge<0.35?oppPose:"idle";
+  const spec=def.opp==="optimus"?OPTIMUS:def.opp==="shockwave"?SHOCKWAVE:def.opp==="soundwave"?SOUNDWAVE:HOTROD;
+  const oScale=def.opp==="optimus"?1.02:(def.opp==="shockwave"||def.opp==="soundwave")?1.0:0.92;
+  drawBot(ctx,spec,oPose,300,468,oScale,oPose==="idle"?bob:0,0,now,oAge);
+ }
  drawKid(ctx,pPose,672,468,1.0,pPose==="idle"?bob:0,Math.max(0,1-(now-plrMissT)*3));
  ctx.restore();
  vignette(ctx);
@@ -1807,7 +2089,7 @@ function renderPlay(t){
  const bx=280,bw=400,by=498;
  ctx.fillStyle="rgba(0,0,0,0.7)";rr(ctx,bx-5,by-5,bw+10,22,10);ctx.fill();
  ctx.strokeStyle="rgba(255,255,255,0.35)";ctx.lineWidth=2;rr(ctx,bx-5,by-5,bw+10,22,10);ctx.stroke();
- const oc=def.opp==="optimus"?"#c03048":def.opp==="shockwave"?"#7a3cc8":"#c8264a";
+ const oc=def.opp==="optimus"?"#c03048":def.opp==="shockwave"?"#7a3cc8":def.opp==="soundwave"?"#2b5fc7":def.opp==="duo"?"#4d49c8":"#c8264a";
  let og=ctx.createLinearGradient(0,by,0,by+12);
  og.addColorStop(0,shade(oc,1.4));og.addColorStop(1,shade(oc,0.7));
  ctx.fillStyle=og;rr(ctx,bx,by,bw*(1-health),12,5);ctx.fill();
@@ -1818,7 +2100,8 @@ function renderPlay(t){
  const oState=health<0.2?"win":(health>0.8?"lose":"norm");
  const pState=health<0.2?"lose":(health>0.8?"win":"norm");
  const isz=52+pulse*5;
- ctx.drawImage(ICONS[def.opp+"_"+oState],bxp-isz+4,by+6-isz/2-20,isz,isz);
+ const oppIconKey=def.opp==="duo"?(duoIcon===2?"soundwave":"shockwave"):def.opp;
+ ctx.drawImage(ICONS[oppIconKey+"_"+oState],bxp-isz+4,by+6-isz/2-20,isz,isz);
  ctx.drawImage(ICONS["kid_"+pState],bxp-4,by+6-isz/2-20,isz,isz);
  // score line
  ctx.font="bold 15px Arial";ctx.textAlign="center";ctx.fillStyle="#fff";
@@ -1896,7 +2179,7 @@ function renderGameOver(t){
  metalText(ctx,"STASIS LOCK",480,140,52,"#607090","#3050a0");
  ctx.font="bold 18px Arial";ctx.textAlign="center";
  ctx.fillStyle="#aab";
- ctx.fillText('"'+(def&&def.opp==="optimus"?"You fought bravely. Rise, and try again.":def&&def.opp==="shockwave"?"As calculated. Your victory probability remains negligible.":"Not bad, kid — wanna go again?")+'"',480,180);
+ ctx.fillText('"'+(def&&def.opp==="optimus"?"You fought bravely. Rise, and try again.":def&&def.opp==="shockwave"?"As calculated. Your victory probability remains negligible.":def&&def.opp==="soundwave"?"Soundwave superior. Challenger inferior. Rewind and retry.":def&&def.opp==="duo"?"Two channels. Zero chance. Transmission ends.":"Not bad, kid — wanna go again?")+'"',480,180);
  ctx.font="16px Arial";ctx.fillStyle="#889";
  ctx.fillText(isTouchUI()?"Tap — retry":"Enter — retry    •    Esc — menu",480,480);
 }
