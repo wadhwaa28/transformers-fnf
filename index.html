@@ -479,12 +479,14 @@ function buildSong(def){
    const pat=big?BIGBASS:BASSPAT;
    for(let j=0;j<8;j++)audio.push({t:bt+j*2*sdl,f:"bass",m:br+pat[j],d:2*sdl*0.9});
    if(def.heavy){ // cinematic weight under the voices: low choir pad, sub drone,
-    // orchestral chord stabs, extra march snare
+    // orchestral chord stabs (placement alternates per bar), extra march snare
     audio.push({t:bt,f:"pad",ms:[def.root-24+d2s(cd)+tr,def.root-24+d2s(cd+2)+tr,def.root-24+d2s(cd+4)+tr],d:16*sdl});
     audio.push({t:bt,f:"bass",m:br-12,d:16*sdl*0.95});
-    audio.push({t:bt,f:"pluck",m:def.root+12+d2s(cd)+tr,d:sdl*4});
-    audio.push({t:bt+8*sdl,f:"pluck",m:def.root+12+d2s(cd+4)+tr,d:sdl*4});
+    const sA=(b%2)?4:0,sB=(b%2)?12:8;
+    audio.push({t:bt+sA*sdl,f:"pluck",m:def.root+12+d2s(cd)+tr,d:sdl*4});
+    audio.push({t:bt+sB*sdl,f:"pluck",m:def.root+12+d2s(cd+(b%2?2:4))+tr,d:sdl*4});
     audio.push({t:bt+14*sdl,f:"snare"});
+    if(b%4===3)for(let s=12;s<16;s++)audio.push({t:bt+s*sdl,f:"hat"}); // fill
    }
   }
  }
@@ -507,8 +509,23 @@ function buildSong(def){
   if(sdl<sd)mel=halfTime(mel);
   if(isC){ // the OTHER side plays/sings the counter-line as their chart
    const s2c=opts.indexOf("2")>=0?2:opts.indexOf("1")>=0?1:3;
-   for(let k2=0;k2<ph.cm.length;k2+=3){
-    const st3=ph.cm[k2],dg3=ph.cm[k2+1],ln3=ph.cm[k2+2];
+   let cmL=ph.cm;
+   if(def.heavy){ // BOSS: rotate counter-subjects across phrases and vary them,
+    // so no recurrence pairs the same two lines twice
+    const pool=[def.phrases.A.cm,def.phrases.B.cm,def.phrases.C.cm,def.phrases.D.cm];
+    cmL=pool[(i+("ABCD".indexOf(sl[0])||0)*3)%4]||ph.cm;
+    cmL=varyMel(cmL,(Math.floor(i/3)+"ABCD".indexOf(sl[0]))%4);
+    const cap=ph.cm.length/3+2; // varied, not harder: trim excess grace notes
+    if(cmL.length/3>cap){
+     let over=cmL.length/3-cap;const out=[];const drop=new Set();
+     for(let k3=cmL.length-3;k3>=0&&over>0;k3-=3)if(cmL[k3+2]<2){drop.add(k3);over--;}
+     for(let k3=0;k3<cmL.length;k3+=3)if(!drop.has(k3))out.push(cmL[k3],cmL[k3+1],cmL[k3+2]);
+     cmL=out;
+    }
+   }
+   if(sdl<sd)cmL=halfTime(cmL); // double-tempo sections: keep the counter playable
+   for(let k2=0;k2<cmL.length;k2+=3){
+    const st3=cmL[k2],dg3=cmL[k2+1],ln3=cmL[k2+2];
     const t3=base+st3*sdl,midi3=def.root+d2s(dg3)+tr;
     const lane3=((dg3%4)+4)%4,dur3=ln3>=4?ln3*sdl:0;
     if(cmOpp){
