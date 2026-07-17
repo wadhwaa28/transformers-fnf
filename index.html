@@ -207,6 +207,250 @@ const SONGS=[
      ["C","c","bhk"],["C","C","bhk"],
      ["C","d","bhk"],
      ["Z","d","bhk"],["Z","d","bhk"]]
+},
+{// SIDE B — an impostor-style mirror duel: YOU are Optimus; the dark clone answers
+ title:"SHATTERED GLASS", opp:"nemesis", oppName:"NEMESIS PRIME", bpm:168, root:50, intro:4, outro:2,
+ speed:1.18, stars:5, stage:8, page:2, plrBot:"optimus", plrVox:"opp", oppVox:"nem", cadence:true,
+ flavor:"Every spark casts a shadow.",
+ kick:[0,3,8,11], introStyle:"mirror", bassPat:[0,12,0,10,0,12,7,10], cmVary:true,
+ phrases:{
+  A:{ch:[0,5],ch2:[3,5],mel:[0,0,1, 2,0,1, 3,3,1, 5,2,1, 6,3,1, 8,5,2, 11,4,1, 12,3,1, 14,2,1, 16,0,1, 18,0,1, 19,3,1, 21,5,1, 22,4,1, 24,3,1, 25,2,1, 26,3,1, 28,0,2, 31,4,1],
+     cm:[1,7,1, 4,9,2, 7,10,1, 9,9,1, 12,7,2, 15,9,1, 17,10,1, 20,9,2, 23,7,1, 25,9,1, 28,10,2, 31,9,1]},
+  B:{ch:[3,4],ch2:[5,4],mel:[0,7,1, 1,6,1, 2,5,1, 4,6,2, 6,5,1, 7,4,1, 8,5,1, 10,4,1, 11,3,1, 12,4,2, 14,3,1, 15,2,1, 16,3,1, 18,2,1, 19,1,1, 20,2,2, 22,4,1, 23,5,1, 24,6,1, 26,5,1, 27,4,1, 28,5,2, 30,1,1, 31,2,1],
+     cm:[2,9,1, 5,11,1, 8,9,2, 11,12,1, 13,11,1, 16,9,2, 19,11,1, 21,12,1, 24,11,2, 27,9,1, 29,11,1, 31,12,1]},
+  C:{ch:[5,6],ch2:[0,6],mel:[0,0,1, 1,1,1, 2,2,1, 3,3,1, 4,4,2, 6,3,1, 7,2,1, 8,3,1, 9,4,1, 10,5,1, 12,7,2, 14,5,1, 16,4,1, 17,5,1, 18,6,1, 19,7,1, 20,8,2, 22,7,1, 23,6,1, 24,7,1, 25,6,1, 26,5,1, 27,4,1, 28,3,2, 30,2,1, 31,1,1],
+     cm:[1,9,1, 3,11,1, 4,9,2, 7,12,1, 9,11,1, 12,9,2, 15,11,1, 16,12,2, 19,11,1, 22,9,1, 24,12,2, 27,11,1, 29,9,1, 31,11,1]},
+  D:{ch:[1,6],ch2:[3,6],mel:[0,0,2, 3,0,1, 4,3,1, 6,2,1, 8,0,2, 11,3,1, 12,4,1, 14,3,1, 16,0,1, 17,0,1, 18,2,1, 20,3,1, 21,4,1, 22,5,1, 24,7,2, 27,5,1, 28,4,1, 29,3,1, 30,2,1, 31,1,1],
+     cm:[2,7,1, 4,9,2, 7,7,1, 10,9,1, 12,10,2, 15,9,1, 18,10,1, 20,12,2, 23,10,1, 26,9,1, 28,7,2, 31,9,1]},
+  N:{ch:[5,4],mel:[0,12,2, 2,11,1, 3,10,1, 4,11,1, 6,9,1, 8,10,2, 10,9,1, 11,8,1, 12,9,1, 14,7,1, 16,8,2, 18,7,1, 19,6,1, 20,7,1, 22,5,1, 24,4,1, 25,5,1, 26,6,1, 27,7,1, 28,9,4],
+     cm:[1,4,1, 3,5,1, 5,4,1, 8,5,2, 11,4,1, 13,5,1, 16,4,2, 19,5,1, 21,7,1, 24,5,2, 27,4,1, 29,5,2]},
+  Z:{ch:[5,0],mel:[0,7,1, 1,6,1, 2,5,1, 3,4,1, 4,5,2, 6,4,1, 7,3,1, 8,4,1, 10,2,1, 12,0,1, 14,1,1, 15,2,1, 16,0,8]}
+ },
+ st:[["A","o"],["A","p"],
+     ["B","o"],["B","p"],
+     ["A","c","s"],["A","C","s"],
+     ["B","c","s"],["B","C","s"],
+     ["C","o","b"],["C","p","b"],
+     ["D","c","b"],["D","C","b"],
+     ["A","c","bh"],["A","C","bh"],
+     ["C","c","b"],["C","C","b"],
+     ["B","c","b"],["B","C","b"],
+     ["D","o","b"],["D","p","b"],
+     ["A","c","bh"],["A","C","bh"],
+     ["D","c","bh"],["D","C","bh"],
+     ["D","c","s"],["D","C","s"],
+     ["C","c","bh"],["C","C","bh"],
+     ["B","o","q"],["B","p","q"],
+     ["N","o","s"],["N","p","s"],["N","c","bh"],
+     ["C","c","bt"],["C","C","bt"],
+     ["A","c","bt"],["A","C","bt"],
+     ["D","c","bhk"],["D","C","bhk"],
+     ["B","c","bhk"],["B","C","bhk"],
+     ["C","c","bhk"],["C","C","bhk"],
+     ["A","c","bhk"],["A","C","bhk"],
+     ["D","d","bhk"],["Z","d","bhk"]]
+},
+{// SIDE C — the emotional closer: somber open, desperate climb, cathartic resolve
+ title:"FINALE", opp:"galvatron", oppName:"MEGATRON", revealName:"GALVATRON", bpm:148, root:52, intro:8, outro:3,
+ speed:1.2, stars:5, stage:9, page:3, cadence:true, cmVary:true, cinema:true, pwrAt:25,
+ morphAt:4, preStage:7, preOpp:"megatron", oppVox:"gal", pwrVox:"uni",
+ flavor:"All things end. Even songs.",
+ kick:[0,6,8,12], introStyle:"elegy", bassPat:[0,7,0,10,0,7,12,7],
+ phrases:{
+  A:{ch:[0,5],ch2:[3,5],mel:[0,7,2, 3,5,1, 4,4,2, 6,5,1, 7,3,1, 8,4,2, 11,2,1, 12,3,2, 14,4,1, 15,1,1, 16,2,2, 19,0,1, 20,1,1, 22,2,1, 23,3,1, 24,4,2, 26,5,1, 27,3,1, 28,2,2, 30,3,1, 31,1,1],
+     cm:[2,9,1, 5,11,1, 8,9,2, 11,12,1, 14,11,1, 16,12,2, 19,11,1, 21,9,1, 24,11,2, 27,12,1, 29,11,1, 31,9,1]},
+  B:{ch:[3,6],ch2:[5,6],mel:[0,0,1, 2,1,1, 3,2,1, 4,3,2, 6,4,1, 8,5,2, 10,4,1, 11,5,1, 12,7,2, 15,5,1, 16,4,1, 18,5,1, 19,6,1, 20,7,2, 22,8,1, 24,9,2, 26,8,1, 27,7,1, 28,9,2, 31,7,1],
+     cm:[1,12,1, 4,11,2, 7,12,1, 9,14,1, 12,12,2, 15,11,1, 17,12,1, 20,14,2, 23,12,1, 25,11,1, 28,12,2, 31,14,1]},
+  C:{ch:[5,4],ch2:[1,4],mel:[0,7,1, 1,8,1, 2,9,1, 3,8,1, 4,7,2, 6,5,1, 7,4,1, 8,5,1, 9,7,1, 10,8,1, 11,9,1, 12,10,2, 14,9,1, 15,8,1, 16,7,1, 17,8,1, 18,9,1, 19,10,1, 20,11,2, 22,10,1, 23,9,1, 24,10,1, 25,9,1, 26,8,1, 27,7,1, 28,5,2, 30,4,1, 31,3,1],
+     cm:[1,12,1, 3,14,1, 5,12,1, 8,14,2, 11,12,1, 13,14,1, 16,12,2, 19,14,1, 21,12,1, 24,14,2, 27,12,1, 29,14,1, 31,12,1]},
+  D:{ch:[1,4],ch2:[3,4],mel:[0,0,1, 1,0,1, 2,3,1, 3,3,1, 4,2,1, 6,0,1, 7,2,1, 8,3,1, 9,3,1, 11,5,1, 12,4,1, 13,3,1, 14,2,1, 16,0,1, 17,0,1, 18,2,1, 19,3,1, 20,4,1, 22,5,1, 23,6,1, 24,7,2, 26,5,1, 27,4,1, 28,4,1, 29,3,1, 30,2,1, 31,1,1],
+     cm:[2,9,1, 4,10,2, 7,9,1, 10,12,1, 12,10,2, 15,9,1, 18,10,1, 20,12,2, 23,10,1, 25,9,1, 28,10,2, 31,12,1]},
+  N:{ch:[5,4],mel:[0,9,2, 2,10,1, 3,11,1, 4,12,4, 8,11,2, 11,10,1, 12,11,2, 15,9,1, 16,10,4, 20,9,1, 21,8,1, 22,9,1, 24,7,2, 26,8,1, 27,9,1, 28,11,4],
+     cm:[1,4,1, 3,5,1, 6,7,1, 8,5,2, 11,4,1, 13,5,1, 16,7,2, 19,5,1, 22,4,1, 24,5,2, 27,7,1, 29,5,2]},
+  Z:{ch:[5,0],mel:[0,9,1, 1,8,1, 2,7,1, 4,8,2, 6,7,1, 7,5,1, 8,7,2, 10,5,1, 12,4,1, 13,3,1, 14,2,1, 15,1,1, 16,0,12]}
+ },
+ st:[["A","o","q"],["A","p","q"],["B","o","q"],["B","p","q"],
+     ["A","c","s"],["A","C","s"],["B","c","s"],["B","C","s"],["D","o","s"],["D","p","s"],
+     ["C","c","b"],["C","C","b"],["D","c","b"],["D","C","b"],["D","o","b"],["D","p","b"],
+     ["A","c","bh"],["A","C","bh"],["A","c","b"],["A","C","b"],["C","c","bh"],["C","C","bh"],
+     ["B","o","q"],["N","p","s"],["N","o","sh"],
+     ["C","c","bt"],["C","C","bt"],["D","c","bt"],["D","C","bt"],
+     ["A","c","bt"],["A","C","bt"],
+     ["A","c","bhk"],["A","C","bhk"],["B","c","bhk"],["B","C","bhk"],
+     ["C","c","bhk"],["C","C","bhk"],["D","c","bhk"],["D","C","bhk"],
+     ["C","c","bhk"],["C","C","bhk"],["B","c","bhk"],["B","C","bhk"],
+     ["N","d","bhk"],["Z","d","bhk"]]
+},
+{// SIDE B, track 2 — the machine wears your face. YOU lead; it echoes.
+ title:"COPYCAT", opp:"robobf", oppName:"ROBO-BF", bpm:135, root:60, intro:4, outro:2,
+ speed:1.12, stars:4, stage:10, page:2, plrChar:"bf", plrVox:"bf", oppVox:"bot", gf:true,
+ cadence:true, cmVary:true,
+ flavor:"It learned your songs. It learned your face.",
+ kick:[0,5,8,13], introStyle:"boot", bassPat:[0,12,10,12,0,10,7,12],
+ phrases:{
+  A:{ch:[0,3],ch2:[5,3],mel:[0,7,1, 1,7,1, 2,9,1, 4,7,1, 5,5,1, 6,7,2, 8,9,1, 9,10,1, 10,9,1, 12,7,1, 13,5,1, 14,4,2, 16,5,1, 17,7,1, 18,5,1, 19,4,1, 20,2,2, 22,4,1, 24,5,1, 25,7,1, 26,9,1, 28,7,2, 31,5,1],
+     cm:[1,12,1, 3,11,1, 5,12,2, 8,14,1, 10,12,1, 12,11,2, 15,12,1, 17,14,1, 20,12,2, 23,11,1, 26,12,1, 29,11,2]},
+  B:{ch:[3,4],ch2:[1,4],mel:[0,4,1, 2,5,1, 3,7,1, 4,5,1, 6,7,1, 7,9,1, 8,7,2, 10,9,1, 11,10,1, 12,9,1, 14,10,1, 15,12,1, 16,10,2, 18,9,1, 19,7,1, 20,9,2, 22,10,1, 24,12,1, 25,10,1, 26,9,1, 27,7,1, 28,9,2, 31,7,1],
+     cm:[2,14,1, 4,12,2, 7,14,1, 9,12,1, 12,14,2, 15,12,1, 18,14,1, 20,16,2, 23,14,1, 25,12,1, 28,14,2, 31,12,1]},
+  C:{ch:[5,4],ch2:[0,4],mel:[0,4,1, 1,5,1, 2,7,1, 3,9,1, 4,10,2, 6,9,1, 7,7,1, 8,9,1, 9,10,1, 10,12,1, 12,10,2, 14,9,1, 15,7,1, 16,9,1, 17,10,1, 18,12,1, 19,10,1, 20,9,2, 22,7,1, 23,5,1, 24,7,1, 25,9,1, 26,7,1, 27,5,1, 28,4,2, 30,5,1, 31,7,1],
+     cm:[1,12,1, 3,14,1, 5,12,2, 8,14,1, 11,16,1, 13,14,1, 16,12,2, 19,14,1, 21,12,1, 24,14,2, 27,12,1, 30,14,1]},
+  D:{ch:[1,5],ch2:[3,5],mel:[0,0,1, 2,2,1, 3,4,1, 4,2,1, 6,0,1, 7,2,1, 8,4,2, 10,5,1, 12,4,1, 13,2,1, 14,4,1, 16,0,1, 18,2,1, 19,4,1, 20,5,1, 22,7,1, 23,5,1, 24,4,1, 25,5,1, 26,7,2, 28,5,1, 29,4,1, 30,2,1, 31,0,1],
+     cm:[2,9,1, 4,11,2, 7,9,1, 10,12,1, 12,11,2, 15,9,1, 18,11,1, 20,12,2, 23,11,1, 26,9,1, 28,12,2, 31,11,1]},
+  N:{ch:[5,3],mel:[0,12,2, 2,11,1, 3,12,1, 4,14,2, 6,12,1, 7,11,1, 8,12,2, 10,10,1, 12,9,2, 14,10,1, 16,12,1, 17,11,1, 18,9,1, 20,10,2, 22,9,1, 24,7,1, 25,9,1, 26,10,1, 27,12,1, 28,14,4],
+     cm:[1,5,1, 3,7,1, 6,5,1, 8,7,2, 11,5,1, 13,7,1, 16,5,2, 19,7,1, 22,9,1, 24,7,2, 27,5,1, 29,7,2]},
+  Z:{ch:[5,0],mel:[0,10,1, 1,9,1, 2,10,1, 4,7,2, 6,5,1, 7,4,1, 8,5,2, 10,4,1, 12,2,1, 13,4,1, 14,2,1, 15,1,1, 16,0,10]}
+ },
+ st:[["A","p"],["A","o"],
+     ["B","p"],["B","o"],
+     ["A","c","s"],["A","C","s"],
+     ["C","p","b"],["C","o","b"],
+     ["B","c","b"],["B","C","b"],
+     ["D","c","bh"],["D","C","bh"],
+     ["A","c","b"],["A","C","b"],
+     ["C","c","bh"],["C","C","bh"],
+     ["B","c","bh"],["B","C","bh"],
+     ["D","o","q"],["D","p","q"],
+     ["N","o","s"],["N","p","s"],
+     ["C","c","bt"],["C","C","bt"],
+     ["A","c","bt"],["A","C","bt"],
+     ["B","c","bhk"],["B","C","bhk"],
+     ["D","c","bhk"],["D","C","bhk"],
+     ["A","c","bhk"],["A","C","bhk"],
+     ["C","c","bhk"],["C","C","bhk"],
+     ["D","d","bhk"],["Z","d","bhk"]]
+},
+{// SIDE B, track 3 — the relay war: every bot answers the call, four slots each
+ title:"ROLL CALL", opp:"decepticons", oppName:"THE DECEPTICONS", bpm:126, root:55, intro:4, outro:2,
+ speed:1.1, stars:4, stage:11, page:2, cadence:true, cmVary:true, plrVox:"opp",
+ oppSwap:["shockwave","megatron","soundwave","nemesis","galvatron","unitron"],
+ plrSwap:["hotrod","optimus","bumblebee","ironhide","ratchet","jazz"],
+ flavor:"Every bot answers the call.",
+ kick:[0,6,8,12], introStyle:"duel", bassPat:[0,7,12,7,0,7,10,7],
+ phrases:{
+  A:{ch:[0,5],ch2:[3,5],mel:[0,0,1, 2,4,1, 4,7,2, 6,5,1, 7,4,1, 8,5,1, 10,7,1, 12,9,2, 14,7,1, 16,5,1, 17,4,1, 18,5,1, 20,7,1, 22,9,1, 24,10,2, 26,9,1, 27,7,1, 28,5,2, 30,4,1, 31,2,1],
+     cm:[1,9,1, 3,11,1, 5,9,2, 8,12,1, 10,11,1, 12,12,2, 15,11,1, 18,12,1, 20,14,2, 23,12,1, 26,11,1, 29,12,2]},
+  B:{ch:[3,4],ch2:[5,4],mel:[0,7,1, 1,9,1, 2,10,1, 4,9,1, 5,7,1, 6,9,2, 8,10,1, 10,12,1, 11,10,1, 12,9,1, 14,7,1, 15,5,1, 16,7,2, 18,9,1, 20,10,1, 21,12,1, 22,10,1, 24,9,2, 26,7,1, 28,9,2, 30,10,1, 31,12,1],
+     cm:[2,12,1, 4,14,2, 7,12,1, 9,14,1, 12,16,2, 15,14,1, 18,12,1, 20,14,2, 23,16,1, 25,14,1, 28,12,2, 31,14,1]},
+  C:{ch:[5,4],ch2:[1,4],mel:[0,4,1, 1,5,1, 2,7,1, 3,9,1, 4,7,2, 6,5,1, 7,4,1, 8,5,1, 9,7,1, 10,9,1, 11,10,1, 12,9,2, 14,7,1, 15,5,1, 16,7,1, 17,9,1, 18,10,1, 19,12,1, 20,10,2, 22,9,1, 23,7,1, 24,9,1, 25,10,1, 26,9,1, 27,7,1, 28,5,2, 30,4,1, 31,5,1],
+     cm:[1,12,1, 3,14,1, 6,12,1, 8,14,2, 11,12,1, 13,14,1, 16,12,2, 19,14,1, 22,12,1, 24,14,2, 27,12,1, 30,14,1]},
+  D:{ch:[1,6],ch2:[3,6],mel:[0,0,1, 1,0,1, 3,3,1, 4,4,1, 6,3,1, 8,0,1, 9,0,1, 11,4,1, 12,5,1, 14,4,1, 16,0,1, 17,2,1, 18,3,1, 20,4,1, 21,5,1, 22,7,1, 24,9,2, 26,7,1, 27,5,1, 28,4,1, 29,3,1, 30,2,1, 31,1,1],
+     cm:[2,9,1, 4,10,2, 7,9,1, 10,12,1, 12,10,2, 15,9,1, 18,10,1, 21,12,1, 24,10,2, 27,9,1, 29,10,1, 31,12,1]},
+  N:{ch:[5,3],mel:[0,9,2, 2,10,1, 3,12,1, 4,10,1, 6,9,1, 8,10,2, 10,12,1, 12,14,2, 14,12,1, 16,10,1, 17,9,1, 18,10,1, 20,12,2, 22,10,1, 24,9,1, 25,10,1, 26,12,1, 28,14,4],
+     cm:[1,5,1, 4,7,2, 7,5,1, 9,7,1, 12,5,2, 15,7,1, 18,9,1, 20,7,2, 23,5,1, 25,7,1, 28,9,2, 31,7,1]},
+  Z:{ch:[5,0],mel:[0,9,1, 1,7,1, 2,9,1, 4,10,2, 6,9,1, 7,7,1, 8,5,2, 10,4,1, 12,5,1, 13,4,1, 14,2,1, 15,1,1, 16,0,10]}
+ },
+ st:[["A","o","s"],["A","p","s"],["B","c","s"],["B","C","s"],
+     ["C","o","s"],["C","p","b"],["A","c","b"],["A","C","b"],
+     ["D","o","b"],["D","p","b"],["C","c","bh"],["C","C","bh"],
+     ["B","o","q"],["N","p","s"],["N","c","bh"],["N","C","bh"],
+     ["C","c","bt"],["C","C","bt"],["D","c","bt"],["D","C","bt"],
+     ["A","c","bhk"],["A","C","bhk"],["B","c","bhk"],["B","C","bhk"],
+     ["D","c","bhk"],["D","C","bhk"],["C","c","bhk"],["C","C","bhk"],
+     ["B","c","bhk"],["B","C","bhk"],["D","d","bhk"],["Z","d","bhk"]]
+},
+{// SIDE B — Bumblebee: small, quick, all sting and cheek
+ title:"YELLOW JACKET", opp:"bumblebee", oppName:"BUMBLEBEE", bpm:144, root:64, intro:4, outro:2,
+ speed:1.0, stars:2, stage:12, page:2, cadence:true,
+ flavor:"Small bot. Big buzz.",
+ kick:[0,6,8,14], introStyle:"sting", bassPat:[0,12,7,12,0,12,10,12],
+ phrases:{
+  A:{ch:[0,3],ch2:[5,3],mel:[0,7,1, 2,9,1, 4,7,1, 6,9,1, 7,10,1, 8,9,1, 10,7,1, 12,9,2, 14,10,1, 16,12,1, 18,10,1, 20,9,1, 22,10,1, 24,9,1, 26,7,1, 28,9,2, 31,7,1],
+     cm:[1,12,1, 5,14,1, 9,12,2, 13,14,1, 17,12,1, 21,14,2, 25,12,1, 29,14,1, 31,12,1, 3,11,1, 11,11,1, 19,11,1]},
+  B:{ch:[3,4],ch2:[1,4],mel:[0,4,1, 2,5,1, 4,7,2, 6,5,1, 8,7,1, 10,9,1, 12,7,2, 14,5,1, 16,7,1, 18,9,1, 20,10,2, 22,9,1, 24,7,1, 26,9,1, 28,10,2, 31,9,1],
+     cm:[1,12,1, 4,11,2, 8,12,1, 12,14,2, 16,12,1, 20,14,1, 24,12,2, 28,11,1, 30,12,1, 6,14,1, 14,11,1, 22,12,1]},
+  C:{ch:[5,4],ch2:[0,4],mel:[0,9,1, 1,10,1, 2,12,1, 4,10,1, 6,9,1, 8,10,1, 9,12,1, 10,10,1, 12,9,2, 14,7,1, 16,9,1, 17,10,1, 18,12,1, 20,10,2, 22,9,1, 24,10,1, 26,12,1, 28,10,2, 31,9,1],
+     cm:[2,14,1, 6,16,1, 10,14,2, 14,16,1, 18,14,1, 22,16,2, 26,14,1, 30,16,1, 4,12,1, 12,12,1, 20,12,1, 28,12,1]},
+  D:{ch:[1,5],ch2:[3,5],mel:[0,0,1, 2,2,1, 4,4,2, 6,2,1, 8,0,1, 10,4,1, 12,5,2, 14,4,1, 16,2,1, 18,4,1, 20,5,1, 22,7,2, 24,5,1, 26,4,1, 28,2,2, 31,0,1],
+     cm:[1,9,1, 5,11,1, 9,9,2, 13,11,1, 17,9,1, 21,11,2, 25,9,1, 29,11,1, 31,9,1, 3,12,1, 11,12,1, 19,12,1]},
+  N:{ch:[5,3],mel:[0,12,2, 2,14,1, 4,12,1, 6,10,1, 8,12,2, 10,10,1, 12,9,2, 14,10,1, 16,12,1, 18,10,1, 20,9,2, 22,7,1, 24,9,1, 26,10,1, 28,12,4],
+     cm:[1,5,1, 5,7,1, 9,5,2, 13,7,1, 17,5,1, 21,7,2, 25,5,1, 29,7,1, 31,5,1, 3,9,1, 11,9,1, 19,9,1]},
+  Z:{ch:[5,0],mel:[0,10,1, 2,9,1, 4,10,2, 6,9,1, 8,7,2, 10,5,1, 12,4,1, 14,2,1, 15,1,1, 16,0,8]}
+ },
+ st:[["A","o"],["A","p"],["B","o"],["B","p"],
+     ["A","c","s"],["A","C","s"],["C","o","b"],["C","p","b"],
+     ["B","c","b"],["B","C","b"],["D","o","q"],["N","p","s"],
+     ["C","c","bh"],["C","C","bh"],["A","c","b"],["A","C","b"],
+     ["D","c","bh"],["D","C","bh"],["N","o","s"],["N","p","b"],
+     ["C","c","bh"],["C","C","bh"],["B","c","bh"],["B","C","bh"],
+     ["D","d","bh"],["Z","d","bh"]]
+},
+{// SIDE B — Ironhide: old iron, low gears, both cannons talking
+ title:"OLD IRON", opp:"ironhide", oppName:"IRONHIDE", bpm:116, root:45, intro:4, outro:2,
+ speed:1.02, stars:3, stage:13, page:2, cadence:true, cmVary:true,
+ flavor:"The old ways still hit hardest.",
+ kick:[0,4,8,12], introStyle:"anvil", bassPat:[0,0,7,0,0,0,5,7],
+ phrases:{
+  A:{ch:[0,5],ch2:[3,5],mel:[0,0,2, 3,3,1, 4,4,2, 7,3,1, 8,0,2, 11,3,1, 12,4,1, 14,5,1, 16,4,2, 19,3,1, 20,4,1, 22,5,1, 24,7,2, 27,5,1, 28,4,2, 31,3,1],
+     cm:[2,9,1, 4,10,2, 8,9,1, 10,12,1, 12,10,2, 16,9,2, 20,10,1, 22,12,1, 24,10,2, 28,9,1, 30,10,1, 6,12,1]},
+  B:{ch:[3,4],ch2:[5,4],mel:[0,4,1, 2,5,1, 4,7,2, 7,5,1, 8,7,1, 10,9,1, 12,7,2, 15,5,1, 16,7,1, 18,9,1, 20,10,2, 23,9,1, 24,7,2, 27,9,1, 28,10,2, 31,9,1],
+     cm:[1,12,1, 4,11,2, 8,12,1, 11,14,1, 12,12,2, 16,11,2, 20,12,1, 23,14,1, 24,12,2, 28,11,1, 30,12,1, 6,14,1]},
+  C:{ch:[5,6],ch2:[1,6],mel:[0,7,1, 1,9,1, 2,10,1, 4,9,2, 6,7,1, 8,9,1, 9,10,1, 10,12,1, 12,10,2, 14,9,1, 16,10,1, 17,12,1, 18,10,1, 20,9,2, 22,7,1, 24,9,1, 25,10,1, 26,9,1, 28,7,2, 31,5,1],
+     cm:[2,14,1, 5,12,1, 8,14,2, 12,12,1, 14,14,1, 16,12,2, 20,14,1, 22,12,1, 24,14,2, 28,12,1, 30,14,1, 10,16,1]},
+  D:{ch:[1,6],ch2:[3,6],mel:[0,0,1, 1,0,1, 3,3,1, 4,4,2, 7,3,1, 8,0,1, 10,3,1, 12,4,2, 14,5,1, 16,4,1, 18,3,1, 20,4,1, 22,5,1, 24,7,2, 26,5,1, 28,4,1, 29,3,1, 30,2,1, 31,0,1],
+     cm:[2,9,1, 4,10,2, 8,12,1, 10,9,1, 12,10,2, 16,9,1, 18,10,1, 20,12,2, 24,10,1, 26,9,1, 28,10,2, 6,12,1]},
+  N:{ch:[5,4],mel:[0,7,2, 2,9,1, 4,10,2, 6,9,1, 8,7,2, 10,9,1, 12,10,2, 14,12,1, 16,10,2, 18,9,1, 20,10,1, 22,12,1, 24,10,2, 26,9,1, 28,7,4],
+     cm:[1,12,1, 4,14,2, 8,12,1, 12,14,1, 16,12,2, 20,14,1, 24,12,2, 28,14,1, 30,12,1, 6,16,1, 14,16,1, 22,16,1]},
+  Z:{ch:[5,0],mel:[0,7,1, 2,5,1, 4,7,2, 6,5,1, 8,4,2, 10,3,1, 12,2,1, 14,1,1, 15,2,1, 16,0,8]}
+ },
+ st:[["A","o","s"],["A","p","s"],["A","c","s"],["A","C","s"],
+     ["B","o","b"],["B","p","b"],["D","c","b"],["D","C","b"],
+     ["C","o","b"],["C","p","b"],["A","c","bh"],["A","C","bh"],
+     ["D","o","q"],["N","p","s"],["N","c","bh"],["N","C","bh"],
+     ["B","c","bh"],["B","C","bh"],["C","c","bh"],["C","C","bh"],
+     ["D","c","bh"],["D","C","bh"],["A","c","bh"],["A","C","bh"],
+     ["D","d","bh"],["Z","d","bh"]]
+},
+{// SIDE B — Ratchet: precision work, steady hands, sirens on
+ title:"FIELD MEDIC", opp:"ratchet", oppName:"RATCHET", bpm:132, root:57, intro:4, outro:2,
+ speed:1.06, stars:3, stage:14, page:2, cadence:true, cmVary:true,
+ flavor:"Hold still. This won't hurt. Much.",
+ kick:[0,5,8,13], introStyle:"siren", bassPat:[0,7,10,7,0,7,12,10],
+ phrases:{
+  A:{ch:[0,3],ch2:[5,3],mel:[0,0,1, 2,2,1, 4,4,1, 6,5,1, 8,7,2, 10,5,1, 12,4,1, 14,2,1, 16,4,1, 18,5,1, 20,7,1, 22,9,1, 24,7,2, 26,5,1, 28,4,2, 30,2,1, 31,0,1],
+     cm:[1,9,1, 3,11,1, 5,9,2, 9,12,1, 12,11,2, 16,9,1, 18,11,1, 21,12,1, 24,11,2, 28,9,1, 30,11,1, 14,12,1]},
+  B:{ch:[3,6],ch2:[1,6],mel:[0,4,1, 1,5,1, 2,7,1, 4,5,2, 6,7,1, 8,9,1, 10,7,1, 12,9,2, 14,10,1, 16,9,1, 17,7,1, 18,9,1, 20,10,2, 22,12,1, 24,10,1, 26,9,1, 28,7,2, 31,5,1],
+     cm:[2,12,1, 5,14,1, 8,12,2, 12,14,1, 14,12,1, 16,14,2, 20,12,1, 22,14,1, 24,12,2, 28,14,1, 30,12,1, 10,16,1]},
+  C:{ch:[5,4],ch2:[0,4],mel:[0,7,1, 1,9,1, 2,7,1, 3,9,1, 4,10,2, 6,9,1, 8,10,1, 9,12,1, 10,10,1, 12,9,2, 14,7,1, 16,9,1, 17,10,1, 18,9,1, 20,7,2, 22,5,1, 24,7,1, 25,9,1, 26,7,1, 28,5,2, 30,4,1, 31,2,1],
+     cm:[1,12,1, 4,14,2, 7,12,1, 10,14,1, 12,12,2, 16,14,1, 19,12,1, 22,14,1, 24,12,2, 28,14,1, 30,12,1, 8,16,1]},
+  D:{ch:[1,5],ch2:[3,5],mel:[0,0,2, 2,2,1, 4,3,1, 6,4,1, 8,5,2, 10,4,1, 12,3,1, 14,2,1, 16,3,1, 18,4,1, 20,5,1, 22,7,1, 24,5,2, 26,4,1, 28,3,1, 29,2,1, 30,1,1, 31,0,1],
+     cm:[2,9,1, 4,11,2, 8,9,1, 11,12,1, 12,11,2, 16,9,1, 18,11,1, 20,12,2, 24,11,1, 26,9,1, 28,11,2, 6,12,1]},
+  N:{ch:[5,3],mel:[0,9,2, 2,10,1, 4,12,2, 6,10,1, 8,9,2, 10,10,1, 12,12,2, 14,10,1, 16,9,1, 17,10,1, 18,12,1, 20,10,2, 22,9,1, 24,10,1, 26,12,1, 28,10,4],
+     cm:[1,5,1, 4,7,2, 8,5,1, 12,7,1, 16,5,2, 20,7,1, 24,5,2, 28,7,1, 30,5,1, 6,9,1, 14,9,1, 22,9,1]},
+  Z:{ch:[5,0],mel:[0,9,1, 2,7,1, 4,9,2, 6,7,1, 8,5,2, 10,4,1, 12,2,1, 13,4,1, 14,2,1, 15,1,1, 16,0,8]}
+ },
+ st:[["A","o"],["A","p"],["B","o"],["B","p"],
+     ["C","c","s"],["C","C","s"],["A","c","b"],["A","C","b"],
+     ["D","o","b"],["D","p","b"],["B","c","bh"],["B","C","bh"],
+     ["A","o","q"],["N","p","s"],["N","c","bh"],["N","C","bh"],
+     ["C","c","b"],["C","C","b"],["D","c","bh"],["D","C","bh"],
+     ["B","c","bh"],["B","C","bh"],["C","c","bh"],["C","C","bh"],
+     ["D","d","bh"],["Z","d","bh"]]
+},
+{// SIDE B — Jazz: cool under fire, speakers out, all pocket
+ title:"SMOOTH TALKER", opp:"jazz", oppName:"JAZZ", bpm:122, root:52, intro:4, outro:2,
+ speed:1.08, stars:4, stage:15, page:2, cadence:true, cmVary:true,
+ flavor:"Do it with style or don't bother.",
+ kick:[0,3,8,11], introStyle:"groove", bassPat:[0,10,0,12,7,0,10,12],
+ phrases:{
+  A:{ch:[0,5],ch2:[3,5],mel:[0,0,1, 3,3,1, 4,4,1, 6,7,1, 8,5,2, 11,4,1, 12,5,1, 14,7,1, 16,9,2, 19,7,1, 20,5,1, 22,7,1, 24,9,1, 25,10,1, 26,9,1, 28,7,2, 30,5,1, 31,4,1],
+     cm:[1,9,1, 4,11,2, 7,9,1, 10,12,1, 12,11,2, 15,12,1, 16,11,1, 19,9,1, 22,11,1, 24,12,2, 28,11,1, 30,9,1]},
+  B:{ch:[3,4],ch2:[5,4],mel:[0,7,1, 2,9,1, 3,10,1, 5,9,1, 6,7,1, 8,9,2, 11,10,1, 12,12,1, 14,10,1, 16,9,1, 18,7,1, 19,9,1, 21,10,1, 22,9,1, 24,7,2, 27,5,1, 28,7,2, 31,9,1],
+     cm:[1,12,1, 4,14,2, 8,12,1, 11,14,1, 13,12,1, 16,14,2, 20,12,1, 23,14,1, 24,12,2, 28,14,1, 30,12,1, 6,16,1]},
+  C:{ch:[5,4],ch2:[1,4],mel:[0,4,1, 1,5,1, 3,7,1, 4,9,1, 6,10,1, 8,9,2, 10,7,1, 11,9,1, 12,10,1, 14,12,1, 16,10,2, 18,9,1, 19,7,1, 21,9,1, 22,10,1, 24,9,1, 25,7,1, 27,5,1, 28,7,2, 31,5,1],
+     cm:[2,12,1, 5,14,1, 8,12,2, 11,16,1, 14,14,1, 16,12,2, 20,14,1, 22,12,1, 24,14,2, 28,12,1, 30,14,1, 12,16,1]},
+  D:{ch:[1,6],ch2:[3,6],mel:[0,0,1, 2,0,1, 3,3,1, 5,4,1, 6,3,1, 8,4,2, 11,5,1, 12,4,1, 14,3,1, 16,4,1, 18,5,1, 19,7,1, 21,5,1, 22,4,1, 24,5,2, 26,7,1, 28,5,1, 29,4,1, 30,3,1, 31,2,1],
+     cm:[1,9,1, 4,10,2, 7,12,1, 10,9,1, 12,10,2, 15,12,1, 18,10,1, 21,9,1, 24,10,2, 27,12,1, 29,10,1, 31,9,1]},
+  N:{ch:[5,3],mel:[0,12,1, 2,10,1, 3,12,1, 4,14,2, 7,12,1, 8,10,2, 11,9,1, 12,10,1, 14,12,1, 16,10,1, 17,9,1, 19,10,1, 20,12,2, 22,10,1, 24,9,1, 26,10,1, 27,12,1, 28,14,4],
+     cm:[1,5,1, 4,7,2, 8,5,1, 11,7,1, 13,5,1, 16,7,2, 20,5,1, 23,7,1, 24,9,2, 28,7,1, 30,5,1, 6,9,1]},
+  Z:{ch:[5,0],mel:[0,10,1, 2,9,1, 3,10,1, 5,7,1, 6,5,1, 8,7,2, 10,5,1, 12,4,1, 13,2,1, 14,4,1, 15,1,1, 16,0,8]}
+ },
+ st:[["A","o"],["A","p"],["B","o"],["B","p"],
+     ["A","c","s"],["A","C","s"],["C","c","b"],["C","C","b"],
+     ["D","o","b"],["D","p","b"],["B","c","b"],["B","C","b"],
+     ["C","o","q"],["N","p","s"],["N","c","bh"],["N","C","bh"],
+     ["A","c","bh"],["A","C","bh"],["D","c","bh"],["D","C","bh"],
+     ["C","c","bh"],["C","C","bh"],["B","c","bh"],["B","C","bh"],
+     ["A","c","bh"],["A","C","bh"],["D","d","bh"],["Z","d","bh"]]
 }
 ];
 
@@ -402,7 +646,7 @@ function buildSong(def){
   barInfo.push({cd:ch[1],opts,tr,spd});
  });
  const lastTr=barInfo.length?barInfo[barInfo.length-1].tr:0;
- for(let ob=0;ob<def.outro;ob++)barInfo.push({cd:ph0.ch[ob%2],opts:"",tr:lastTr,spd:1});
+ for(let ob=0;ob<def.outro;ob++)barInfo.push({cd:def.cadence?0:ph0.ch[ob%2],opts:"",tr:lastTr,spd:1});
  // cumulative bar start times — double-speed ("t") bars are half length
  const barStart=[];let accT=0;
  for(const bi of barInfo){bi.spd=bi.spd||1;barStart.push(accT);accT+=16*sd*bi.spd;}
@@ -450,6 +694,63 @@ function buildSong(def){
     audio.push({t:bt,f:"pluck",m:def.root+12+d2s(cd),d:sd*3});
     if(ib>=2)for(const k of def.kick)audio.push({t:bt+k*sd,f:"kick"});
     if(last)for(let s=8;s<16;s++)audio.push({t:bt+s*sd,f:"snare"});
+   }else if(def.introStyle==="sting"){ // a buzz circling closer
+    audio.push({t:bt,f:"bass",m:br,d:16*sd*0.95});
+    for(let j=0;j<8;j++)audio.push({t:bt+j*2*sd,f:"cm",m:def.root+12+((ib+j)%2?1:0)+d2s(cd),d:sd*1.6});
+    if(ib>=1)for(let s=0;s<16;s+=4)audio.push({t:bt+s*sd,f:"hat"});
+    if(ib>=2)for(const k of def.kick)audio.push({t:bt+k*sd,f:"kick"});
+    if(last)for(let s=8;s<16;s+=2)audio.push({t:bt+s*sd,f:"snare"});
+   }else if(def.introStyle==="anvil"){ // hammer on metal, sparks between
+    audio.push({t:bt,f:"bass",m:br-12,d:16*sd*0.98});
+    for(const s2 of [0,6,8,14])audio.push({t:bt+s2*sd,f:"snare"});
+    if(ib>=1)for(const s2 of [0,8])audio.push({t:bt+s2*sd,f:"kick"});
+    if(ib>=2)for(const s2 of [3,11])audio.push({t:bt+s2*sd,f:"pluck",m:def.root+d2s(cd),d:sd*2});
+    if(last)for(let s=12;s<16;s++)audio.push({t:bt+s*sd,f:"snare"});
+   }else if(def.introStyle==="siren"){ // the two-note wail, inbound
+    audio.push({t:bt,f:"bass",m:br,d:16*sd*0.95});
+    audio.push({t:bt,f:"cm",m:def.root+12+d2s(cd+4),d:8*sd});
+    audio.push({t:bt+8*sd,f:"cm",m:def.root+12+d2s(cd+2),d:8*sd});
+    if(ib>=2){for(const k of def.kick)audio.push({t:bt+k*sd,f:"kick"});for(let s=2;s<16;s+=4)audio.push({t:bt+s*sd,f:"hat"});}
+    if(last)for(let s=10;s<16;s++)audio.push({t:bt+s*sd,f:"snare"});
+   }else if(def.introStyle==="groove"){ // the pocket arrives before the singer
+    for(let j=0;j<8;j++)audio.push({t:bt+j*2*sd,f:"bass",m:br+def.bassPat[j],d:2*sd*0.9});
+    for(let s=2;s<16;s+=4)audio.push({t:bt+s*sd,f:"hat"});
+    if(ib>=1){audio.push({t:bt+4*sd,f:"snare"});audio.push({t:bt+12*sd,f:"snare"});}
+    if(ib>=2)audio.push({t:bt,f:"pluck",m:def.root+12+d2s(cd+4),d:sd*3});
+    if(last)for(let s=8;s<16;s+=2)audio.push({t:bt+s*sd,f:"snare"});
+   }else if(def.introStyle==="duel"){ // two factions tune up — fanfare vs growl
+    audio.push({t:bt,f:"bass",m:br,d:16*sd*0.95});
+    if(ib%2===0){for(let j=0;j<6;j++)audio.push({t:bt+j*sd,f:"pluck",m:def.root+d2s(cd+[0,2,4,7,9,12][j]),d:sd*1.4});}
+    else{for(const s2 of [0,3,6])audio.push({t:bt+s2*sd,f:"bass",m:br-12,d:sd*2.5});
+     audio.push({t:bt+8*sd,f:"cm",m:def.root+12+d2s(cd),d:6*sd});}
+    if(ib>=2){for(const k of def.kick)audio.push({t:bt+k*sd,f:"kick"});audio.push({t:bt+12*sd,f:"snare"});}
+    if(last)for(let s=8;s<16;s+=2)audio.push({t:bt+s*sd,f:"snare"});
+   }else if(def.introStyle==="boot"){ // a machine waking up wearing your face
+    audio.push({t:bt,f:"bass",m:br,d:16*sd*0.95});
+    for(let j=0;j<16;j++){
+     if((j%4)===3)continue;
+     audio.push({t:bt+j*sd,f:"pluck",m:def.root+((ib*3+j)%12)+(j%2?12:0),d:sd*0.5});
+    }
+    if(ib>=2){for(const k of def.kick)audio.push({t:bt+k*sd,f:"kick"});audio.push({t:bt+8*sd,f:"snare"});}
+    if(last)for(let s=10;s<16;s++)audio.push({t:bt+s*sd,f:"snare"});
+   }else if(def.introStyle==="elegy"){ // somber bells over a void — the end begins
+    audio.push({t:bt,f:"bass",m:br,d:16*sd*0.98});
+    const ln2=ib%2?[9,7,5,4]:[5,4,3,2];
+    for(let j=0;j<4;j++){
+     audio.push({t:bt+j*4*sd,f:"cm",m:def.root+12+d2s(cd+ln2[j]),d:4*sd});
+     if(ib>=3)audio.push({t:bt+(j*4+2)*sd,f:"pluck",m:def.root+d2s(cd+ln2[j]),d:2*sd});
+    }
+    if(ib>=5)for(let s=0;s<16;s+=8)audio.push({t:bt+s*sd,f:"kick"});
+    if(last)for(let s=0;s<16;s+=2)audio.push({t:bt+s*sd,f:"snare"});
+   }else if(def.introStyle==="mirror"){ // a sly motif, then its warped reflection
+    audio.push({t:bt,f:"bass",m:br,d:16*sd*0.95});
+    const mot=[0,3,5,3,7,5,3,0];
+    for(let j=0;j<8;j++){
+     audio.push({t:bt+j*2*sd,f:"pluck",m:def.root+d2s(cd+mot[j]),d:sd*1.2});
+     if(ib>=1)audio.push({t:bt+(j*2+1)*sd,f:"cm",m:def.root+11+d2s(cd+mot[j]),d:sd*0.9});
+    }
+    if(ib>=2){for(const k of def.kick)audio.push({t:bt+k*sd,f:"kick"});for(let s=2;s<16;s+=4)audio.push({t:bt+s*sd,f:"hat"});}
+    if(last)for(let s=8;s<16;s++)audio.push({t:bt+s*sd,f:"snare"});
    }else{ // "cine"
     audio.push({t:bt,f:"bass",m:br-12,d:16*sd*0.98});
     if(ib>=4){
@@ -458,6 +759,25 @@ function buildSong(def){
      for(let j=0;j<16;j++)audio.push({t:bt+j*sd,f:"pluck",m:def.root+d2s(cd+ar[j%4])+(j%8>=4?12:0),d:sd*1.5});
     }
     if(last)for(let s=8;s<16;s++)audio.push({t:bt+s*sd,f:"snare"});
+   }
+   continue;
+  }
+  if(def.cadence&&b>=bars-def.outro-1){
+   // RULE (Shattered Glass onward): the instrumental closes WITH the voice.
+   // Final vocal bar = one landing hit under the held note; then an answering
+   // echo of the intro motif resolving to the tonic; then a ringing release.
+   if(b===bars-def.outro-1){ // the landing — drums stop, the held note rings
+    audio.push({t:bt,f:"kick"});audio.push({t:bt,f:"snare"});
+    audio.push({t:bt,f:"bass",m:def.root-24+tr,d:32*sd*0.98});
+    audio.push({t:bt,f:"pad",ms:[def.root-24+tr,def.root-21+tr,def.root-17+tr],d:32*sd});
+   }else if(b===bars-def.outro){ // the answer — mirror motif reversed, resolving home
+    for(let j=0;j<4;j++)audio.push({t:bt+j*2*sd,f:"pluck",m:def.root+12+d2s([7,5,3,0][j])+tr,d:2*sd*1.6});
+    audio.push({t:bt+8*sd,f:"cm",m:def.root+24+tr,d:8*sd});
+    audio.push({t:bt+8*sd,f:"kick"});
+   }else{ // the release — one low tonic, left to ring out
+    audio.push({t:bt,f:"bass",m:def.root-24+tr,d:16*sd*1.5});
+    audio.push({t:bt,f:"cm",m:def.root+12+tr,d:12*sd});
+    audio.push({t:bt,f:"kick"});
    }
    continue;
   }
@@ -476,7 +796,7 @@ function buildSong(def){
    for(const k of def.kick)audio.push({t:bt+k*sdl,f:"kick"});
    audio.push({t:bt+4*sdl,f:"snare"});audio.push({t:bt+12*sdl,f:"snare"});
    for(let s=0;s<16;s+=big?1:2)audio.push({t:bt+s*sdl,f:"hat"});
-   const pat=big?BIGBASS:BASSPAT;
+   const pat=big?BIGBASS:(def.bassPat||BASSPAT);
    for(let j=0;j<8;j++)audio.push({t:bt+j*2*sdl,f:"bass",m:br+pat[j],d:2*sdl*0.9});
    if(def.heavy){ // cinematic weight under the voices: low choir pad, sub drone,
     // orchestral chord stabs (placement alternates per bar), extra march snare
@@ -510,7 +830,7 @@ function buildSong(def){
   if(isC){ // the OTHER side plays/sings the counter-line as their chart
    const s2c=opts.indexOf("2")>=0?2:opts.indexOf("1")>=0?1:3;
    let cmL=ph.cm;
-   if(def.heavy){ // BOSS: rotate counter-subjects across phrases and vary them,
+   if(def.heavy||def.cmVary){ // counterpoint-heavy songs: rotate counter-subjects
     // so no recurrence pairs the same two lines twice
     const pool=[def.phrases.A.cm,def.phrases.B.cm,def.phrases.C.cm,def.phrases.D.cm];
     cmL=pool[(i+("ABCD".indexOf(sl[0])||0)*3)%4]||ph.cm;
@@ -687,9 +1007,18 @@ function buildSong(def){
 const cv=document.getElementById("cv"),ctx=cv.getContext("2d");
 const W=960,H=540,TAU=Math.PI*2;
 let state="menu",selIdx=0,menuT=0;
+let menuPage=0; // 0 = Side A (story), 1 = Side B, 2 = Side C
+const NPAGES=SONGS.reduce((m,s)=>Math.max(m,s.page||1),1);
+function pageList(){const a=[];SONGS.forEach((s,i)=>{if((s.page||1)===menuPage+1)a.push(i);});return a;}
 let ac=null,masterGain=null,noiseBuf=null,songGain=null;
 let song=null,def=null,songStartAbs=0,aidx=0,playing=false;
 let health=0.5,score=0,combo=0,maxCombo=0,sicks=0,goods=0,bads=0,misses=0,accSum=0,accN=0;
+let recentJ=[]; // rolling judgment history for the duel meter
+let dispH=0.5,ghostH=0.5,lastH=0.5,chompT=-9; // FINALE hp-bar juice
+let comboBreaks=0;
+let morphT=-1; // when Megatron is reborn as Galvatron (song seconds)
+let lastSwapO="",lastSwapP="",swapFxT=-9,swapFxTP=-9; // roster-relay bookkeeping
+let pwrTm=-1; // when the final form takes over
 let popups=[],flashes=[[0,0,0,0],[0,0,0,0]];
 let oppPose="idle",oppPoseT=-9,plrPose="idle",plrPoseT=-9,plrMissT=-9;
 let duoPose1="idle",duoPose2="idle",duoPoseT1=-9,duoPoseT2=-9,duoIcon=1;
@@ -721,9 +1050,18 @@ let bindSel=0,bindWait=false;
 let cleared={};
 try{const c=localStorage.getItem("tfg1_clear");if(c)cleared=JSON.parse(c)||{};}catch(e){}
 function saveClear(){try{localStorage.setItem("tfg1_clear",JSON.stringify(cleared));}catch(e){}}
+const SPECMAP={}; // filled after the character specs are defined
+function swapAt(ts){ // who is on stage at song-time ts (roster-relay songs)
+ if(!def||!def.oppSwap||!song)return null;
+ let b=0;while(b+1<song.bars.start.length&&song.bars.start[b+1]<=ts)b++;
+ const si=Math.max(0,Math.floor((b-def.intro)/2));
+ return {opp:def.oppSwap[Math.floor(si/4)%def.oppSwap.length],
+         plr:def.plrSwap[Math.floor((si+2)/4)%def.plrSwap.length]};
+}
 function isLocked(i){
  if(!SONGS[i]||!SONGS[i].locked)return false;
- return !SONGS.every((s,j)=>j===i||cleared[s.title]);
+ const pg=SONGS[i].page||1; // unlock only depends on songs from the same side
+ return !SONGS.every((s,j)=>j===i||(s.page||1)!==pg||cleared[s.title]);
 }
 
 // ---- visual helpers ----
@@ -812,6 +1150,20 @@ function sPad(t,ms,d,dest){
 }
 function sVox(t,m,d,who,gs){
  gs=gs||1;
+ // per-song voice casting — playing AS Optimus uses his existing (finale) voice,
+ // and Nemesis sings the same voice pulled through the dark mirror
+ if(def){
+  if(who==="plr"&&def.plrVox)who=def.plrVox;
+  else if(who==="opp"&&def.oppSwap){
+   const sw2=swapAt(t-songStartAbs+0.01);
+   if(sw2)who=({nemesis:"nem",galvatron:"gal",unitron:"uni"})[sw2.opp]||"opp";
+  }
+  else if(who==="opp"&&def.oppVox){
+   const st5=t-songStartAbs;
+   if(pwrTm>=0&&st5>=pwrTm-0.01)who=def.pwrVox||def.oppVox;
+   else if(morphT<0||st5>=morphT-0.01)who=def.oppVox;
+  }
+ }
  const f=ac.createBiquadFilter();f.type="lowpass";
  const g=ac.createGain();
  f.connect(g);g.connect(songGain);
@@ -826,6 +1178,96 @@ function sVox(t,m,d,who,gs){
    o.detune.value=dt;lg.connect(o.detune);
    o.connect(f);o.start(t);o.stop(t+d+0.08);
   }
+ }else if(who==="nem"){ // corrupted Prime: wider detune, sub-octave growl, darker filter
+  f.frequency.value=1250;env(g,t,0.02,0.13*gs,d,0.06);
+  for(const dt of [-14,14]){
+   const o=ac.createOscillator();o.type="square";
+   o.frequency.setValueAtTime(m2f(m)*1.03,t);
+   o.frequency.exponentialRampToValueAtTime(m2f(m),t+0.07);
+   o.detune.value=dt;lg.connect(o.detune);
+   o.connect(f);o.start(t);o.stop(t+d+0.08);
+  }
+  const g3=ac.createGain();g3.gain.value=0.4;
+  const os=ac.createOscillator();os.type="square";os.frequency.value=m2f(m-12);
+  os.connect(g3);g3.connect(f);os.start(t);os.stop(t+d+0.08);
+ }else if(who==="gal"){ // Galvatron: ring-modulated snarl through a sweeping
+  // formant — inharmonic sidebands make a cracked, metallic, unhinged tone
+  f.type="bandpass";f.frequency.setValueAtTime(1250,t);
+  f.frequency.exponentialRampToValueAtTime(620,t+Math.min(d,0.3));f.Q.value=2.0;
+  env(g,t,0.012,0.30*gs,d,0.05);
+  const o=ac.createOscillator();o.type="sawtooth";
+  o.frequency.setValueAtTime(m2f(m)*0.94,t);
+  o.frequency.exponentialRampToValueAtTime(m2f(m),t+0.045);
+  lg.connect(o.detune);
+  const rm=ac.createGain();rm.gain.value=0; // ring modulator core
+  const mo=ac.createOscillator();mo.type="sine";mo.frequency.value=m2f(m)*0.75*1.04;
+  mo.connect(rm.gain);
+  o.connect(rm);rm.connect(f);
+  o.start(t);o.stop(t+d+0.08);mo.start(t);mo.stop(t+d+0.08);
+  const o2=ac.createOscillator();o2.type="square";o2.frequency.value=m2f(m)*2; // bright snarl bed
+  const g2=ac.createGain();g2.gain.value=0.18;o2.connect(g2);g2.connect(f);
+  o2.start(t);o2.stop(t+d+0.08);
+ }else if(who==="bf"){ // formant synthesis: a sung "beh" — bright saw pushed
+  // through vowel resonances, a sine for chest, soft attack, tiny upward scoop
+  f.frequency.value=4000;
+  env(g,t,0.015,0.15*gs,d,0.05);
+  const src=ac.createGain();src.gain.value=1;
+  for(const dt of [0,6]){
+   const o=ac.createOscillator();o.type="sawtooth";
+   o.frequency.setValueAtTime(m2f(m)*0.96,t);
+   o.frequency.exponentialRampToValueAtTime(m2f(m),t+0.035);
+   o.detune.value=dt;lg.connect(o.detune);
+   o.connect(src);o.start(t);o.stop(t+d+0.08);
+  }
+  for(const [ff,qq,gg2] of [[650,5,1.0],[1750,7,0.55],[2600,9,0.22]]){
+   const bp=ac.createBiquadFilter();bp.type="bandpass";bp.frequency.value=ff;bp.Q.value=qq;
+   const bg=ac.createGain();bg.gain.value=gg2;
+   src.connect(bp);bp.connect(bg);bg.connect(f);
+  }
+  const ob=ac.createOscillator();ob.type="sine"; // chest fundamental
+  ob.frequency.setValueAtTime(m2f(m)*0.96,t);
+  ob.frequency.exponentialRampToValueAtTime(m2f(m),t+0.035);
+  const body=ac.createGain();body.gain.value=0.35;ob.connect(body);body.connect(f);
+  ob.start(t);ob.stop(t+d+0.08);
+ }else if(who==="bot"){ // the copy: same throat, wrong firmware — formants shifted
+  // down, servo-gated, and bent downward into every note
+  f.frequency.value=3600;
+  env(g,t,0.012,0.15*gs,d,0.05);
+  const src=ac.createGain();src.gain.value=1;
+  const gt=ac.createGain();gt.gain.value=0.72;
+  const go=ac.createOscillator();go.type="square";go.frequency.value=11;
+  const gg4=ac.createGain();gg4.gain.value=0.28;go.connect(gg4);gg4.connect(gt.gain);
+  for(const dt of [-10,10]){
+   const o=ac.createOscillator();o.type="sawtooth";
+   o.frequency.setValueAtTime(m2f(m)*1.05,t);
+   o.frequency.exponentialRampToValueAtTime(m2f(m),t+0.05);
+   o.detune.value=dt;lg.connect(o.detune);
+   o.connect(src);o.start(t);o.stop(t+d+0.08);
+  }
+  for(const [ff,qq,gg2] of [[520,5,1.0],[1400,7,0.5],[2900,10,0.28]]){
+   const bp=ac.createBiquadFilter();bp.type="bandpass";bp.frequency.value=ff;bp.Q.value=qq;
+   const bg=ac.createGain();bg.gain.value=gg2;
+   src.connect(bp);bp.connect(bg);bg.connect(gt);
+  }
+  gt.connect(f);
+  go.start(t);go.stop(t+d+0.08);
+ }else if(who==="uni"){ // UNITRON: a planet given a throat — subharmonic god-voice
+  // an octave-down square with a slow gravitational throb, a two-octave-down
+  // saw underneath, and a thin metallic shimmer far above
+  f.frequency.value=900;env(g,t,0.03,0.34*gs,d,0.09);
+  const o=ac.createOscillator();o.type="square";o.frequency.value=m2f(m-12);
+  lg.connect(o.detune);
+  const tr2=ac.createGain();tr2.gain.value=0.55;
+  const to=ac.createOscillator();to.type="sine";to.frequency.value=6.5;
+  const tg3=ac.createGain();tg3.gain.value=0.45;to.connect(tg3);tg3.connect(tr2.gain);
+  o.connect(tr2);tr2.connect(f);
+  o.start(t);o.stop(t+d+0.1);to.start(t);to.stop(t+d+0.1);
+  const os2=ac.createOscillator();os2.type="sawtooth";os2.frequency.value=m2f(m-24);
+  const g4=ac.createGain();g4.gain.value=0.5;os2.connect(g4);g4.connect(f);
+  os2.start(t);os2.stop(t+d+0.1);
+  const sh2=ac.createOscillator();sh2.type="sine";sh2.frequency.value=m2f(m)*3.02;
+  const g5=ac.createGain();g5.gain.value=0.10;sh2.connect(g5);g5.connect(f);
+  sh2.start(t);sh2.stop(t+d+0.1);
  }else{
   f.frequency.value=2400;env(g,t,0.015,0.12*gs,d,0.06);
   const o=ac.createOscillator();o.type="sawtooth";o.frequency.value=m2f(m);
@@ -975,6 +1417,93 @@ const MEGATRON_POSES={
 };
 MEGATRON.poses=MEGATRON_POSES;
 MEGATRON.fusion=true;
+// Nemesis Prime: the black clone — every move is Optimus' reflection gone wrong.
+// Constant violet corruption arcs, smokestack shadow-bleed, and a dark ion blaster.
+const NEMESIS={c1:"#23252e",c2:"#2e1054",c3:"#b9bec9",metal:"#4e525e",face:"#0e0f14",eyes:"#ff2a2a",
+ legT:"#2e1054",legS:"#1f0a3c",head:"optimus",chest:"windows",wings:false,
+ winCol:"#b050ff",winColHi:"#dda8ff",blastCol:"#c060ff"};
+const NEMESIS_POSES={
+ idle:{lean:0.04,crouch:2,aL:-0.5,aR:0.7,head:0.05,mouth:0,bAng:0.35,aura:1},
+ left:{lean:-0.24,crouch:10,aL:-0.5,aR:-1.7,head:-0.2,mouth:1,bAng:Math.PI*0.92,aura:1,smog:1},
+ right:{lean:0.26,crouch:8,aL:-1.7,aR:2.1,head:0.2,mouth:1,bAng:-0.3,aura:1},
+ up:{lean:-0.08,crouch:-18,aL:-2.75,aR:2.75,head:-0.3,mouth:1,bAng:-Math.PI/2,aura:1,veil:1},
+ down:{lean:0.08,crouch:34,aL:-1.2,aR:0.8,head:0.28,mouth:1,bAng:1.1,aura:1,smog:1}
+};
+NEMESIS.poses=NEMESIS_POSES;
+NEMESIS.blaster=true;
+// Galvatron: Megatron reborn in Unicron's forge — crowned, furious, orange furnace
+// chest, and a particle cannon on the arm. Crown crackles; the ground cracks.
+const GALVATRON={c1:"#6e5aa8",c2:"#4a3580",c3:"#ff8c28",metal:"#8d8fa0",face:"#141018",eyes:"#ff3838",
+ legT:"#5e4a98",legS:"#4a3580",head:"galvatron",chest:"furnace",wings:false};
+const GALVATRON_POSES={
+ idle:{lean:0.02,crouch:0,aL:-0.4,aR:0.6,head:0,mouth:0,gAng:0.6},
+ left:{lean:-0.26,crouch:9,aL:-2.15,aR:0.4,head:-0.18,mouth:1,gAng:Math.PI*0.9,crackle:1},
+ right:{lean:0.24,crouch:7,aL:0.9,aR:1.95,head:0.18,mouth:1,gAng:0.05},
+ up:{lean:-0.07,crouch:-16,aL:-2.85,aR:0.5,head:-0.26,mouth:1,gAng:-Math.PI/2,crackle:1},
+ down:{lean:0.07,crouch:33,aL:-1.15,aR:1.0,head:0.26,mouth:1,gAng:1.0,quake:1}
+};
+GALVATRON.poses=GALVATRON_POSES;
+GALVATRON.gCannon=true;
+// The final form: UNITRON — the Chaos Bringer pours himself into his herald.
+// Rust-brown armor, molten eyes, the crown of horns, and the burning halo.
+const UNITRON={c1:"#7a4a26",c2:"#3a2210",c3:"#ff7828",metal:"#9a8a76",face:"#140c08",eyes:"#ffb000",
+ legT:"#6a3e1e",legS:"#3a2210",head:"unitron",chest:"furnace",wings:false,ascended:true};
+const UNITRON_POSES={ // he does not fight like Galvatron — he WARPS
+ idle:{lean:-0.03,crouch:-4,aL:-0.6,aR:0.8,head:0.03,mouth:0,gAng:0.5,orbit:1},
+ left:{lean:-0.3,crouch:12,aL:-0.4,aR:-1.9,head:-0.22,mouth:1,gAng:Math.PI*0.88,orbit:1,gwell:1},
+ right:{lean:0.28,crouch:5,aL:1.2,aR:2.2,head:0.22,mouth:1,gAng:-0.1,orbit:1},
+ up:{lean:-0.1,crouch:-22,aL:-2.95,aR:2.95,head:-0.32,mouth:1,gAng:-Math.PI/2,orbit:1,gmaw:1},
+ down:{lean:0.1,crouch:40,aL:-1.3,aR:1.3,head:0.3,mouth:1,gAng:1.15,orbit:1,gwell:1}
+};
+UNITRON.poses=UNITRON_POSES;
+UNITRON.gCannon=true;
+// Bumblebee: the smallest bot with the biggest attitude — bounces, stings
+const BUMBLEBEE={c1:"#f2c020",c2:"#2a2a30",c3:"#f2c020",metal:"#9aa2b2",face:"#c8d0dc",eyes:"#57c8ff",
+ legT:"#f2c020",legS:"#2a2a30",head:"bee",chest:"grill",wings:false};
+const BUMBLEBEE_POSES={
+ idle:{lean:0,crouch:-2,aL:-0.35,aR:0.35,head:0.04,mouth:0},
+ left:{lean:-0.24,crouch:10,aL:-2.4,aR:0.5,head:-0.2,mouth:1,zap:1},
+ right:{lean:0.24,crouch:10,aL:-0.5,aR:2.4,head:0.2,mouth:1,zap:1},
+ up:{lean:0,crouch:-24,aL:-2.9,aR:2.9,head:-0.3,mouth:1,hopfx:1},
+ down:{lean:0.06,crouch:42,aL:-1.1,aR:1.1,head:0.26,mouth:1,dustfx:1}
+};
+BUMBLEBEE.poses=BUMBLEBEE_POSES;
+// Ironhide: old iron — both wrist cannons answer every note
+const IRONHIDE={c1:"#c8452a",c2:"#7a2415",c3:"#8d95a5",metal:"#8d95a5",face:"#c8d0dc",eyes:"#4d9dff",
+ legT:"#c8452a",legS:"#7a2415",head:"vanbot",chest:"plates",wings:false};
+const IRONHIDE_POSES={
+ idle:{lean:0.02,crouch:2,aL:-0.4,aR:0.4,head:0,mouth:0},
+ left:{lean:-0.16,crouch:8,aL:-2.0,aR:0.6,head:-0.12,mouth:1,guns:1},
+ right:{lean:0.16,crouch:8,aL:-0.6,aR:2.0,head:0.12,mouth:1,guns:1},
+ up:{lean:-0.04,crouch:-10,aL:-2.7,aR:2.7,head:-0.2,mouth:1,guns:1},
+ down:{lean:0.04,crouch:34,aL:-1.4,aR:1.4,head:0.2,mouth:1,brace:1}
+};
+IRONHIDE.poses=IRONHIDE_POSES;
+// Ratchet: the medic — beacon spinning, wrench out, sparks of triage
+const RATCHET={c1:"#eceff4",c2:"#c8202a",c3:"#c8202a",metal:"#9aa2b2",face:"#c8d0dc",eyes:"#4dd0a8",
+ legT:"#eceff4",legS:"#c8202a",head:"vanbot",chest:"cross",wings:false};
+const RATCHET_POSES={
+ idle:{lean:0,crouch:0,aL:-0.3,aR:0.45,head:0,mouth:0},
+ left:{lean:-0.18,crouch:6,aL:-2.1,aR:0.4,head:-0.14,mouth:1,beacon:1},
+ right:{lean:0.18,crouch:6,aL:-0.4,aR:2.1,head:0.14,mouth:1,beacon:1},
+ up:{lean:0,crouch:-14,aL:-0.4,aR:2.9,head:-0.24,mouth:1,beacon:1,wrench:1},
+ down:{lean:0.05,crouch:32,aL:-0.9,aR:0.9,head:0.22,mouth:1,patch:1}
+};
+RATCHET.poses=RATCHET_POSES;
+// Jazz: cool as coolant — visor gleam, shoulder speakers, ground slides
+const JAZZ={c1:"#f0f2f6",c2:"#2456c8",c3:"#d02828",metal:"#8d95a5",face:"#141a30",eyes:"#7ad0ff",
+ legT:"#f0f2f6",legS:"#2456c8",head:"jazz",chest:"stripe",wings:false};
+const JAZZ_POSES={
+ idle:{lean:0.03,crouch:0,aL:-0.5,aR:0.3,head:0.05,mouth:0},
+ left:{lean:-0.28,crouch:10,aL:-2.2,aR:0.5,head:-0.18,mouth:1,gleam:1},
+ right:{lean:0.28,crouch:10,aL:-0.5,aR:2.2,head:0.18,mouth:1,gleam:1},
+ up:{lean:-0.06,crouch:-16,aL:-2.85,aR:2.85,head:-0.26,mouth:1,boom:1},
+ down:{lean:0.22,crouch:30,aL:-1.6,aR:0.6,head:0.2,mouth:1,slidefx:1}
+};
+JAZZ.poses=JAZZ_POSES;
+Object.assign(SPECMAP,{hotrod:HOTROD,optimus:OPTIMUS,shockwave:SHOCKWAVE,soundwave:SOUNDWAVE,
+ megatron:MEGATRON,nemesis:NEMESIS,galvatron:GALVATRON,unitron:UNITRON,
+ bumblebee:BUMBLEBEE,ironhide:IRONHIDE,ratchet:RATCHET,jazz:JAZZ});
 
 function rr(g,x,y,w,h,r){g.beginPath();g.roundRect(x,y,w,h,r);}
 function drawArm(g,sx,sy,a,spec,w){
@@ -1001,11 +1530,30 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge,fc){
  if(fxT===undefined)fxT=0;
  if(poseAge===undefined)poseAge=9;
  if(fc===undefined)fc=1; // facing: +1 toward the player, -1 the other way
+ let flip=false;
+ if(fc<0){ // player side: mirror the ENTIRE bot so he faces the enemy —
+  // and swap the left/right sing poses so gestures stay screen-true
+  flip=true;fc=1;
+  if(poseName==="left")poseName="right";else if(poseName==="right")poseName="left";
+ }
  const P=(spec.poses&&spec.poses[poseName])||POSES[poseName]||POSES.idle;
  g.save();g.translate(x,y);g.scale(scale,scale);
  // shadow
  g.fillStyle="rgba(0,0,0,0.35)";g.beginPath();g.ellipse(0,6,70,12,0,0,TAU);g.fill();
+ if(flip)g.scale(-1,1);
  g.rotate(P.lean*0.5+fc*0.05); // cheat-in toward the other performer
+ if(spec.ascended){ // Unicron's blessing — a burning halo behind the frame
+  const ag=g.createRadialGradient(0,-140,20,0,-140,190);
+  ag.addColorStop(0,"rgba(255,170,60,0.34)");ag.addColorStop(1,"rgba(255,120,30,0)");
+  g.fillStyle=ag;g.fillRect(-200,-330,400,340);
+  for(let i=0;i<5;i++){ // flame wisps rising off the armor
+   const ph=(fxT*1.5+i*0.2)%1;
+   g.globalAlpha=0.5*(1-ph);
+   g.fillStyle=i%2?"#ffb040":"#ff7828";
+   g.beginPath();g.ellipse((hashRand(i*31)-0.5)*130,-90-ph*220,6+ph*4,14+ph*8,0,0,TAU);g.fill();
+  }
+  g.globalAlpha=1;
+ }
  const q=P.crouch,ty=q+bob;
  // dash speed lines (Hot Rod racer crouch)
  if(P.dash){
@@ -1068,8 +1616,9 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge,fc){
   g.quadraticCurveTo(30,-160+ty,0,-138+ty);
   g.fill();
  }else if(spec.chest==="windows"){
-  g.shadowColor="#7ec8ff";g.shadowBlur=P.mouth?14:7;
-  g.fillStyle=P.mouth?"#a8dcff":"#7ec8ff";
+  const wc=spec.winCol||"#7ec8ff",wch=spec.winColHi||"#a8dcff";
+  g.shadowColor=wc;g.shadowBlur=P.mouth?14:7;
+  g.fillStyle=P.mouth?wch:wc;
   rr(g,-40,-198+ty,34,26,3);g.fill();
   rr(g,6,-198+ty,34,26,3);g.fill();
   g.shadowBlur=0;
@@ -1100,6 +1649,35 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge,fc){
   g.fillStyle=spec.metal;
   g.beginPath();g.moveTo(-30,-160+ty);g.lineTo(-6,-152+ty);g.lineTo(-10,-140+ty);g.lineTo(-28,-146+ty);g.closePath();g.fill();
   g.beginPath();g.moveTo(30,-160+ty);g.lineTo(6,-152+ty);g.lineTo(10,-140+ty);g.lineTo(28,-146+ty);g.closePath();g.fill();
+ }else if(spec.chest==="grill"){ // little bumper grill
+  g.fillStyle=spec.c2;rr(g,-26,-192+ty,52,20,4);g.fill();
+  g.fillStyle=spec.metal;
+  for(let i=0;i<5;i++){rr(g,-22+i*10,-188+ty,6,12,2);g.fill();}
+  g.fillStyle=spec.c1;rr(g,-20,-164+ty,40,14,4);g.fill();
+ }else if(spec.chest==="plates"){ // riveted armor slabs
+  g.fillStyle=spec.c2;
+  rr(g,-36,-198+ty,32,26,4);g.fill();rr(g,4,-198+ty,32,26,4);g.fill();
+  g.fillStyle=spec.metal;rr(g,-26,-164+ty,52,18,3);g.fill();
+  g.fillStyle="#3c3c46";
+  for(const s of [-30,-10,10,30]){g.beginPath();g.arc(s,-186+ty,2.5,0,TAU);g.fill();}
+ }else if(spec.chest==="cross"){ // the medic's mark
+  g.fillStyle="#fff";rr(g,-30,-198+ty,60,32,4);g.fill();
+  g.fillStyle=spec.c3;
+  rr(g,-6,-196+ty,12,28,2);g.fill();rr(g,-16,-188+ty,32,12,2);g.fill();
+  g.fillStyle=spec.metal;rr(g,-24,-160+ty,48,12,3);g.fill();
+ }else if(spec.chest==="stripe"){ // racing stripes over white
+  g.fillStyle="#fff";rr(g,-32,-198+ty,64,34,4);g.fill();
+  g.fillStyle=spec.c2;rr(g,-10,-198+ty,8,34,2);g.fill();
+  g.fillStyle=spec.c3;rr(g,2,-198+ty,8,34,2);g.fill();
+  g.fillStyle=spec.metal;rr(g,-24,-158+ty,48,12,3);g.fill();
+ }else if(spec.chest==="furnace"){ // three orange reactor windows, breathing heat
+  g.fillStyle=spec.c2;rr(g,-34,-200+ty,68,32,4);g.fill();
+  g.shadowColor=spec.c3;g.shadowBlur=P.mouth?16:8;
+  g.fillStyle=spec.c3;
+  for(let i=0;i<3;i++){rr(g,-27+i*19,-196+ty,14,22,3);g.fill();}
+  g.shadowBlur=0;
+  g.fillStyle=spec.metal;rr(g,-24,-158+ty,48,14,3);g.fill();
+  g.fillStyle="rgba(0,0,0,0.25)";rr(g,-24,-150+ty,48,6,3);g.fill();
  }else if(spec.chest==="core"){ // glowing reactor core
   g.shadowColor=spec.c3;g.shadowBlur=P.mouth?16:9;
   g.fillStyle=spec.c3;
@@ -1134,8 +1712,9 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge,fc){
   g.fillStyle="#2c3140";rr(g,-2,4,8,12,2);g.fill();
   g.fillStyle="#6a7386";rr(g,-6,-6,8,4,1);g.fill();
   if(P.mouth&&poseAge<0.18){
-   g.shadowColor="#ffd84a";g.shadowBlur=14;
-   g.fillStyle="#ffd84a";
+   const bc=spec.blastCol||"#ffd84a";
+   g.shadowColor=bc;g.shadowBlur=14;
+   g.fillStyle=bc;
    g.beginPath();
    g.moveTo(46,-1);g.lineTo(60,-8);g.lineTo(54,-1);g.lineTo(63,1);g.lineTo(53,3);g.lineTo(57,9);g.closePath();g.fill();
    g.shadowBlur=0;
@@ -1259,6 +1838,190 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge,fc){
    g.beginPath();g.ellipse(s*26,3,12,5+fl*0.6,0,0,TAU);g.fill();
   }
  }
+ // Nemesis Prime dark-energy fx
+ if(P.aura){ // crawling violet corruption arcs over the frame
+  g.lineWidth=2;g.lineCap="round";
+  for(let i=0;i<3;i++){
+   const seed=Math.floor(fxT*9)+i*17;
+   if(hashRand(seed)<0.5)continue;
+   let ax=(hashRand(seed+1)-0.5)*120,ay=-200+ty+hashRand(seed+2)*160;
+   g.strokeStyle="rgba(190,80,255,"+(0.35+hashRand(seed+3)*0.4)+")";
+   g.beginPath();g.moveTo(ax,ay);
+   for(let k=0;k<4;k++){ax+=(hashRand(seed+4+k)-0.5)*34;ay+=(hashRand(seed+8+k)-0.5)*26;g.lineTo(ax,ay);}
+   g.stroke();
+  }
+ }
+ if(P.smog){ // black smoke bleeding from the stacks
+  for(const s of [-1,1])for(let i=0;i<3;i++){
+   const ph=(fxT*1.2+i*0.33)%1;
+   g.globalAlpha=0.5*(1-ph);
+   g.fillStyle="rgb(30,22,44)";
+   g.beginPath();g.arc(s*60+Math.sin(fxT*3+i)*4,-240+ty-ph*34,6+ph*10,0,TAU);g.fill();
+  }
+  g.globalAlpha=1;
+ }
+ if(P.veil&&P.mouth){ // rising ring of violet fire on the up pose
+  const a4=Math.max(0,0.8-poseAge*1.6);
+  g.strokeStyle="rgba(190,80,255,"+a4+")";g.lineWidth=5;
+  g.beginPath();g.ellipse(0,4,66+poseAge*160,14+poseAge*30,0,0,TAU);g.stroke();
+  g.strokeStyle="rgba(255,255,255,"+a4*0.5+")";g.lineWidth=2;
+  g.beginPath();g.ellipse(0,4,60+poseAge*160,12+poseAge*28,0,0,TAU);g.stroke();
+ }
+ // Galvatron: particle cannon on the LEFT arm — fires with every sung note
+ if(spec.gCannon){
+  const gA=P.gAng!==undefined?P.gAng:0.6;
+  g.save();g.translate(hL[0],hL[1]);g.rotate(gA);
+  const rec=(P.mouth&&poseAge<0.13)?-6:0;
+  g.translate(rec,0);
+  g.fillStyle=spec.c3;rr(g,-12,-11,46,22,6);g.fill();
+  g.fillStyle="rgba(255,255,255,0.2)";rr(g,-12,-11,46,7,6);g.fill();
+  g.fillStyle=spec.metal;rr(g,32,-8,24,16,4);g.fill();
+  g.fillStyle="#241014";g.beginPath();g.arc(56,0,6,0,TAU);g.fill();
+  if(P.mouth&&poseAge<0.22){
+   g.shadowColor="#ff8c28";g.shadowBlur=18;
+   const bg5=g.createLinearGradient(56,0,175,0);
+   bg5.addColorStop(0,"rgba(255,150,50,0.95)");bg5.addColorStop(1,"rgba(255,150,50,0)");
+   g.fillStyle=bg5;rr(g,56,-5,115,10,5);g.fill();
+   g.fillStyle="#fff";g.beginPath();g.arc(56,0,7,0,TAU);g.fill();
+   g.shadowBlur=0;
+  }
+  g.restore();
+ }
+ if(P.crackle){ // orange energy arcing off the crown
+  g.lineWidth=2;g.lineCap="round";
+  for(let i=0;i<2;i++){
+   const sd2=Math.floor(fxT*11)+i*29;
+   if(hashRand(sd2)<0.45)continue;
+   let cx3=fc*6+(hashRand(sd2+1)-0.5)*36,cy3=-282+ty;
+   g.strokeStyle="rgba(255,150,60,"+(0.4+hashRand(sd2+2)*0.4)+")";
+   g.beginPath();g.moveTo(cx3,cy3);
+   for(let k=0;k<3;k++){cx3+=(hashRand(sd2+3+k)-0.5)*26;cy3-=6+hashRand(sd2+6+k)*14;g.lineTo(cx3,cy3);}
+   g.stroke();
+  }
+ }
+ if(P.quake){ // the ground answers his fury
+  g.strokeStyle="rgba(255,140,50,"+Math.max(0,0.7-poseAge*1.4)+")";g.lineWidth=4;
+  g.beginPath();g.ellipse(0,5,60+poseAge*220,12+poseAge*40,0,0,TAU);g.stroke();
+  g.strokeStyle="rgba(60,40,30,0.8)";g.lineWidth=3;
+  for(let i=0;i<4;i++){
+   const a5=-0.4+i*0.55;
+   g.beginPath();g.moveTo(0,4);g.lineTo(Math.cos(a5)*52,6+Math.abs(Math.sin(a5))*10);g.stroke();
+  }
+ }
+ // Unitron: he is less a robot than a small angry planet
+ if(P.orbit){ // debris orbits him like captured moons
+  for(let i=0;i<5;i++){
+   const a6=fxT*(0.8+i*0.13)+i*1.26;
+   const ox=Math.cos(a6)*(95+i*9),oy=-150+ty+Math.sin(a6)*(26+i*4);
+   g.globalAlpha=Math.sin(a6)<0?0.4:0.85;
+   g.fillStyle=i%2?"#8a6a4a":"#5a4632";
+   g.save();g.translate(ox,oy);g.rotate(a6*2);rr(g,-5,-3,10,6,2);g.fill();g.restore();
+  }
+  g.globalAlpha=1;
+ }
+ if(P.gmaw&&P.mouth){ // he drinks the light of stars
+  const a7=Math.max(0,0.8-poseAge*1.5);
+  for(const h of [hL,hR]){
+   g.strokeStyle="rgba(255,150,50,"+a7+")";g.lineWidth=7;g.lineCap="round";
+   g.beginPath();g.moveTo(h[0],h[1]);g.lineTo(0,-330+ty);g.stroke();
+   g.strokeStyle="rgba(255,235,170,"+a7*0.7+")";g.lineWidth=2.5;
+   g.beginPath();g.moveTo(h[0],h[1]);g.lineTo(0,-330+ty);g.stroke();
+  }
+  g.fillStyle="rgba(255,230,160,"+a7+")";
+  g.beginPath();g.arc(0,-330+ty,10+poseAge*30,0,TAU);g.fill();
+ }
+ if(P.gwell){ // gravity claws the ground toward him
+  g.strokeStyle="rgba(255,160,70,"+Math.max(0,0.6-poseAge*1.2)+")";g.lineWidth=3;g.lineCap="round";
+  for(let i=0;i<5;i++){
+   const ph2=1-((fxT*1.4+i*0.2)%1);
+   const a8=-0.5+i*0.5;
+   g.beginPath();g.moveTo(Math.cos(a8)*(30+ph2*80),6+Math.abs(Math.sin(a8))*(4+ph2*10));
+   g.lineTo(Math.cos(a8)*(18+ph2*60),4);g.stroke();
+  }
+ }
+ // ---- the new Autobots' signature moves ----
+ if(P.zap){ // Bumblebee: a stinger spark off the leading fist
+  const hz=P.aR>1?hR:hL;
+  g.shadowColor="#ffe860";g.shadowBlur=10;
+  g.strokeStyle="rgba(255,232,96,"+Math.max(0,0.9-poseAge*3)+")";g.lineWidth=3;
+  g.beginPath();g.moveTo(hz[0],hz[1]);g.lineTo(hz[0]+10,hz[1]-14);g.lineTo(hz[0]+2,hz[1]-16);g.lineTo(hz[0]+14,hz[1]-30);g.stroke();
+  g.shadowBlur=0;
+ }
+ if(P.hopfx){ // Bumblebee leaves the ground when he sings up
+  g.strokeStyle="rgba(242,192,32,"+Math.max(0,0.6-poseAge*1.5)+")";g.lineWidth=3;
+  g.beginPath();g.ellipse(0,6,34+poseAge*120,7+poseAge*14,0,0,TAU);g.stroke();
+ }
+ if(P.dustfx){ // and lands with a puff
+  for(let i=0;i<3;i++){
+   const ph3=(fxT*2+i*0.33)%1;
+   g.globalAlpha=0.4*(1-ph3);
+   g.fillStyle="#a89878";
+   g.beginPath();g.arc(-30+i*30,2-ph3*10,5+ph3*7,0,TAU);g.fill();
+  }
+  g.globalAlpha=1;
+ }
+ if(P.guns){ // Ironhide: BOTH wrist cannons speak at once
+  for(const h of [hL,hR]){
+   g.fillStyle=spec.metal;rr(g,h[0]-6,h[1]-4,16,9,3);g.fill();
+   if(P.mouth&&poseAge<0.16){
+    g.shadowColor="#ffb050";g.shadowBlur=12;
+    g.fillStyle="#ffb050";
+    g.beginPath();g.arc(h[0]+14,h[1],5+poseAge*10,0,TAU);g.fill();
+    g.shadowBlur=0;
+   }
+  }
+ }
+ if(P.brace){ // Ironhide plants — the floor complains
+  g.strokeStyle="rgba(200,80,40,"+Math.max(0,0.6-poseAge*1.4)+")";g.lineWidth=4;
+  g.beginPath();g.moveTo(-56,4);g.lineTo(56,4);g.stroke();
+ }
+ if(P.beacon){ // Ratchet: emergency light spinning over his head
+  const ba=fxT*9;
+  g.save();g.translate(0,-266+ty);
+  g.fillStyle=spec.metal;rr(g,-6,8,12,8,2);g.fill();
+  g.shadowColor=Math.sin(ba)>0?"#ff4040":"#fff";g.shadowBlur=12;
+  g.fillStyle=Math.sin(ba)>0?"rgba(255,64,64,0.9)":"rgba(255,255,255,0.9)";
+  rr(g,-7,-2,14,10,4);g.fill();g.shadowBlur=0;
+  g.fillStyle="rgba(255,80,80,"+(0.25+0.2*Math.sin(ba))+")";
+  g.beginPath();g.moveTo(0,3);g.lineTo(Math.cos(ba)*70,3+Math.sin(ba)*18);g.lineTo(Math.cos(ba)*70*0.9,3+Math.sin(ba)*18-9);g.closePath();g.fill();
+  g.restore();
+ }
+ if(P.wrench){ // the wrench, raised like a verdict
+  g.save();g.translate(hR[0],hR[1]);g.rotate(-0.5);
+  g.fillStyle="#9aa2b2";rr(g,-3,-26,6,26,3);g.fill();
+  g.beginPath();g.arc(0,-28,7,0.6,Math.PI*2-0.6);g.strokeStyle="#9aa2b2";g.lineWidth=5;g.stroke();
+  g.restore();
+ }
+ if(P.patch){ // triage sparks
+  for(let i=0;i<4;i++){
+   const sd3=Math.floor(fxT*14)+i*7;
+   g.fillStyle=i%2?"#ffe27a":"#7ae2ff";
+   g.globalAlpha=0.5+hashRand(sd3)*0.5;
+   g.fillRect(hR[0]-10+hashRand(sd3+1)*20,hR[1]-10+hashRand(sd3+2)*16,3,3);
+  }
+  g.globalAlpha=1;
+ }
+ if(P.gleam){ // Jazz: a light sweeps across the visor
+  g.save();g.translate(fc*6,-232+ty);
+  const gx2=((fxT*180)%44)-22;
+  g.fillStyle="rgba(180,240,255,0.7)";rr(g,gx2-3,-10,6,10,3);g.fill();
+  g.restore();
+ }
+ if(P.boom){ // shoulder speakers pop out and push air
+  for(const s of [-1,1]){
+   g.fillStyle="#16161e";rr(g,s*62-10,-216+ty,20,22,4);g.fill();
+   g.strokeStyle="#4a4a5e";g.lineWidth=2;
+   g.beginPath();g.arc(s*62,-205+ty,6,0,TAU);g.stroke();
+   g.strokeStyle="rgba(122,208,255,"+Math.max(0,0.7-poseAge*1.5)+")";g.lineWidth=2.5;
+   for(let i=1;i<3;i++){g.beginPath();g.arc(s*62,-205+ty,8+i*8+poseAge*40,s>0?-0.5:Math.PI-0.5,s>0?0.5:Math.PI+0.5);g.stroke();}
+  }
+ }
+ if(P.slidefx){ // Jazz doesn't crouch. Jazz slides.
+  g.strokeStyle="rgba(240,242,246,"+Math.max(0,0.55-poseAge*1.2)+")";g.lineWidth=3;g.lineCap="round";
+  for(let i=0;i<3;i++){
+   g.beginPath();g.moveTo(-40-i*16,2-i*3);g.lineTo(-70-i*16,2-i*3);g.stroke();
+  }
+ }
  // Hot Rod wrist-exhaust flames (up pose)
  if(P.flames){
   for(const h of [hL,hR]){
@@ -1313,6 +2076,59 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge,fc){
   g.fillStyle=spec.metal;rr(g,-11,2,22,12,3);g.fill();
   g.strokeStyle=P.mouth?"#ffb0a0":"#3a3e46";g.lineWidth=2;
   for(let i=-6;i<=6;i+=4){g.beginPath();g.moveTo(i,4);g.lineTo(i,12);g.stroke();}
+ }else if(spec.head==="bee"){ // round little face, two horns
+  g.fillStyle=spec.c1;rr(g,-17,-22,34,38,10);g.fill();
+  g.fillStyle=spec.c1;
+  g.beginPath();g.moveTo(-12,-22);g.lineTo(-16,-38);g.lineTo(-6,-24);g.closePath();g.fill();
+  g.beginPath();g.moveTo(12,-22);g.lineTo(16,-38);g.lineTo(6,-24);g.closePath();g.fill();
+  g.fillStyle=spec.face;rr(g,-13,-12,26,22,5);g.fill();
+  g.shadowColor=spec.eyes;g.shadowBlur=P.mouth?12:6;
+  g.fillStyle=spec.eyes;rr(g,-10,-7,8,6,2);g.fill();rr(g,2,-7,8,6,2);g.fill();
+  g.shadowBlur=0;
+  g.fillStyle="#3a4150";
+  if(P.mouth)rr(g,-5,3,10,7,2);else rr(g,-6,6,12,3,1);
+  g.fill();
+ }else if(spec.head==="vanbot"){ // the boxy van-bot helm (Ironhide / Ratchet)
+  g.fillStyle=spec.c1;rr(g,-19,-26,38,42,5);g.fill();
+  g.fillStyle=spec.c2;rr(g,-19,-26,38,9,4);g.fill();
+  g.shadowColor=spec.eyes;g.shadowBlur=P.mouth?12:6;
+  g.fillStyle=spec.eyes;rr(g,-12,-10,9,6,2);g.fill();rr(g,3,-10,9,6,2);g.fill();
+  g.shadowBlur=0;
+  g.fillStyle=spec.metal;rr(g,-12,0,24,14,3);g.fill();
+  g.strokeStyle=P.mouth?"#dfe8ff":"#5a6272";g.lineWidth=2;
+  g.beginPath();g.moveTo(-7,4);g.lineTo(7,4);g.moveTo(-7,9);g.lineTo(7,9);g.stroke();
+ }else if(spec.head==="jazz"){ // the visor
+  g.fillStyle=spec.c1;rr(g,-18,-24,36,40,8);g.fill();
+  g.fillStyle=spec.c2;rr(g,-18,-24,36,8,4);g.fill();
+  g.shadowColor=spec.eyes;g.shadowBlur=P.mouth?14:7;
+  g.fillStyle=spec.eyes;rr(g,-14,-11,28,9,4);g.fill();
+  g.shadowBlur=0;
+  g.fillStyle=spec.metal;rr(g,-11,1,22,13,3);g.fill();
+  g.strokeStyle=P.mouth?"#dfe8ff":"#5a6272";g.lineWidth=2;
+  g.beginPath();g.moveTo(-6,7);g.lineTo(6,7);g.stroke();
+ }else if(spec.head==="unitron"){ // the Chaos Bringer wears the crown of horns
+  g.fillStyle=spec.c1;rr(g,-19,-24,38,40,6);g.fill();
+  g.fillStyle=spec.c2;
+  g.beginPath();g.moveTo(-16,-22);g.quadraticCurveTo(-40,-34,-34,-62);g.quadraticCurveTo(-24,-40,-8,-28);g.closePath();g.fill();
+  g.beginPath();g.moveTo(16,-22);g.quadraticCurveTo(40,-34,34,-62);g.quadraticCurveTo(24,-40,8,-28);g.closePath();g.fill();
+  g.shadowColor=spec.eyes;g.shadowBlur=P.mouth?18:9;
+  g.fillStyle=spec.eyes;rr(g,-13,-10,10,6,2);g.fill();rr(g,3,-10,10,6,2);g.fill();
+  g.shadowBlur=0;
+  g.fillStyle=spec.metal;rr(g,-12,1,24,13,3);g.fill();
+  g.strokeStyle=P.mouth?"#ffd0a0":"#4a3828";g.lineWidth=2;
+  g.beginPath();g.moveTo(-7,5);g.lineTo(7,5);g.moveTo(-7,9);g.lineTo(7,9);g.stroke();
+ }else if(spec.head==="galvatron"){ // crowned in Unicron's forge
+  g.fillStyle=spec.c1;rr(g,-18,-24,36,40,6);g.fill();
+  g.fillStyle=spec.c2;
+  g.beginPath();g.moveTo(-18,-22);g.lineTo(-27,-46);g.lineTo(-10,-26);g.closePath();g.fill();
+  g.beginPath();g.moveTo(18,-22);g.lineTo(27,-46);g.lineTo(10,-26);g.closePath();g.fill();
+  g.beginPath();g.moveTo(-6,-24);g.lineTo(0,-54);g.lineTo(6,-24);g.closePath();g.fill();
+  g.shadowColor=spec.eyes;g.shadowBlur=P.mouth?16:8;
+  g.fillStyle=spec.eyes;rr(g,-12,-10,9,5,2);g.fill();rr(g,3,-10,9,5,2);g.fill();
+  g.shadowBlur=0;
+  g.fillStyle=spec.metal;rr(g,-12,0,24,14,3);g.fill();
+  g.strokeStyle=P.mouth?"#ffc8a0":"#4a4258";g.lineWidth=2;
+  g.beginPath();g.moveTo(-7,4);g.lineTo(7,4);g.moveTo(-7,9);g.lineTo(7,9);g.stroke();
  }else if(spec.head==="soundwave"){
   // boxy helmet with full red visor and chin guard
   g.fillStyle=spec.c1;rr(g,-19,-26,38,42,5);g.fill();
@@ -1372,6 +2188,264 @@ function drawBot(g,spec,poseName,x,y,scale,bob,tint,fxT,poseAge,fc){
   g.fillStyle="#f33";g.fillRect(-110,-280,220,300);
   g.globalCompositeOperation="source-over";g.globalAlpha=1;
  }
+ g.restore();
+}
+function drawBF(g,poseName,x,y,scale,bob,tint,fc,robot){
+ // Traced from reference: 60% head, thick black outlines, giant sneakers,
+ // back-swept cap with strap, forward-bursting two-tone spikes, smirk+tongue.
+ if(fc===undefined)fc=-1;
+ const P=POSES[poseName]||POSES.idle;
+ g.save();g.translate(x,y);g.scale(scale,scale);
+ g.fillStyle="rgba(0,0,0,0.35)";g.beginPath();g.ellipse(0,6,54,10,0,0,TAU);g.fill();
+ if(fc>0)g.scale(-1,1); // canonical art faces left
+ g.rotate(P.lean*0.5);
+ const q=P.crouch*0.6,ty=q+bob;
+ const OL="#101014";
+ const skin=robot?"#b6bfce":"#ffe0b0",
+  hairA=robot?"#5a6c86":"#35c4f0",hairB=robot?"#3c4c64":"#2b86d8",
+  tee=robot?"#a8aeba":"#ffffff",capA=robot?"#8c3a30":"#e02434",capB=robot?"#5c2018":"#8e1830",
+  pantA=robot?"#3a4454":"#3a63d8",pantB=robot?"#2a3240":"#2646a8",
+  shoeA=robot?"#9c4438":"#e02838";
+ const O=w=>{g.strokeStyle=OL;g.lineWidth=w;g.stroke();};
+ // ===== the giant sneakers =====
+ for(const s of [[-30,0],[26,0]]){
+  g.beginPath();
+  g.moveTo(s[0]-34,0);g.quadraticCurveTo(s[0]-36,-22,s[0]-12,-24);
+  g.quadraticCurveTo(s[0]+18,-26,s[0]+30,-12);g.quadraticCurveTo(s[0]+36,-4,s[0]+32,0);g.closePath();
+  g.fillStyle=shoeA;g.fill();O(4.5);
+  g.fillStyle="#f2dce8";
+  g.beginPath();g.moveTo(s[0]-33,-2);g.lineTo(s[0]+31,-2);g.lineTo(s[0]+29,-7);g.lineTo(s[0]-32,-7);g.closePath();g.fill();
+  g.strokeStyle="#fff";g.lineWidth=5;g.lineCap="round";
+  g.beginPath();g.moveTo(s[0]-14,-18);g.lineTo(s[0]+8,-16);g.stroke();
+  g.beginPath();g.moveTo(s[0]-15,-12);g.lineTo(s[0]+10,-10);g.stroke();
+ }
+ // ===== stubby two-tone pants =====
+ g.beginPath();rr(g,-30,-58+q*0.5,26,40,7);g.fillStyle=pantB;g.fill();O(4);
+ g.beginPath();rr(g,6,-58+q*0.5,26,40,7);g.fillStyle=pantB;g.fill();O(4);
+ g.fillStyle=pantA;rr(g,-26,-56+q*0.5,10,34,4);g.fill();rr(g,10,-56+q*0.5,10,34,4);g.fill();
+ // ===== tiny tee torso with the sign =====
+ g.beginPath();
+ g.moveTo(-27,-52+q*0.5);g.lineTo(27,-52+q*0.5);g.lineTo(30,-106+ty);g.lineTo(-30,-106+ty);g.closePath();
+ g.fillStyle=tee;g.fill();O(4.5);
+ if(robot){
+  g.fillStyle="#68758a";rr(g,-11,-96+ty,22,20,4);g.fill();
+  g.shadowColor="#57e8ff";g.shadowBlur=8;
+  g.fillStyle=P.mouth?"#9df3ff":"#57e8ff";g.beginPath();g.arc(0,-86+ty,5,0,TAU);g.fill();g.shadowBlur=0;
+ }else{
+  g.strokeStyle="#e02434";g.lineWidth=5;
+  g.beginPath();g.arc(0,-78+ty,13,0,TAU);g.stroke();
+  g.beginPath();g.moveTo(-9,-87+ty);g.lineTo(9,-69+ty);g.stroke();
+ }
+ // ===== arms =====
+ g.lineCap="round";
+ const mAng=-1.7+P.aL*0.25; // mic arm, raised
+ const mx1=-26+Math.sin(mAng)*26,my1=-96+ty+Math.cos(mAng)*26;
+ const mx2=mx1+Math.sin(mAng-0.5)*24,my2=my1+Math.cos(mAng-0.5)*24;
+ g.strokeStyle=OL;g.lineWidth=17;
+ g.beginPath();g.moveTo(-26,-96+ty);g.lineTo(mx1,my1);g.lineTo(mx2,my2);g.stroke();
+ g.strokeStyle=skin;g.lineWidth=11;
+ g.beginPath();g.moveTo(-26,-96+ty);g.lineTo(mx1,my1);g.lineTo(mx2,my2);g.stroke();
+ // the mic: crosshatched black ball
+ g.save();g.translate(mx2-6,my2-10);g.rotate(-0.5);
+ g.beginPath();rr(g,-5,8,10,16,4);g.fillStyle="#3c4658";g.fill();O(3.5);
+ g.beginPath();g.arc(0,-4,15,0,TAU);g.fillStyle="#23252e";g.fill();O(4);
+ g.save();g.beginPath();g.arc(0,-4,15,0,TAU);g.clip();
+ g.strokeStyle="#6a7386";g.lineWidth=1.6;
+ for(let i=-2;i<=2;i++){g.beginPath();g.moveTo(i*7,-20);g.lineTo(i*7,12);g.stroke();}
+ for(let i=-2;i<=2;i++){g.beginPath();g.moveTo(-16,-4+i*6);g.lineTo(16,-4+i*6);g.stroke();}
+ g.restore();
+ g.restore();
+ // free arm — swings per pose, throws the peace sign at rest
+ const fAng2=P.mouth?P.aR:0.85;
+ const fx1=26+Math.sin(fAng2)*26,fy1=-96+ty+Math.cos(fAng2)*26;
+ const fx2=fx1+Math.sin(fAng2+0.4)*22,fy2=fy1+Math.cos(fAng2+0.4)*22;
+ g.strokeStyle=OL;g.lineWidth=17;
+ g.beginPath();g.moveTo(26,-96+ty);g.lineTo(fx1,fy1);g.lineTo(fx2,fy2);g.stroke();
+ g.strokeStyle=skin;g.lineWidth=11;
+ g.beginPath();g.moveTo(26,-96+ty);g.lineTo(fx1,fy1);g.lineTo(fx2,fy2);g.stroke();
+ g.beginPath();g.arc(fx2,fy2,9,0,TAU);g.fillStyle=skin;g.fill();O(3.5);
+ if(!P.mouth){ // the peace sign
+  g.strokeStyle=OL;g.lineWidth=9.5;
+  g.beginPath();g.moveTo(fx2-2,fy2-4);g.lineTo(fx2-6,fy2-24);g.stroke();
+  g.beginPath();g.moveTo(fx2+4,fy2-4);g.lineTo(fx2+10,fy2-22);g.stroke();
+  g.strokeStyle=skin;g.lineWidth=6;
+  g.beginPath();g.moveTo(fx2-2,fy2-4);g.lineTo(fx2-6,fy2-24);g.stroke();
+  g.beginPath();g.moveTo(fx2+4,fy2-4);g.lineTo(fx2+10,fy2-22);g.stroke();
+ }
+ // ===== THE HEAD =====
+ g.save();g.translate(-4,-150+ty);g.rotate(P.head*0.7);
+ g.beginPath(); // wide face blob, big cheek toward the facing side
+ g.moveTo(-52,-6);
+ g.quadraticCurveTo(-56,22,-30,32);
+ g.quadraticCurveTo(-6,40,20,32);
+ g.quadraticCurveTo(46,26,48,2);
+ g.quadraticCurveTo(50,-24,20,-30);
+ g.quadraticCurveTo(-12,-36,-34,-26);
+ g.quadraticCurveTo(-50,-18,-52,-6);
+ g.closePath();
+ g.fillStyle=skin;g.fill();O(5);
+ // THE CAP first — one solid dome covering the skull, swept far back
+ g.beginPath();
+ g.moveTo(-24,-28);
+ g.quadraticCurveTo(-14,-58,16,-64);
+ g.quadraticCurveTo(50,-66,64,-38);
+ g.quadraticCurveTo(70,-20,64,-6);
+ g.quadraticCurveTo(40,-16,14,-24);
+ g.quadraticCurveTo(-8,-28,-24,-28);
+ g.closePath();
+ g.fillStyle=capA;g.fill();O(5);
+ g.fillStyle=capB; // dark rear panel
+ g.beginPath();
+ g.moveTo(22,-62);
+ g.quadraticCurveTo(50,-64,64,-38);
+ g.quadraticCurveTo(70,-20,64,-6);
+ g.quadraticCurveTo(46,-14,26,-22);
+ g.closePath();g.fill();
+ g.beginPath();g.moveTo(62,-14);g.lineTo(84,-8);g.lineTo(82,0);g.lineTo(58,-4);g.closePath();
+ g.fillStyle=robot?"#4a5a74":"#1e56d8";g.fill();O(3.5); // the strap
+ // hair ERUPTING from under the cap front — big two-tone spikes
+ g.beginPath();
+ g.moveTo(-56,0);
+ g.lineTo(-76,-14);g.lineTo(-54,-20);
+ g.lineTo(-66,-46);g.lineTo(-40,-36);
+ g.lineTo(-42,-68);g.lineTo(-16,-40);
+ g.lineTo(-4,-70);g.lineTo(8,-38);
+ g.lineTo(24,-52);g.lineTo(24,-30);
+ g.quadraticCurveTo(-4,-42,-28,-32);
+ g.quadraticCurveTo(-48,-22,-56,0);
+ g.closePath();g.fillStyle=hairB;g.fill();O(4.5);
+ g.fillStyle=hairA; // bright crowns
+ g.beginPath();
+ g.moveTo(-52,-18);g.lineTo(-62,-42);g.lineTo(-40,-33);g.lineTo(-41,-62);g.lineTo(-18,-38);g.lineTo(-6,-64);g.lineTo(4,-36);g.lineTo(18,-48);g.lineTo(19,-30);
+ g.quadraticCurveTo(-6,-40,-28,-31);g.quadraticCurveTo(-44,-24,-52,-18);
+ g.closePath();g.fill();
+ // sideburn spike behind the cheek
+ g.beginPath();g.moveTo(40,-12);g.lineTo(60,0);g.lineTo(44,12);g.quadraticCurveTo(46,-2,40,-12);g.closePath();
+ g.fillStyle=hairB;g.fill();O(4);
+ // the brow line — flat, a little annoyed
+ g.strokeStyle="#14141a";g.lineWidth=6;g.lineCap="round";
+ g.beginPath();g.moveTo(-38,-11);g.lineTo(26,-16);g.stroke();
+ // black almond eyes, big, right under the brow
+ g.fillStyle="#14141a";
+ g.save();g.translate(-24,0);g.rotate(-0.10);g.beginPath();g.ellipse(0,0,12,9,0,0,TAU);g.fill();g.restore();
+ g.save();g.translate(14,-2);g.rotate(-0.10);g.beginPath();g.ellipse(0,0,12,9,0,0,TAU);g.fill();g.restore();
+ if(robot){
+  g.shadowColor="#57e8ff";g.shadowBlur=8;
+  g.fillStyle="#57e8ff";
+  g.beginPath();g.ellipse(-24,-2,6,4,0,0,TAU);g.fill();
+  g.beginPath();g.ellipse(12,0,6,4,0,0,TAU);g.fill();
+  g.shadowBlur=0;
+  g.strokeStyle="#8d95a5";g.lineWidth=3;g.beginPath();g.moveTo(30,-48);g.lineTo(38,-62);g.stroke();
+  g.fillStyle="#ff5060";g.beginPath();g.arc(40,-64,3.5,0,TAU);g.fill();
+ }
+ if(P.mouth){ // open singing mouth
+  g.beginPath();g.ellipse(-16,20,10,8,0,0,TAU);
+  g.fillStyle=robot?"#0c1016":"#5c1616";g.fill();O(3.5);
+  if(!robot){g.fillStyle="#f06a8a";g.beginPath();g.ellipse(-16,24,5,3.5,0,0,TAU);g.fill();}
+ }else{ // smirk with the tongue out
+  g.strokeStyle=OL;g.lineWidth=3.5;
+  g.beginPath();g.moveTo(-26,17);g.quadraticCurveTo(-14,22,-2,18);g.stroke();
+  if(!robot){
+   g.fillStyle="#f06a8a";
+   g.beginPath();g.moveTo(-17,19);g.quadraticCurveTo(-12,28,-5,19);g.closePath();g.fill();O(2.5);
+  }
+ }
+ g.restore();
+ if(tint>0){
+  g.globalAlpha=tint*0.4;g.globalCompositeOperation="source-atop";
+  g.fillStyle="#f33";g.fillRect(-130,-240,260,260);
+  g.globalCompositeOperation="source-over";g.globalAlpha=1;
+ }
+ g.restore();
+}
+function drawGF(g,x,y,scale,sw,pulse){
+ // Traced from reference: stacked two-woofer main cab with angled side cabs;
+ // GF on top — huge auburn hair, crop top, crossed legs, red pumps on the cone.
+ g.save();g.translate(x,y);g.scale(scale,scale);
+ const OL="#101014";
+ const O=w=>{g.strokeStyle=OL;g.lineWidth=w;g.stroke();};
+ for(const s of [-1,1]){ // angled side cabs
+  g.save();g.translate(s*92,-2);g.rotate(s*0.09);
+  g.beginPath();rr(g,-26,-64,52,64,6);g.fillStyle="#33333e";g.fill();O(4);
+  for(const yy of [-46,-18]){
+   g.beginPath();g.arc(0,yy,11,0,TAU);g.fillStyle="#15151c";g.fill();O(3);
+   g.fillStyle="#3f3f4c";g.beginPath();g.arc(0,yy,4,0,TAU);g.fill();
+  }
+  g.restore();
+ }
+ // main cab, TWO woofers stacked
+ g.beginPath();rr(g,-62,-106,124,106,8);g.fillStyle="#3f3f4a";g.fill();O(5);
+ for(const yy of [-78,-30]){
+  g.beginPath();g.arc(0,yy,22,0,TAU);g.fillStyle="#14141a";g.fill();O(4);
+  g.strokeStyle="#55556a";g.lineWidth=2;
+  g.beginPath();g.arc(0,yy,16+pulse*3,0,TAU);g.stroke();
+  g.fillStyle="#2c2c38";g.beginPath();g.arc(0,yy,6+pulse*2,0,TAU);g.fill();
+ }
+ const hairA="#9e3b24",skin="#ffe3c0";
+ // ============ GF perched ON TOP of the cab ============
+ g.save();g.translate(0,-86); // seat planted ON the cab, hair draping over its lip
+ // the hair silhouette behind her: wide, flowing to her shoulders
+ g.save();g.translate(sw*3,0);g.rotate(sw*0.05);
+ g.beginPath();
+ g.moveTo(0,-102);
+ g.quadraticCurveTo(-26,-98,-28,-66);
+ g.quadraticCurveTo(-30,-32,-24,-4);
+ g.quadraticCurveTo(-12,2,0,0);
+ g.quadraticCurveTo(12,2,24,-4);
+ g.quadraticCurveTo(30,-32,28,-66);
+ g.quadraticCurveTo(26,-98,0,-102);
+ g.closePath();
+ g.fillStyle=hairA;g.fill();O(4.5);
+ g.fillStyle="#7a2a18"; // inner shadow streaks
+ g.beginPath();g.moveTo(-20,-80);g.quadraticCurveTo(-24,-40,-18,-10);g.lineTo(-12,-12);g.quadraticCurveTo(-17,-42,-14,-78);g.closePath();g.fill();
+ g.beginPath();g.moveTo(20,-80);g.quadraticCurveTo(24,-40,18,-10);g.lineTo(12,-12);g.quadraticCurveTo(17,-42,14,-78);g.closePath();g.fill();
+ g.restore();
+ // compact crossed legs tucked to one side, heels on the top woofer
+ g.save();g.translate(2,-24);g.rotate(0.1);
+ g.beginPath();rr(g,-14,-8,38,17,9);g.fillStyle=skin;g.fill();O(4); // thighs
+ g.restore();
+ g.lineCap="round";
+ g.strokeStyle="#101014";g.lineWidth=12.5;
+ g.beginPath();g.moveTo(22,-20);g.quadraticCurveTo(18,-4,6,4);g.stroke();
+ g.beginPath();g.moveTo(14,-18);g.quadraticCurveTo(4,-6,-6,0);g.stroke();
+ g.strokeStyle=skin;g.lineWidth=8.5;
+ g.beginPath();g.moveTo(22,-20);g.quadraticCurveTo(18,-4,6,4);g.stroke();
+ g.beginPath();g.moveTo(14,-18);g.quadraticCurveTo(4,-6,-6,0);g.stroke();
+ for(const pxy of [[7,7,0.45],[-8,3,0.35]]){ // red pumps
+  g.save();g.translate(pxy[0],pxy[1]);g.rotate(pxy[2]);
+  g.beginPath();g.ellipse(0,0,10,4.5,0,0,TAU);g.fillStyle="#e0203a";g.fill();O(3);
+  g.restore();
+ }
+ // hips + tiny red skirt
+ g.beginPath();rr(g,-15,-32,30,13,6);g.fillStyle="#c81f30";g.fill();O(3.5);
+ // bare midriff + crop top
+ g.beginPath();rr(g,-10,-46,20,15,6);g.fillStyle=skin;g.fill();O(3.5);
+ g.beginPath();rr(g,-13,-64,26,20,7);g.fillStyle="#d02858";g.fill();O(4);
+ // arms: one propped behind on the cab, one on her knee
+ g.strokeStyle="#101014";g.lineWidth=11;
+ g.beginPath();g.moveTo(-10,-58);g.quadraticCurveTo(-24,-42,-26,-16);g.stroke();
+ g.beginPath();g.moveTo(10,-58);g.quadraticCurveTo(18,-42,18,-24);g.stroke();
+ g.strokeStyle=skin;g.lineWidth=7.5;
+ g.beginPath();g.moveTo(-10,-58);g.quadraticCurveTo(-24,-42,-26,-16);g.stroke();
+ g.beginPath();g.moveTo(10,-58);g.quadraticCurveTo(18,-42,18,-24);g.stroke();
+ // head — modest size, framed by bangs, bobbing with the beat
+ g.save();g.translate(sw*6,-78);g.rotate(sw*0.14);
+ g.beginPath(); // face
+ g.moveTo(-14,-4);g.quadraticCurveTo(-15,12,0,13);g.quadraticCurveTo(15,12,14,-4);g.quadraticCurveTo(13,-15,0,-16);g.quadraticCurveTo(-13,-15,-14,-4);g.closePath();
+ g.fillStyle=skin;g.fill();O(3.5);
+ g.fillStyle=hairA; // bangs sweeping across + cowlick tuft
+ g.beginPath();g.moveTo(-15,-3);g.quadraticCurveTo(-16,-17,-2,-17);g.quadraticCurveTo(12,-17,15,-4);g.lineTo(10,-6);g.quadraticCurveTo(8,-12,-2,-11);g.quadraticCurveTo(-10,-11,-11,-4);g.closePath();g.fill();O(2.5);
+ g.beginPath();g.moveTo(-3,-17);g.quadraticCurveTo(1,-27,9,-23);g.quadraticCurveTo(3,-21,2,-16);g.closePath();g.fill();O(2.5);
+ g.fillStyle="#1a1a22"; // eyes + lashes
+ g.beginPath();g.ellipse(-6,-1,3.6,4.6,0,0,TAU);g.fill();
+ g.beginPath();g.ellipse(7,-1,3.6,4.6,0,0,TAU);g.fill();
+ g.strokeStyle="#1a1a22";g.lineWidth=1.8;
+ g.beginPath();g.moveTo(-9,-5);g.lineTo(-12,-7);g.stroke();
+ g.beginPath();g.moveTo(10,-5);g.lineTo(13,-7);g.stroke();
+ g.strokeStyle="#8a3030";g.lineWidth=2; // small smile
+ g.beginPath();g.moveTo(-4,5);g.quadraticCurveTo(0,8.5,4,5);g.stroke();
+ g.restore();
+ g.restore();
  g.restore();
 }
 function drawKid(g,poseName,x,y,scale,bob,tint,fc,scared){
@@ -1565,6 +2639,141 @@ function makeIcon(who,st){
     for(let a=0;a<6;a++){const th=a*Math.PI/3;
      g.beginPath();g.moveTo(Math.cos(th)*13,-2+Math.sin(th)*13);g.lineTo(Math.cos(th)*17,-2+Math.sin(th)*17);g.stroke();}}
   }
+ }else if(who==="bumblebee"){
+  g.fillStyle=col("#f2c020");rr(g,-16,-20,32,36,9);g.fill();
+  g.beginPath();g.moveTo(-11,-20);g.lineTo(-15,-34);g.lineTo(-5,-22);g.closePath();g.fill();
+  g.beginPath();g.moveTo(11,-20);g.lineTo(15,-34);g.lineTo(5,-22);g.closePath();g.fill();
+  g.fillStyle=col("#c8d0dc");rr(g,-12,-11,24,21,4);g.fill();
+  if(st==="lose"){g.strokeStyle=col("#57c8ff");g.lineWidth=2.5;
+   g.beginPath();g.moveTo(-10,-7);g.lineTo(-3,-1);g.moveTo(-3,-7);g.lineTo(-10,-1);g.stroke();
+   g.beginPath();g.moveTo(3,-7);g.lineTo(10,-1);g.moveTo(10,-7);g.lineTo(3,-1);g.stroke();
+  }else{
+   if(st==="win"){g.shadowColor=col("#57c8ff");g.shadowBlur=8;}
+   g.fillStyle=col("#57c8ff");rr(g,-9,-7,7,5,2);g.fill();rr(g,2,-7,7,5,2);g.fill();
+   g.shadowBlur=0;
+  }
+  g.fillStyle=col("#3a4150");
+  if(st==="win")rr(g,-5,3,10,6,2);else if(st==="lose")rr(g,-5,5,10,3,1);else rr(g,-6,4,12,3,1);
+  g.fill();
+ }else if(who==="ironhide"||who==="ratchet"){
+  const ih=who==="ironhide";
+  g.fillStyle=col(ih?"#c8452a":"#eceff4");rr(g,-17,-24,34,40,5);g.fill();
+  g.fillStyle=col(ih?"#7a2415":"#c8202a");rr(g,-17,-24,34,9,4);g.fill();
+  if(!ih){g.fillStyle=col("#c8202a");rr(g,-3,-30,6,9,2);g.fill();}
+  if(st==="lose"){g.strokeStyle=col(ih?"#4d9dff":"#4dd0a8");g.lineWidth=2.5;
+   g.beginPath();g.moveTo(-11,-9);g.lineTo(-4,-3);g.moveTo(-4,-9);g.lineTo(-11,-3);g.stroke();
+   g.beginPath();g.moveTo(4,-9);g.lineTo(11,-3);g.moveTo(11,-9);g.lineTo(4,-3);g.stroke();
+  }else{
+   if(st==="win"){g.shadowColor=col(ih?"#4d9dff":"#4dd0a8");g.shadowBlur=8;}
+   g.fillStyle=col(ih?"#4d9dff":"#4dd0a8");rr(g,-10,-9,8,5,2);g.fill();rr(g,3,-9,8,5,2);g.fill();
+   g.shadowBlur=0;
+  }
+  g.fillStyle=col("#9aa2b2");rr(g,-11,0,22,12,3);g.fill();
+  g.strokeStyle=st==="win"?"#dfe8ff":col("#5a6272");g.lineWidth=2;
+  g.beginPath();g.moveTo(-6,4);g.lineTo(6,4);g.moveTo(-6,8);g.lineTo(6,8);g.stroke();
+ }else if(who==="jazz"){
+  g.fillStyle=col("#f0f2f6");rr(g,-16,-22,32,38,8);g.fill();
+  g.fillStyle=col("#2456c8");rr(g,-16,-22,32,7,4);g.fill();
+  if(st==="lose"){
+   g.fillStyle=col("#3a4a6a");rr(g,-12,-10,24,8,3);g.fill();
+   g.strokeStyle="rgba(20,20,40,0.8)";g.lineWidth=2;
+   g.beginPath();g.moveTo(-9,-9);g.lineTo(0,-3);g.moveTo(2,-9);g.lineTo(9,-4);g.stroke();
+  }else{
+   if(st==="win"){g.shadowColor=col("#7ad0ff");g.shadowBlur=9;}
+   g.fillStyle=col("#7ad0ff");rr(g,-12,-10,24,8,3);g.fill();
+   g.shadowBlur=0;
+   g.fillStyle="rgba(255,255,255,"+(st==="win"?0.7:0.3)+")";rr(g,-9+(st==="win"?10:3),-9,5,4,2);g.fill();
+  }
+  g.fillStyle=col("#8d95a5");rr(g,-10,2,20,11,3);g.fill();
+  g.strokeStyle=st==="win"?"#dfe8ff":col("#5a6272");g.lineWidth=2;
+  g.beginPath();g.moveTo(-5,7);g.lineTo(5,7);g.stroke();
+ }else if(who==="bf"||who==="robobf"){
+  const rb=who==="robobf";
+  const skin=rb?"#aab4c4":"#f0c8a0",hair=rb?"#3a4a66":"#29b5f6",capc=rb?"#7a2f26":"#d0342c";
+  g.fillStyle=col(skin);rr(g,-17,-10,34,28,8);g.fill();
+  g.fillStyle=col(hair);
+  g.beginPath();g.moveTo(-17,-6);g.lineTo(-22,-18);g.lineTo(-11,-12);g.lineTo(-7,-24);g.lineTo(0,-12);g.lineTo(5,-22);g.lineTo(11,-10);g.lineTo(17,-16);g.lineTo(17,-2);g.lineTo(-17,-2);g.closePath();g.fill();
+  g.fillStyle=col(capc);rr(g,-19,-20,38,10,4);g.fill();
+  g.fillStyle=col("#8a2420");rr(g,12,-18,12,7,3);g.fill();
+  if(rb){
+   g.strokeStyle=col("#8d95a5");g.lineWidth=2.5;g.beginPath();g.moveTo(0,-20);g.lineTo(0,-30);g.stroke();
+   g.fillStyle=col("#ff5060");g.beginPath();g.arc(0,-32,3,0,TAU);g.fill();
+  }
+  if(st==="lose"){
+   g.strokeStyle=rb?col("#57e8ff"):"#222";g.lineWidth=2.5;
+   g.beginPath();g.moveTo(-11,-1);g.lineTo(-4,5);g.moveTo(-4,-1);g.lineTo(-11,5);g.stroke();
+   g.beginPath();g.moveTo(4,-1);g.lineTo(11,5);g.moveTo(11,-1);g.lineTo(4,5);g.stroke();
+   if(!rb){g.fillStyle="#6cf";g.beginPath();g.ellipse(-8,10,2,5,0,0,TAU);g.fill();}
+  }else if(rb){
+   if(st==="win"){g.shadowColor=col("#57e8ff");g.shadowBlur=8;}
+   g.fillStyle=col("#57e8ff");rr(g,-11,-2,8,5,2);g.fill();rr(g,3,-2,8,5,2);g.fill();
+   g.shadowBlur=0;
+  }else{
+   g.fillStyle="#222";
+   if(st==="win"){rr(g,-11,-3,7,7,3);g.fill();rr(g,4,-3,7,7,3);g.fill();}
+   else{rr(g,-10,-2,6,6,2);g.fill();rr(g,4,-2,6,6,2);g.fill();}
+  }
+  g.strokeStyle=rb?col("#0c1016"):col("#7a2020");g.lineWidth=3;g.beginPath();
+  if(st==="win")g.arc(0,9,8,0.15*Math.PI,0.85*Math.PI);
+  else if(st==="lose")g.arc(0,19,8,1.15*Math.PI,1.85*Math.PI);
+  else{g.moveTo(-5,13);g.lineTo(5,13);}
+  g.stroke();
+ }else if(who==="unitron"){
+  g.fillStyle=col("#7a4a26");rr(g,-17,-20,34,36,6);g.fill();
+  g.fillStyle=col("#3a2210");
+  g.beginPath();g.moveTo(-14,-18);g.quadraticCurveTo(-34,-28,-28,-50);g.quadraticCurveTo(-20,-32,-6,-23);g.closePath();g.fill();
+  g.beginPath();g.moveTo(14,-18);g.quadraticCurveTo(34,-28,28,-50);g.quadraticCurveTo(20,-32,6,-23);g.closePath();g.fill();
+  if(st==="lose"){
+   g.strokeStyle=col("#ffb000");g.lineWidth=3;
+   g.beginPath();g.moveTo(-12,-8);g.lineTo(-4,-2);g.moveTo(-4,-8);g.lineTo(-12,-2);g.stroke();
+   g.beginPath();g.moveTo(4,-8);g.lineTo(12,-2);g.moveTo(12,-8);g.lineTo(4,-2);g.stroke();
+  }else{
+   if(st==="win"){g.shadowColor=col("#ff7828");g.shadowBlur=10;}
+   g.fillStyle=col("#ffb000");
+   rr(g,-13,-8,10,6,2);g.fill();rr(g,3,-8,10,6,2);g.fill();
+   g.shadowBlur=0;
+  }
+  g.fillStyle=col("#9a8a76");rr(g,-11,2,22,11,3);g.fill();
+  g.strokeStyle=st==="win"?"#ffd8a0":col("#4a3828");g.lineWidth=2;
+  g.beginPath();g.moveTo(-7,5);g.lineTo(7,5);g.moveTo(-7,9);g.lineTo(7,9);g.stroke();
+ }else if(who==="galvatron"){
+  g.fillStyle=col("#6e5aa8");rr(g,-17,-22,34,38,6);g.fill();
+  g.fillStyle=col("#4a3580");
+  g.beginPath();g.moveTo(-17,-20);g.lineTo(-25,-40);g.lineTo(-9,-23);g.closePath();g.fill();
+  g.beginPath();g.moveTo(17,-20);g.lineTo(25,-40);g.lineTo(9,-23);g.closePath();g.fill();
+  g.beginPath();g.moveTo(-5,-22);g.lineTo(0,-48);g.lineTo(5,-22);g.closePath();g.fill();
+  if(st==="lose"){
+   g.strokeStyle=col("#ff3838");g.lineWidth=3;
+   g.beginPath();g.moveTo(-12,-9);g.lineTo(-4,-3);g.moveTo(-4,-9);g.lineTo(-12,-3);g.stroke();
+   g.beginPath();g.moveTo(4,-9);g.lineTo(12,-3);g.moveTo(12,-9);g.lineTo(4,-3);g.stroke();
+   g.strokeStyle="rgba(255,140,50,0.8)";g.lineWidth=2;
+   g.beginPath();g.moveTo(-13,-20);g.lineTo(-2,-4);g.lineTo(-8,10);g.stroke();
+  }else{
+   if(st==="win"){g.shadowColor=col("#ff8c28");g.shadowBlur=9;}
+   g.fillStyle=col("#ff3838");
+   rr(g,-12,-9,9,5,2);g.fill();rr(g,3,-9,9,5,2);g.fill();
+   g.shadowBlur=0;
+  }
+  g.fillStyle=col("#8d8fa0");rr(g,-11,1,22,12,3);g.fill();
+  g.strokeStyle=st==="win"?"#ffd8b0":col("#4a4258");g.lineWidth=2;
+  g.beginPath();g.moveTo(-7,5);g.lineTo(7,5);g.moveTo(-7,9);g.lineTo(7,9);g.stroke();
+ }else if(who==="nemesis"){
+  g.fillStyle=col("#23252e");rr(g,-19,-26,38,44,6);g.fill();
+  g.fillStyle=col("#b9bec9");rr(g,-4,-32,8,8,2);g.fill();
+  if(st==="lose"){g.strokeStyle=col("#ff2a2a");g.lineWidth=3;
+   g.beginPath();g.moveTo(-13,-12);g.lineTo(-4,-4);g.moveTo(-4,-12);g.lineTo(-13,-4);g.stroke();
+   g.beginPath();g.moveTo(4,-12);g.lineTo(13,-4);g.moveTo(13,-12);g.lineTo(4,-4);g.stroke();
+   g.strokeStyle="rgba(150,60,255,0.8)";g.lineWidth=2;
+   g.beginPath();g.moveTo(-14,-24);g.lineTo(-2,-6);g.lineTo(-8,10);g.stroke();
+  }else{
+   if(st==="win"){g.shadowColor=col("#ff2a2a");g.shadowBlur=9;}
+   g.fillStyle=col("#ff2a2a");
+   rr(g,-13,-12,10,7,2);g.fill();rr(g,3,-12,10,7,2);g.fill();
+   g.shadowBlur=0;
+  }
+  g.fillStyle=col("#4e525e");rr(g,-13,-1,26,18,4);g.fill();
+  g.strokeStyle=st==="win"?"#e8b8ff":col("#2e1054");g.lineWidth=2;
+  g.beginPath();g.moveTo(-8,5);g.lineTo(8,5);g.moveTo(-8,10);g.lineTo(8,10);g.stroke();
  }else{ // kid
   g.fillStyle=col("#e8b48c");g.beginPath();g.arc(0,0,20,0,TAU);g.fill();
   g.fillStyle=col("#3a2a1c");g.beginPath();g.arc(0,-6,20,Math.PI,0);g.fill();
@@ -1584,7 +2793,7 @@ function makeIcon(who,st){
  }
  return c;
 }
-for(const w of ["hotrod","optimus","shockwave","soundwave","megatron","kid"])
+for(const w of ["hotrod","optimus","shockwave","soundwave","megatron","nemesis","galvatron","unitron","bf","robobf","bumblebee","ironhide","ratchet","jazz","kid"])
  for(const s of ["norm","win","lose"])
   ICONS[w+"_"+s]=makeIcon(w,s);
 
@@ -1983,7 +3192,281 @@ function stageRuins(g,t,pulse){ // live-action battlefield: burning city, ash, s
  g.globalAlpha=1;
  drawFloor(g,"#1c110b","#5a3220",pulse);
 }
-const STAGES=[stageArk,stageHighway,stageCybertron,stageAutobotCity,stageShockLab,stageComms,stageNemesis,stageRuins];
+function stageMirror(g,t,pulse){ // shattered-glass void — the mirror dimension
+ let gr=g.createLinearGradient(0,0,0,H);
+ gr.addColorStop(0,"#050308");gr.addColorStop(0.6,"#150a26");gr.addColorStop(1,"#0a0512");
+ g.fillStyle=gr;g.fillRect(0,0,W,H);
+ for(let i=0;i<3;i++){ // drifting violet nebulae
+  const nx=(i*340+Math.sin(t*0.13+i)*40+W)%W,ny=90+i*60;
+  const ng=g.createRadialGradient(nx,ny,10,nx,ny,150);
+  ng.addColorStop(0,"rgba(120,40,200,0.16)");ng.addColorStop(1,"rgba(0,0,0,0)");
+  g.fillStyle=ng;g.fillRect(nx-150,ny-150,300,300);
+ }
+ // the great cracked mirror
+ g.save();g.translate(480,215);
+ g.fillStyle="rgba(20,14,36,0.9)";
+ rr(g,-290,-160,580,320,18);g.fill();
+ g.strokeStyle="#3a2a5e";g.lineWidth=8;rr(g,-290,-160,580,320,18);g.stroke();
+ const mg=g.createLinearGradient(-290,-160,290,160);
+ mg.addColorStop(0,"rgba(90,60,160,0.35)");mg.addColorStop(0.5,"rgba(30,18,60,0.5)");mg.addColorStop(1,"rgba(120,80,220,0.28)");
+ g.fillStyle=mg;rr(g,-278,-148,556,296,12);g.fill();
+ const gx=((t*130)%700)-350; // sweeping ghost-light inside the glass
+ const gg=g.createLinearGradient(gx-60,0,gx+60,0);
+ gg.addColorStop(0,"rgba(200,160,255,0)");gg.addColorStop(0.5,"rgba(200,160,255,0.13)");gg.addColorStop(1,"rgba(200,160,255,0)");
+ g.fillStyle=gg;rr(g,-278,-148,556,296,12);g.fill();
+ g.strokeStyle="rgba(210,180,255,"+(0.35+pulse*0.5)+")";g.lineWidth=2; // beat-lit cracks
+ for(let i=0;i<7;i++){
+  let cx2=-60,cy2=-20;
+  g.beginPath();g.moveTo(cx2,cy2);
+  for(let k=0;k<4;k++){cx2+=Math.cos(i*0.9+k*0.3)*(30+hashRand(i*9+k)*38);cy2+=Math.sin(i*0.9+k*0.5)*(24+hashRand(i*7+k)*30);g.lineTo(cx2,cy2);}
+  g.stroke();
+ }
+ g.restore();
+ const fseed=Math.floor(t*1.7); // violet lightning
+ if(hashRand(fseed)>0.82){
+  g.fillStyle="rgba(180,120,255,"+(0.10+hashRand(fseed+1)*0.08)+")";g.fillRect(0,0,W,H);
+  g.strokeStyle="rgba(230,200,255,0.8)";g.lineWidth=3;
+  let lx=hashRand(fseed+2)*W,ly=0;
+  g.beginPath();g.moveTo(lx,ly);
+  for(let k=0;k<6;k++){lx+=(hashRand(fseed+3+k)-0.5)*90;ly+=40+hashRand(fseed+9+k)*30;g.lineTo(lx,ly);}
+  g.stroke();
+ }
+ for(let i=0;i<9;i++){ // floating glass shards
+  const sx=hashRand(i*13)*W,sy=120+hashRand(i*29)*260+Math.sin(t*0.8+i)*12,rot=t*0.35+i;
+  g.save();g.translate(sx,sy);g.rotate(rot);
+  g.fillStyle="rgba(160,120,230,"+(0.14+hashRand(i)*0.2)+")";
+  g.beginPath();g.moveTo(0,-10-hashRand(i+3)*10);g.lineTo(7,6);g.lineTo(-6,8);g.closePath();g.fill();
+  g.restore();
+ }
+ drawFloor(g,"#0d0916","#5a3a9e",pulse);
+ g.globalAlpha=0.12;g.fillStyle="#b080ff";g.fillRect(0,432,W,4);g.globalAlpha=1;
+}
+function stageUnicron(g,t,pulse){ // the maw of Unicron — deep space, dying orange light
+ let gr=g.createLinearGradient(0,0,0,H);
+ gr.addColorStop(0,"#020208");gr.addColorStop(0.7,"#12060e");gr.addColorStop(1,"#1c0a08");
+ g.fillStyle=gr;g.fillRect(0,0,W,H);
+ for(let i=0;i<70;i++){ // starfield
+  const tw=0.35+0.65*Math.abs(Math.sin(t*(0.6+hashRand(i)*1.4)+i));
+  g.globalAlpha=tw*0.8;g.fillStyle=i%7?"#cfd8ff":"#ffd8b0";
+  g.fillRect(hashRand(i*3)*W,hashRand(i*5)*400,2,2);
+ }
+ g.globalAlpha=1;
+ // Unicron — horned, ringed, waiting
+ g.save();g.translate(480,150);
+ const ug=g.createRadialGradient(-30,-30,20,0,0,130);
+ ug.addColorStop(0,"#5a3420");ug.addColorStop(0.7,"#2e1810");ug.addColorStop(1,"#180a06");
+ g.fillStyle=ug;g.beginPath();g.arc(0,0,110,0,TAU);g.fill();
+ g.fillStyle="#241209";
+ g.beginPath();g.moveTo(-78,-72);g.lineTo(-150,-150);g.lineTo(-52,-96);g.closePath();g.fill();
+ g.beginPath();g.moveTo(78,-72);g.lineTo(150,-150);g.lineTo(52,-96);g.closePath();g.fill();
+ g.shadowColor="#ff7828";g.shadowBlur=18; // the eye-band burns with the beat
+ g.fillStyle="rgba(255,120,40,"+(0.5+pulse*0.4)+")";
+ rr(g,-58,-18,116,10,5);g.fill();g.shadowBlur=0;
+ g.save();g.rotate(0.35+Math.sin(t*0.1)*0.03); // slow ring
+ g.strokeStyle="rgba(200,140,90,0.5)";g.lineWidth=7;
+ g.beginPath();g.ellipse(0,18,175,34,0,0,TAU);g.stroke();
+ g.strokeStyle="rgba(255,170,110,0.25)";g.lineWidth=14;
+ g.beginPath();g.ellipse(0,18,192,40,0,0,TAU);g.stroke();
+ g.restore();
+ g.restore();
+ for(let i=0;i<8;i++){ // drifting debris
+  const dx=(hashRand(i*7)*W+t*(6+hashRand(i)*8))%W,dy=60+hashRand(i*11)*300;
+  g.save();g.translate(dx,dy);g.rotate(t*0.2+i);
+  g.fillStyle="rgba(120,90,70,"+(0.25+hashRand(i)*0.2)+")";
+  rr(g,-6,-3,12+hashRand(i*5)*10,6,2);g.fill();
+  g.restore();
+ }
+ if(pulse>0.5){ // orange flare on the downbeat
+  g.fillStyle="rgba(255,110,30,"+(pulse-0.5)*0.12+")";g.fillRect(0,0,W,H);
+ }
+ drawFloor(g,"#150a0c","#a8501e",pulse);
+}
+function stageStatic(g,t,pulse){ // the identity glitch — static void, ghost frames
+ g.fillStyle="#06060a";g.fillRect(0,0,W,H);
+ for(let i=0;i<26;i++){ // rolling static bands
+  const yy=(i*23+Math.floor(t*140)%23);
+  g.fillStyle="rgba(255,255,255,"+(0.015+hashRand(i+Math.floor(t*9))*0.03)+")";
+  g.fillRect(0,yy,W,hashRand(i*3)*3+1);
+ }
+ const gsd=Math.floor(t*2.3); // chromatic glitch slabs
+ if(hashRand(gsd)>0.6){
+  const gy=hashRand(gsd+1)*380,gh=8+hashRand(gsd+2)*40,gx=(hashRand(gsd+3)-0.5)*40;
+  g.fillStyle="rgba(255,60,120,0.10)";g.fillRect(gx,gy,W,gh);
+  g.fillStyle="rgba(60,220,255,0.10)";g.fillRect(-gx,gy+4,W,gh);
+ }
+ for(const s of [[-1,300],[1,660]]){ // two giant ghost echoes facing off
+  for(let e2=0;e2<3;e2++){
+   const off=e2*8*Math.sin(t*1.7+e2);
+   g.fillStyle="rgba("+(s[0]<0?"90,220,255":"255,80,150")+","+(0.05-e2*0.012)+")";
+   g.beginPath();g.ellipse(s[1]+off,300,60+e2*10,120+e2*14,0,0,TAU);g.fill();
+  }
+ }
+ // a broken monitor moon, blinking a question
+ g.fillStyle="#10121c";rr(g,410,84,140,96,8);g.fill();
+ g.strokeStyle="#2a3448";g.lineWidth=3;rr(g,410,84,140,96,8);g.stroke();
+ if(Math.floor(t*1.4)%2===0){
+  g.fillStyle="rgba(120,220,255,0.7)";g.font="900 52px Arial";g.textAlign="center";
+  g.fillText("?",480,152);
+ }
+ drawFloor(g,"#0a0a12","#3a7ac8",pulse);
+ g.fillStyle="rgba(90,200,255,"+(0.05+pulse*0.08)+")";g.fillRect(0,432,W,3);
+}
+function stageArena(g,t,pulse){ // the relay arena — two factions, one floor
+ let gr=g.createLinearGradient(0,0,0,H);
+ gr.addColorStop(0,"#0a0a14");gr.addColorStop(0.65,"#181228");gr.addColorStop(1,"#100c1a");
+ g.fillStyle=gr;g.fillRect(0,0,W,H);
+ // tiered crowd of bot silhouettes, bobbing on the beat
+ for(let row=0;row<3;row++){
+  const ry=180+row*46,n2=14+row*3;
+  for(let i=0;i<n2;i++){
+   const bx2=(i+0.5)*W/n2+hashRand(row*31+i)*10;
+   const bo=Math.sin(t*2+i*1.3+row)*2+(pulse*4*((i+row)%2?1:0));
+   g.fillStyle="rgba("+(row===0?"40,44,64":"28,30,46")+","+(0.9-row*0.2)+")";
+   g.beginPath();g.arc(bx2,ry-bo,9-row*1.5,0,TAU);g.fill();
+   rr(g,bx2-8+row,ry-bo+4,16-row*2,18-row*3,4);g.fill();
+  }
+ }
+ // faction emblems glowing on the back wall
+ g.save();g.translate(180,110);g.globalAlpha=0.5+pulse*0.3;
+ g.shadowColor="#ff5060";g.shadowBlur=18;
+ g.fillStyle="#c03040";
+ g.beginPath();g.moveTo(0,-38);g.lineTo(30,-10);g.lineTo(20,34);g.lineTo(-20,34);g.lineTo(-30,-10);g.closePath();g.fill();
+ g.fillStyle="#180a10";rr(g,-14,-8,28,10,3);g.fill();rr(g,-10,8,20,8,2);g.fill();
+ g.restore();
+ g.save();g.translate(780,110);g.globalAlpha=0.5+pulse*0.3;
+ g.shadowColor="#b060ff";g.shadowBlur=18;
+ g.fillStyle="#6b34b8";
+ g.beginPath();g.moveTo(0,-38);g.lineTo(34,-16);g.lineTo(14,10);g.lineTo(22,34);g.lineTo(0,20);g.lineTo(-22,34);g.lineTo(-14,10);g.lineTo(-34,-16);g.closePath();g.fill();
+ g.fillStyle="#120a1c";g.beginPath();g.moveTo(0,-16);g.lineTo(10,0);g.lineTo(-10,0);g.closePath();g.fill();
+ g.restore();
+ g.globalAlpha=1;g.shadowBlur=0;
+ // sweeping spotlights
+ for(const s of [-1,1]){
+  const a2=Math.sin(t*0.6+s*1.7)*0.5;
+  g.save();g.translate(480+s*430,-10);g.rotate(a2+s*0.25);
+  const sg2=g.createLinearGradient(0,0,0,520);
+  sg2.addColorStop(0,"rgba("+(s<0?"255,120,90":"170,110,255")+",0.14)");
+  sg2.addColorStop(1,"rgba(0,0,0,0)");
+  g.fillStyle=sg2;
+  g.beginPath();g.moveTo(-14,0);g.lineTo(14,0);g.lineTo(150,520);g.lineTo(-150,520);g.closePath();g.fill();
+  g.restore();
+ }
+ drawFloor(g,"#12101c","#7a5adc",pulse);
+}
+function stageStreet(g,t,pulse){ // Bumblebee's sunny suburb
+ let gr=g.createLinearGradient(0,0,0,H);
+ gr.addColorStop(0,"#7ec2e8");gr.addColorStop(0.7,"#cfe6f2");gr.addColorStop(1,"#8a9aa8");
+ g.fillStyle=gr;g.fillRect(0,0,W,H);
+ g.fillStyle="#ffd85a";g.beginPath();g.arc(790,86,42,0,TAU);g.fill(); // sun
+ g.fillStyle="rgba(255,216,90,"+(0.18+pulse*0.15)+")";g.beginPath();g.arc(790,86,58,0,TAU);g.fill();
+ for(let i=0;i<4;i++){ // drifting clouds
+  const cxp=((i*280+t*12)%(W+160))-80;
+  g.fillStyle="rgba(255,255,255,0.85)";
+  g.beginPath();g.arc(cxp,70+i*22,20,0,TAU);g.arc(cxp+22,64+i*22,15,0,TAU);g.arc(cxp-20,66+i*22,14,0,TAU);g.fill();
+ }
+ for(let i=0;i<6;i++){ // houses
+  const hx2=i*170+20;
+  g.fillStyle=i%2?"#c98a6a":"#8aa2c8";rr(g,hx2,300,120,132,4);g.fill();
+  g.fillStyle=i%2?"#8a5a42":"#5a7098";
+  g.beginPath();g.moveTo(hx2-10,300);g.lineTo(hx2+60,258);g.lineTo(hx2+130,300);g.closePath();g.fill();
+  g.fillStyle="#f8f4d8";rr(g,hx2+16,330,28,26,3);g.fill();rr(g,hx2+74,330,28,26,3);g.fill();
+ }
+ drawFloor(g,"#6a7480","#f2c020",pulse);
+ g.fillStyle="#e8d84a"; // road dashes
+ for(let i=0;i<7;i++)rr(g,i*150+((t*40)%150),488,42,6,3),g.fill();
+}
+function stageDepot(g,t,pulse){ // Ironhide's weapons depot
+ let gr=g.createLinearGradient(0,0,0,H);
+ gr.addColorStop(0,"#241c16");gr.addColorStop(1,"#3c2c1e");
+ g.fillStyle=gr;g.fillRect(0,0,W,H);
+ g.fillStyle="#4a3a28";g.fillRect(60,120,840,312); // back wall
+ g.strokeStyle="#5e4a32";g.lineWidth=3;
+ for(let i=0;i<8;i++){g.beginPath();g.moveTo(60+i*120,120);g.lineTo(60+i*120,432);g.stroke();}
+ for(let i=0;i<5;i++){ // crates
+  const cx3=90+i*180,cy3=380-((i%2)*46);
+  g.fillStyle=i%2?"#5c4630":"#6a5238";rr(g,cx3,cy3,90,52,4);g.fill();
+  g.strokeStyle="#3a2c1c";g.lineWidth=3;rr(g,cx3,cy3,90,52,4);g.stroke();
+  g.beginPath();g.moveTo(cx3,cy3);g.lineTo(cx3+90,cy3+52);g.moveTo(cx3+90,cy3);g.lineTo(cx3,cy3+52);g.stroke();
+ }
+ // warning light washes the wall
+ g.fillStyle="rgba(255,120,40,"+(0.05+0.10*Math.abs(Math.sin(t*2)))+")";g.fillRect(60,120,840,312);
+ for(let i=0;i<3;i++){ // hanging cables sway
+  const sway=Math.sin(t*0.9+i)*10;
+  g.strokeStyle="#181008";g.lineWidth=4;
+  g.beginPath();g.moveTo(200+i*260,0);g.quadraticCurveTo(200+i*260+sway,90,200+i*260+sway*1.4,150);g.stroke();
+  g.fillStyle="#ffb050";g.beginPath();g.arc(200+i*260+sway*1.4,156,6+pulse*3,0,TAU);g.fill();
+ }
+ drawFloor(g,"#241a10","#c8452a",pulse);
+}
+function stageMedbay(g,t,pulse){ // Ratchet's repair bay
+ let gr=g.createLinearGradient(0,0,0,H);
+ gr.addColorStop(0,"#dfe8ec");gr.addColorStop(1,"#9fb2bc");
+ g.fillStyle=gr;g.fillRect(0,0,W,H);
+ g.fillStyle="#c2d2da";g.fillRect(0,110,W,322);
+ g.strokeStyle="#a8bcc6";g.lineWidth=2;
+ for(let i=0;i<10;i++){g.beginPath();g.moveTo(i*106,110);g.lineTo(i*106,432);g.stroke();}
+ // the vitals monitor — a heartbeat that beats with the song
+ g.fillStyle="#0a1a14";rr(g,330,140,300,120,8);g.fill();
+ g.strokeStyle="#2a4a3a";g.lineWidth=2;rr(g,330,140,300,120,8);g.stroke();
+ g.strokeStyle="#4dffa8";g.lineWidth=2.5;g.beginPath();
+ for(let x2=0;x2<=280;x2+=4){
+  const ph4=((x2/280+t*0.5)%1);
+  let yv=0;
+  if(ph4>0.42&&ph4<0.46)yv=-34*(1-Math.abs(ph4-0.44)/0.02);
+  else if(ph4>0.46&&ph4<0.5)yv=18*(1-Math.abs(ph4-0.48)/0.02);
+  else yv=Math.sin(ph4*12)*3;
+  if(x2===0)g.moveTo(340+x2,200+yv);else g.lineTo(340+x2,200+yv);
+ }
+ g.stroke();
+ // red cross sign, pulsing politely
+ g.fillStyle="rgba(200,32,42,"+(0.75+pulse*0.25)+")";
+ rr(g,120,150,18,66,3);g.fill();rr(g,96,174,66,18,3);g.fill();
+ rr(g,790,150,18,66,3);g.fill();rr(g,766,174,66,18,3);g.fill();
+ for(const s of [220,690]){ // tool racks
+  g.fillStyle="#8a9aa4";rr(g,s,290,110,10,3);g.fill();
+  for(let i=0;i<4;i++){g.fillStyle="#6a7a86";rr(g,s+12+i*26,300,7,34+(i%2)*12,2);g.fill();}
+ }
+ drawFloor(g,"#b8c8d0","#c8202a",pulse);
+}
+function stageClub(g,t,pulse){ // Jazz's joint — low light, high style
+ let gr=g.createLinearGradient(0,0,0,H);
+ gr.addColorStop(0,"#0c0616");gr.addColorStop(1,"#1c1030");
+ g.fillStyle=gr;g.fillRect(0,0,W,H);
+ // disco ball
+ g.save();g.translate(480,90);
+ g.strokeStyle="#3a3a4a";g.lineWidth=3;g.beginPath();g.moveTo(0,-90);g.lineTo(0,-34);g.stroke();
+ g.fillStyle="#b8c4d8";g.beginPath();g.arc(0,0,34,0,TAU);g.fill();
+ for(let i=0;i<24;i++){
+  const a3=(i/24)*TAU+t*0.8;
+  g.fillStyle="rgba(255,255,255,"+(0.3+0.5*Math.max(0,Math.sin(a3*3+t*4)))+")";
+  rr(g,Math.cos(a3)*26-3,Math.sin(a3)*26*0.6-3,6,6,1);g.fill();
+ }
+ g.restore();
+ for(let i=0;i<5;i++){ // colored beams from the ball
+  const a4=t*0.7+i*1.26;
+  g.save();g.translate(480,90);g.rotate(Math.sin(a4)*0.9);
+  const bg7=g.createLinearGradient(0,0,0,460);
+  bg7.addColorStop(0,"rgba("+(i%2?"122,208,255":"210,40,80")+",0.14)");
+  bg7.addColorStop(1,"rgba(0,0,0,0)");
+  g.fillStyle=bg7;
+  g.beginPath();g.moveTo(-8,0);g.lineTo(8,0);g.lineTo(70,460);g.lineTo(-70,460);g.closePath();g.fill();
+  g.restore();
+ }
+ // neon strips pulse with the beat
+ for(const yy of [150,320]){
+  g.shadowColor="#7ad0ff";g.shadowBlur=12;
+  g.strokeStyle="rgba(122,208,255,"+(0.4+pulse*0.5)+")";g.lineWidth=3;
+  g.beginPath();g.moveTo(40,yy);g.lineTo(300,yy);g.stroke();
+  g.beginPath();g.moveTo(660,yy);g.lineTo(920,yy);g.stroke();
+  g.shadowBlur=0;
+ }
+ drawFloor(g,"#100a1e","#7ad0ff",pulse);
+ // checkered dance floor shimmer
+ g.globalAlpha=0.10+pulse*0.08;
+ for(let i=0;i<16;i++)for(let j=0;j<2;j++)if((i+j)%2===0){g.fillStyle="#fff";g.fillRect(i*60,440+j*50,60,50);}
+ g.globalAlpha=1;
+}
+const STAGES=[stageArk,stageHighway,stageCybertron,stageAutobotCity,stageShockLab,stageComms,stageNemesis,stageRuins,stageMirror,stageUnicron,stageStatic,stageArena,stageStreet,stageDepot,stageMedbay,stageClub];
 
 // ============ arrows / notes ============
 function drawArrow(g,x,y,lane,fill,alpha,scale,glow){
@@ -2017,7 +3500,10 @@ function startSong(i){
  if(songGain)try{songGain.disconnect();}catch(e){}
  songGain=ac.createGain();songGain.gain.value=1;songGain.connect(masterGain);
  songStartAbs=ac.currentTime+1.0;aidx=0;
- health=0.5;score=0;combo=0;maxCombo=0;sicks=0;goods=0;bads=0;misses=0;accSum=0;accN=0;
+ health=0.5;score=0;combo=0;maxCombo=0;sicks=0;goods=0;bads=0;misses=0;accSum=0;accN=0;recentJ=[];dispH=0.5;ghostH=0.5;lastH=0.5;chompT=-9;comboBreaks=0;
+ morphT=def.morphAt!==undefined?song.bars.start[def.intro+def.morphAt*2]:-1;
+ pwrTm=def.pwrAt!==undefined&&def.pwrVox?song.bars.start[def.intro+def.pwrAt*2]:-1;
+ lastSwapO="";lastSwapP="";swapFxT=-9;swapFxTP=-9;
  popups=[];parts=[];flashes=[[-9,-9,-9,-9],[-9,-9,-9,-9]];songBarIdx=0;
  oppPose="idle";plrPose="idle";oppPoseT=-9;plrPoseT=-9;plrMissT=-9;
  duoPose1="idle";duoPose2="idle";duoPoseT1=-9;duoPoseT2=-9;duoIcon=1;
@@ -2039,7 +3525,7 @@ function endSong(){
  state="results";
 }
 function doMiss(){
- combo=0;misses++;accN++;
+ comboBreaks++;combo=0;misses++;accN++;recentJ.push({t:lastNow,q:0});
  health=Math.max(0,health-0.05);
  plrMissT=lastNow;
  popups.push({txt:"MISS",col:"#f55",t:lastNow});
@@ -2072,6 +3558,7 @@ function onHit(lane){
  best.hit=true;
  const [txt,col,pts,accv,hp]=judge(bestDt);
  if(txt==="SICK!!")sicks++;else if(txt==="GOOD")goods++;else bads++;
+ recentJ.push({t:lastNow,q:txt==="SICK!!"?1:txt==="GOOD"?0.72:0.4});
  score+=pts;combo++;maxCombo=Math.max(maxCombo,combo);
  accSum+=accv;accN++;
  health=Math.min(1,health+hp);
@@ -2089,12 +3576,14 @@ window.addEventListener("keydown",e=>{
  if(e.repeat)return;
  if(state==="menu"){
   initAudio();if(ac.state==="suspended")ac.resume();
-  const N=SONGS.length+1;
+  const list=pageList();const N=list.length+1;
   if(e.key==="ArrowUp"||e.key.toLowerCase()==="w")selIdx=(selIdx+N-1)%N;
   else if(e.key==="ArrowDown"||e.key.toLowerCase()==="s")selIdx=(selIdx+1)%N;
+  else if(e.key==="ArrowLeft"||e.key.toLowerCase()==="a"){menuPage=(menuPage+NPAGES-1)%NPAGES;selIdx=0;}
+  else if(e.key==="ArrowRight"||e.key.toLowerCase()==="d"){menuPage=(menuPage+1)%NPAGES;selIdx=0;}
   else if(e.key==="Enter"){
-   if(selIdx===SONGS.length){bindsReturn="menu";state="binds";bindSel=0;bindWait=false;}
-   else if(!isLocked(selIdx))startSong(selIdx);
+   if(selIdx>=list.length){bindsReturn="menu";state="binds";bindSel=0;bindWait=false;}
+   else if(!isLocked(list[selIdx]))startSong(list[selIdx]);
   }
  }else if(state==="binds"){
   const k=e.key.toLowerCase();
@@ -2139,7 +3628,7 @@ function releaseLane(l){
  if(playing&&song&&state==="play")for(const n of song.plr)
   if(n.holding&&n.lane===l&&!n.auto){
    n.holding=false;
-   if(lastNow<n.t+n.dur-0.15){combo=0;} // dropped sustain
+   if(lastNow<n.t+n.dur-0.15){comboBreaks++;combo=0;} // dropped sustain
   }
 }
 function releaseAllLanes(){for(let l=0;l<4;l++)heldKeys[l]=false;}
@@ -2163,11 +3652,14 @@ function pointerAt(mx,my){
  const pausedCtx=state==="pause"||(state==="binds"&&bindsReturn==="pause");
  if(ac&&ac.state==="suspended"&&!pausedCtx)ac.resume();
  if(state==="menu"){
-  for(let i=0;i<=SONGS.length;i++){
+  // page-flip side tabs
+  if(my>280&&my<384&&(mx<130||mx>830)){menuPage=(menuPage+(mx<130?NPAGES-1:1))%NPAGES;selIdx=0;return;}
+  const list=pageList();
+  for(let i=0;i<=list.length;i++){
    const y=182+i*40;
    if(my>y-17&&my<y+17){
-    if(i===SONGS.length){bindsReturn="menu";state="binds";bindSel=0;bindWait=false;}
-    else if(selIdx===i&&!isLocked(i))startSong(i);
+    if(i===list.length){bindsReturn="menu";state="binds";bindSel=0;bindWait=false;}
+    else if(selIdx===i&&!isLocked(list[i]))startSong(list[i]);
     else selIdx=i;
    }
   }
@@ -2293,9 +3785,12 @@ function renderMenu(t){
   ctx.fillStyle="rgba(255,216,74,0.9)";ctx.font="bold 15px Arial";
   ctx.fillText("⟳  Rotate your device to landscape for the best experience",480,168);
  }
- for(let i=0;i<=SONGS.length;i++){
-  const y=182+i*40,sel=i===selIdx,isCtl=i===SONGS.length;
-  const lk=!isCtl&&isLocked(i);
+ const list=pageList();
+ if(selIdx>list.length)selIdx=0;
+ for(let i=0;i<=list.length;i++){
+  const y=182+i*40,sel=i===selIdx,isCtl=i===list.length;
+  const si=isCtl?-1:list[i];
+  const lk=!isCtl&&isLocked(si);
   ctx.globalAlpha=sel?1:(lk?0.55:0.78);
   if(sel){ctx.shadowColor=lk?"#803040":"#ffd84a";ctx.shadowBlur=16;}
   ctx.fillStyle=sel?(lk?"rgba(70,20,26,0.95)":"rgba(96,42,150,0.95)"):(lk?"rgba(26,14,16,0.9)":"rgba(28,22,48,0.88)");
@@ -2306,7 +3801,7 @@ function renderMenu(t){
    ctx.font="900 15px 'Arial Black',Arial";
    ctx.fillText("⚙  CONTROLS — rebind keys",480,y+5);
   }else if(lk){
-   const s=SONGS[i];
+   const s=SONGS[si];
    ctx.textAlign="left";ctx.fillStyle=sel?"#ff9aa4":"#8a6a70";
    ctx.font="900 14px 'Arial Black',Arial";
    ctx.fillText("🔒 "+s.title,190,y-3);
@@ -2315,7 +3810,7 @@ function renderMenu(t){
    ctx.textAlign="right";ctx.font="12px Arial";ctx.fillStyle="#8a6a70";
    ctx.fillText("★★★★★",772,y+4);
   }else{
-   const s=SONGS[i];
+   const s=SONGS[si];
    ctx.textAlign="left";ctx.fillStyle=sel?"#fff":"#cbc5dd";
    ctx.font="900 14px 'Arial Black',Arial";
    ctx.fillText((s.opp==="optimus"?"★ FINALE — ":"")+(s.locked?"☠ BOSS — ":"")+s.title,190,y-3);
@@ -2326,6 +3821,16 @@ function renderMenu(t){
   }
   ctx.globalAlpha=1;
  }
+ // page tabs — tap the side arrows, or press left/right
+ for(const s2 of [-1,1]){
+  const x2=s2<0?80:880;
+  ctx.fillStyle="rgba(28,22,48,0.9)";rr(ctx,x2-34,300,68,64,12);ctx.fill();
+  ctx.strokeStyle="#6a5a9e";ctx.lineWidth=2;rr(ctx,x2-34,300,68,64,12);ctx.stroke();
+  ctx.fillStyle="#ffd84a";ctx.font="900 30px 'Arial Black',Arial";ctx.textAlign="center";
+  ctx.fillText(s2<0?"◀":"▶",x2,342);
+ }
+ ctx.font="900 12px 'Arial Black',Arial";ctx.fillStyle="#c7b6ff";ctx.textAlign="center";
+ ctx.fillText(["SIDE A — THE WAR FOR EARTH","SIDE B — SHATTERED GLASS","SIDE C — THE FINAL BATTLE"][menuPage]+"    "+(menuPage+1)+" / "+NPAGES+"    (◀ ▶ or ← → to flip)",480,164);
  ctx.textAlign="center";ctx.font="11px Arial";ctx.fillStyle="#776f8f";
  ctx.fillText("Unofficial fan work. Transformers © Hasbro/Takara. Friday Night Funkin' by The Funkin' Crew. All music here is original.",480,528);
  scanlines();
@@ -2403,8 +3908,13 @@ function renderPause(t){
   drawBot(ctx,SOUNDWAVE,"up",370,505,1.15,Math.sin(t*2+1.5)*3,0,t,0.05,1);
  }else if(def.opp==="megatron"){
   drawBot(ctx,MEGATRON,"up",270,538,1.9,Math.sin(t*2)*3,0,t,0.05,1);
+ }else if(def.opp==="robobf"){
+  drawBF(ctx,"up",270,505,1.5,Math.sin(t*2)*3,0,1,true);
+ }else if(def.oppSwap){
+  const swn=swapAt(lastNow)||{opp:def.oppSwap[0]};
+  drawBot(ctx,SPECMAP[swn.opp]||MEGATRON,"up",270,505,1.5,Math.sin(t*2)*3,0,t,0.05,1);
  }else{
-  const spec=def.opp==="optimus"?OPTIMUS:def.opp==="shockwave"?SHOCKWAVE:def.opp==="soundwave"?SOUNDWAVE:HOTROD;
+  const spec=def.opp==="galvatron"?((def.morphAt!==undefined&&song&&lastNow<song.bars.start[def.intro+def.morphAt*2])?MEGATRON:(def.pwrAt!==undefined&&song&&lastNow>=song.bars.start[def.intro+def.pwrAt*2]?UNITRON:GALVATRON)):(SPECMAP[def.opp]||HOTROD);
   drawBot(ctx,spec,"up",270,505,1.55,Math.sin(t*2)*3,0,t,0.05,1);
  }
  metalText(ctx,"PAUSED",700,116,46,"#8090b0","#c03040");
@@ -2442,6 +3952,7 @@ function renderPlay(t){
     if(n.who2&2){duoPose2=dirN;duoPoseT2=now;}
     duoIcon=n.who2===3?(duoIcon===1?2:1):n.who2;
    }else{oppPose=dirN;oppPoseT=now;}
+   if(def.cinema)health=Math.max(0,health-0.019); // his notes hit almost as hard as yours
   }
  }
  // player miss detection — with chord forgiveness: if you hit ANY member of a
@@ -2479,7 +3990,8 @@ function renderPlay(t){
   const sh=Math.max(0,0.3-(now-oppPoseT))*20;
   if(sh>0.5)ctx.translate((hashRand(Math.floor(now*60))-0.5)*sh,(hashRand(Math.floor(now*60)+7)-0.5)*sh);
  }
- STAGES[def.stage](ctx,Math.max(0,now),pulse);
+ const stIdx=(def.morphAt!==undefined&&now<song.bars.start[def.intro+def.morphAt*2])?def.preStage:def.stage;
+ STAGES[stIdx](ctx,Math.max(0,now),pulse);
  // camera bump
  ctx.save();
  const z=1+pulse*0.012;
@@ -2488,6 +4000,12 @@ function renderPlay(t){
  const bob=Math.sin(beatPh*Math.PI)*4;
  const pAge=now-plrPoseT;
  const pPose=pAge<0.35?plrPose:"idle";
+ if(def.gf){ // girlfriend on the speaker, bobbing with the beat
+  const bDur=4*song.sd*(song.bars.spd[songBarIdx]||1);
+  const bc=Math.floor((now-song.bars.start[songBarIdx])/bDur)+songBarIdx*4;
+  const sw=((bc%2)?1:-1)*(0.35+0.65*Math.max(0,1-beatPh*2));
+  drawGF(ctx,480,472,1.3,sw,pulse); // she and the speaker TOWER behind the duel
+ }
  if(def.opp==="duo"){
   const a1=now-duoPoseT1,a2=now-duoPoseT2;
   const p1=a1<0.35?duoPose1:"idle",p2=a2<0.35?duoPose2:"idle";
@@ -2498,21 +4016,98 @@ function renderPlay(t){
   const oAge=now-oppPoseT;
   const oPose=oAge<0.4?oppPose:"idle";
   drawBot(ctx,MEGATRON,oPose,205,540,2.15,oPose==="idle"?bob*1.6:0,0,now,oAge,1);
+ }else if(def.oppSwap){ // the Decepticon relay — a new duelist every block
+  const oAge=now-oppPoseT;
+  const oPose=oAge<0.35?oppPose:"idle";
+  const swn=swapAt(now)||{opp:def.oppSwap[0],plr:def.plrSwap[0]};
+  if(swn.opp!==lastSwapO){lastSwapO=swn.opp;swapFxT=now;}
+  const sc2=(swn.opp==="galvatron"||swn.opp==="unitron")?1.1:swn.opp==="megatron"?1.05:1.0;
+  drawBot(ctx,SPECMAP[swn.opp]||MEGATRON,oPose,300,468,sc2,oPose==="idle"?bob:0,0,now,oAge,1);
+  const sfo=now-swapFxT;
+  if(sfo>=0&&sfo<0.5){ // tag-in flash
+   ctx.strokeStyle="rgba(176,96,255,"+(0.85*(1-sfo*2))+")";ctx.lineWidth=4;
+   ctx.beginPath();ctx.arc(300,380,20+sfo*320,0,TAU);ctx.stroke();
+  }
+ }else if(def.opp==="robobf"){
+  const oAge=now-oppPoseT;
+  const oPose=oAge<0.35?oppPose:"idle";
+  drawBF(ctx,oPose,300,468,1.02,oPose==="idle"?bob:0,0,1,true);
  }else{
   const oAge=now-oppPoseT;
   const oPose=oAge<0.35?oppPose:"idle";
-  const spec=def.opp==="optimus"?OPTIMUS:def.opp==="shockwave"?SHOCKWAVE:def.opp==="soundwave"?SOUNDWAVE:HOTROD;
-  const oScale=def.opp==="optimus"?1.02:(def.opp==="shockwave"||def.opp==="soundwave")?1.0:0.92;
+  let spec=SPECMAP[def.opp]||HOTROD;
+  let oScale=def.opp==="galvatron"?1.12:def.opp==="bumblebee"?0.84:(def.opp==="optimus"||def.opp==="nemesis")?1.02:(def.opp==="shockwave"||def.opp==="soundwave"||def.opp==="ironhide"||def.opp==="ratchet"||def.opp==="jazz")?1.0:0.92;
+  let pwrT=-1,mT=-1;
+  if(def.morphAt!==undefined&&def.opp==="galvatron"){
+   const tm=song.bars.start[def.intro+def.morphAt*2];
+   if(now<tm){spec=MEGATRON;oScale=0.98;} // not yet reborn — Megatron, and smaller
+   else mT=now-tm;
+  }
+  if(def.pwrAt!==undefined&&def.opp==="galvatron"&&spec!==MEGATRON){ // the payoff
+   const tp=song.bars.start[def.intro+def.pwrAt*2];
+   if(now>=tp){spec=UNITRON;oScale=1.22;pwrT=now-tp;}
+  }
   drawBot(ctx,spec,oPose,300,468,oScale,oPose==="idle"?bob:0,0,now,oAge,1);
+  if(mT>=0&&mT<1.1){ // REBIRTH — violet fire: Megatron dies, Galvatron rises
+   const k2=1-mT/1.1;
+   ctx.strokeStyle="rgba(190,90,255,"+(k2*0.9)+")";ctx.lineWidth=6;
+   ctx.beginPath();ctx.arc(300,360,20+mT*470,0,TAU);ctx.stroke();
+   ctx.strokeStyle="rgba(255,255,255,"+(k2*0.55)+")";ctx.lineWidth=2.5;
+   ctx.beginPath();ctx.arc(300,360,10+mT*550,0,TAU);ctx.stroke();
+   ctx.fillStyle="rgba(230,190,255,"+(k2*k2*0.8)+")";ctx.fillRect(0,0,W,H);
+  }
+  if(pwrT>=0&&pwrT<1.1){ // ascension burst — light swallows the screen, rings race out
+   const k=1-pwrT/1.1;
+   ctx.strokeStyle="rgba(255,190,80,"+(k*0.9)+")";ctx.lineWidth=6;
+   ctx.beginPath();ctx.arc(300,360,20+pwrT*480,0,TAU);ctx.stroke();
+   ctx.strokeStyle="rgba(255,255,255,"+(k*0.6)+")";ctx.lineWidth=2.5;
+   ctx.beginPath();ctx.arc(300,360,10+pwrT*560,0,TAU);ctx.stroke();
+   ctx.fillStyle="rgba(255,240,210,"+(k*k*0.75)+")";ctx.fillRect(0,0,W,H);
+  }
  }
- drawKid(ctx,pPose,def.opp==="megatron"?830:672,468,1.0,pPose==="idle"?bob:0,Math.max(0,1-(now-plrMissT)*3),-1,def.opp==="megatron"?now:0);
+ if(def.plrBot)drawBot(ctx,OPTIMUS,pPose,678,468,1.0,pPose==="idle"?bob:0,Math.max(0,1-(now-plrMissT)*3),now,pAge,-1);
+ else if(def.plrSwap){ // the Autobot relay
+  const swn=swapAt(now)||{plr:def.plrSwap[0]};
+  if(swn.plr!==lastSwapP){lastSwapP=swn.plr;swapFxTP=now;}
+  drawBot(ctx,SPECMAP[swn.plr]||HOTROD,pPose,672,468,swn.plr==="bumblebee"?0.84:0.98,pPose==="idle"?bob:0,Math.max(0,1-(now-plrMissT)*3),now,pAge,-1);
+  const sfp=now-swapFxTP;
+  if(sfp>=0&&sfp<0.5){
+   ctx.strokeStyle="rgba(255,120,80,"+(0.85*(1-sfp*2))+")";ctx.lineWidth=4;
+   ctx.beginPath();ctx.arc(672,380,20+sfp*320,0,TAU);ctx.stroke();
+  }
+ }
+ else if(def.plrChar==="bf")drawBF(ctx,pPose,672,468,1.0,pPose==="idle"?bob:0,Math.max(0,1-(now-plrMissT)*3),-1,false);
+ else drawKid(ctx,pPose,def.opp==="megatron"?830:672,468,1.0,pPose==="idle"?bob:0,Math.max(0,1-(now-plrMissT)*3),-1,(def.opp==="megatron"||def.opp==="galvatron")?now:0);
  ctx.restore();
  ctx.restore(); // impact-shake frame
+ if(def.cinema){ // FINALE presentation: this one does not look like the others
+  for(let i=0;i<26;i++){ // rising embers
+   const ph=((now*(0.05+hashRand(i)*0.06))+hashRand(i*3))%1;
+   const ex=hashRand(i*7)*W+Math.sin(now*0.8+i)*18,ey=540-ph*560;
+   ctx.globalAlpha=0.5*(1-ph)*(0.6+0.4*Math.sin(now*6+i));
+   ctx.fillStyle=i%3?"#ff9a40":"#ffd8a0";
+   ctx.fillRect(ex,ey,2.5,2.5);
+  }
+  ctx.globalAlpha=1;
+  // cinematic grade follows the song's emotional tier: the somber acts sit in
+  // near-darkness, the build lifts, and the climax burns at full brightness
+  const si2=Math.max(0,Math.min(def.st.length-1,Math.floor((songBarIdx-def.intro)/2)));
+  const op2=(def.st[si2]&&def.st[si2][2])||"";
+  const dark=songBarIdx<def.intro?0.30:op2.indexOf("q")>=0?0.34:op2.indexOf("s")>=0?0.18:0.05;
+  ctx.fillStyle="rgba(2,1,6,"+dark+")";ctx.fillRect(0,0,W,H);
+  ctx.fillStyle="rgba(0,0,0,0.9)";ctx.fillRect(0,0,W,7);ctx.fillRect(0,H-7,W,7); // letterbox
+ }
  vignette(ctx);
  // translucent lane panels
- ctx.fillStyle="rgba(5,5,14,0.34)";
- rr(ctx,OPPX[0]-46,42,OPPX[3]-OPPX[0]+92,478,14);ctx.fill();
- rr(ctx,PLRX[0]-46,42,PLRX[3]-PLRX[0]+92,478,14);ctx.fill();
+ if(def.cinema){ // ember rails instead of glass panels
+  ctx.strokeStyle="rgba(255,140,60,0.22)";ctx.lineWidth=2;
+  rr(ctx,OPPX[0]-46,42,OPPX[3]-OPPX[0]+92,478,14);ctx.stroke();
+  rr(ctx,PLRX[0]-46,42,PLRX[3]-PLRX[0]+92,478,14);ctx.stroke();
+ }else{
+  ctx.fillStyle="rgba(5,5,14,0.34)";
+  rr(ctx,OPPX[0]-46,42,OPPX[3]-OPPX[0]+92,478,14);ctx.fill();
+  rr(ctx,PLRX[0]-46,42,PLRX[3]-PLRX[0]+92,478,14);ctx.fill();
+ }
  // lane-color tint (togglable in settings) — helps track which lane is which
  if(laneTint==="on"){
   if(isTouchUI()){
@@ -2571,27 +4166,188 @@ function renderPlay(t){
   ctx.beginPath();ctx.arc(p.x+p.vx*a,p.y+p.vy*a+200*a*a,3.4*k+1,0,TAU);ctx.fill();
  }
  ctx.globalAlpha=1;
- // health bar
+ // health bar — slanted duel bar on every song; FINALE gets the full treatment
  const bx=280,bw=400,by=498;
- ctx.fillStyle="rgba(0,0,0,0.7)";rr(ctx,bx-5,by-5,bw+10,22,10);ctx.fill();
- ctx.strokeStyle="rgba(255,255,255,0.35)";ctx.lineWidth=2;rr(ctx,bx-5,by-5,bw+10,22,10);ctx.stroke();
- const oc=def.opp==="optimus"?"#c03048":def.opp==="shockwave"?"#7a3cc8":def.opp==="soundwave"?"#2b5fc7":def.opp==="duo"?"#4d49c8":def.opp==="megatron"?"#7a1420":"#c8264a";
- let og=ctx.createLinearGradient(0,by,0,by+12);
- og.addColorStop(0,shade(oc,1.4));og.addColorStop(1,shade(oc,0.7));
- ctx.fillStyle=og;rr(ctx,bx,by,bw*(1-health),12,5);ctx.fill();
- let pg=ctx.createLinearGradient(0,by,0,by+12);
- pg.addColorStop(0,shade("#18a8a0",1.5));pg.addColorStop(1,shade("#18a8a0",0.7));
- ctx.fillStyle=pg;rr(ctx,bx+bw*(1-health),by,bw*health,12,5);ctx.fill();
- const bxp=bx+bw*(1-health);
+ if(def.cinema){ // eased display health, ghost drain, chomp trigger
+  dispH+=(health-dispH)*0.25;
+  ghostH+=(health-ghostH)*0.05;
+  if(health<lastH-0.015)chompT=now;
+  lastH=health;
+ }
+ const hShow=def.cinema?dispH:health;
+ const bxp=def.cinema?190+566*(1-hShow):bx+bw*(1-hShow);
  const oState=health<0.2?"win":(health>0.8?"lose":"norm");
  const pState=health<0.2?"lose":(health>0.8?"win":"norm");
- const isz=52+pulse*5;
- const oppIconKey=def.opp==="duo"?(duoIcon===2?"soundwave":"shockwave"):def.opp;
- ctx.drawImage(ICONS[oppIconKey+"_"+oState],bxp-isz+4,by+6-isz/2-20,isz,isz);
- ctx.drawImage(ICONS["kid_"+pState],bxp-4,by+6-isz/2-20,isz,isz);
+ const preForm=def.morphAt!==undefined&&now<song.bars.start[def.intro+def.morphAt*2];
+ const pwrForm=def.pwrAt!==undefined&&def.opp==="galvatron"&&now>=song.bars.start[def.intro+def.pwrAt*2];
+ const swNow=def.oppSwap?(swapAt(now)||{opp:def.oppSwap[0],plr:def.plrSwap[0]}):null;
+ const oppIconKey=def.opp==="duo"?(duoIcon===2?"soundwave":"shockwave"):(swNow?swNow.opp:(preForm?def.preOpp:(pwrForm?"unitron":def.opp)));
+ const oc=def.opp==="optimus"?"#c03048":def.opp==="shockwave"?"#7a3cc8":def.opp==="soundwave"?"#2b5fc7":def.opp==="duo"?"#4d49c8":def.opp==="megatron"?"#7a1420":def.opp==="nemesis"?"#8a30d8":def.opp==="galvatron"?"#c85a10":def.opp==="robobf"?"#3a7ac8":def.opp==="decepticons"?"#6b34b8":def.opp==="bumblebee"?"#f2c020":def.opp==="ironhide"?"#c8452a":def.opp==="ratchet"?"#c8202a":def.opp==="jazz"?"#2456c8":"#c8264a";
+ const sk=10;
+ ctx.save();
+ if(def.cinema){ // the whole bar sits tilted, like something struck it
+  ctx.translate(480,by+5);ctx.rotate(-0.022);ctx.translate(-480,-(by+5));
+  const glL=ctx.createLinearGradient(160,0,360,0);
+  glL.addColorStop(0,"rgba(255,120,30,0.22)");glL.addColorStop(1,"rgba(255,120,30,0)");
+  ctx.fillStyle=glL;ctx.fillRect(160,by-48,200,80);
+  const glR=ctx.createLinearGradient(790,0,600,0);
+  glR.addColorStop(0,"rgba(66,232,216,0.18)");glR.addColorStop(1,"rgba(66,232,216,0)");
+  ctx.fillStyle=glR;ctx.fillRect(600,by-30,190,60);
+ }
+ const hy1=def.cinema?by-42:by-4,hy2=def.cinema?by+26:by+14;
+ const xL=def.cinema?170:bx,xR=def.cinema?770:bx+bw;
+ const bladePath=()=>{ // FINALE silhouette measured from the footage:
+  // sharp point low-left; the spine arcs high over a fat belly in the left
+  // third; the underside runs almost straight; at ~45% of the length the
+  // shape collapses into a long thin tail that runs to the player's end.
+  ctx.beginPath();
+  ctx.moveTo(190,514); // the point
+  ctx.quadraticCurveTo(238,470,330,470); // spine climbing to the crest
+  ctx.quadraticCurveTo(428,472,468,501); // crest collapsing toward the tail
+  ctx.quadraticCurveTo(500,505,540,505); // into the thin tail (top edge)
+  ctx.lineTo(748,505);
+  ctx.quadraticCurveTo(758,508,748,511); // small rounded tail end
+  ctx.lineTo(540,511);
+  ctx.quadraticCurveTo(478,512,428,516); // tail underside joins the belly
+  ctx.quadraticCurveTo(292,521,190,514); // near-straight cutting edge back
+  ctx.closePath();
+ };
+ if(def.cinema){
+  bladePath();ctx.fillStyle="rgba(0,0,0,0.78)";ctx.fill();
+  bladePath();ctx.save();ctx.clip(); // everything below is trimmed to the blade
+ }else{
+  ctx.beginPath();ctx.moveTo(bx-8+sk,by-7);ctx.lineTo(bx+bw+8+sk,by-7);ctx.lineTo(bx+bw+8-sk,by+17);ctx.lineTo(bx-8-sk,by+17);ctx.closePath();
+  ctx.fillStyle="rgba(0,0,0,0.78)";ctx.fill();
+  ctx.strokeStyle=health<0.25?"rgba(255,60,40,"+(0.6+0.4*Math.sin(now*10))+")":"rgba(255,255,255,0.4)";
+  ctx.lineWidth=2.5;ctx.stroke();
+ }
+ const og2=ctx.createLinearGradient(0,hy1,0,hy2); // opponent half in their color
+ og2.addColorStop(0,shade(oc,1.7));og2.addColorStop(0.5,oc);og2.addColorStop(1,shade(oc,0.4));
+ ctx.beginPath();ctx.moveTo(xL+sk*0.7,hy1);ctx.lineTo(bxp+sk*0.7,hy1);ctx.lineTo(bxp-sk*0.7,hy2);ctx.lineTo(xL-sk*0.7,hy2);ctx.closePath();
+ ctx.fillStyle=og2;ctx.fill();
+ for(let i=0;i<6;i++){ // energy flicker along their edge
+  const fxp=(def.cinema?190:bx)+((i+0.5)/6)*(bxp-(def.cinema?190:bx));
+  const fl=3+3*Math.abs(Math.sin(now*7+i*1.7));
+  ctx.globalAlpha=0.5;ctx.fillStyle=shade(oc,1.9);
+  ctx.beginPath();ctx.ellipse(fxp,by-3,2.5,fl,0,0,TAU);ctx.fill();
+ }
+ ctx.globalAlpha=1;
+ const pg2=ctx.createLinearGradient(0,hy1,0,hy2); // your half sparks teal
+ pg2.addColorStop(0,"#7dfff0");pg2.addColorStop(0.5,"#18b8a8");pg2.addColorStop(1,"#075048");
+ ctx.beginPath();ctx.moveTo(bxp+sk*0.7,hy1);ctx.lineTo(xR+sk*0.7,hy1);ctx.lineTo(xR-sk*0.7,hy2);ctx.lineTo(bxp-sk*0.7,hy2);ctx.closePath();
+ ctx.fillStyle=pg2;ctx.fill();
+ if(def.cinema){ // ghost of health just lost, draining toward the truth
+  const gx2=bx+bw*(1-ghostH);
+  if(Math.abs(gx2-bxp)>1.5){
+   const x1=Math.min(gx2,bxp),x2=Math.max(gx2,bxp);
+   ctx.fillStyle="rgba(255,255,255,"+(0.30+0.18*Math.sin(now*20))+")";
+   ctx.beginPath();ctx.moveTo(x1+sk*0.7,hy1);ctx.lineTo(x2+sk*0.7,hy1);ctx.lineTo(x2-sk*0.7,hy2);ctx.lineTo(x1-sk*0.7,hy2);ctx.closePath();ctx.fill();
+  }
+ }
+ ctx.strokeStyle="rgba(0,0,0,0.35)";ctx.lineWidth=1.5; // 10% ticks
+ for(let i=1;i<10;i++){const tx=(def.cinema?190:bx)+(def.cinema?566:bw)*i/10;ctx.beginPath();ctx.moveTo(tx+sk*0.4,by-3);ctx.lineTo(tx-sk*0.4,by+13);ctx.stroke();}
+ if(def.cinema){ // unclip, ink the blade's edge, then tear the frontier open
+  ctx.restore();
+  bladePath();
+  ctx.shadowColor="#57e8ff";ctx.shadowBlur=9;
+  ctx.strokeStyle=health<0.25?"rgba(255,60,40,"+(0.6+0.4*Math.sin(now*10))+")":"rgba(87,232,255,0.9)";
+  ctx.lineWidth=2.5;ctx.stroke();ctx.shadowBlur=0;
+  ctx.shadowColor="#fff";ctx.shadowBlur=12;
+  ctx.strokeStyle="#fff";ctx.lineWidth=3.5;ctx.lineJoin="round";
+  const inBelly=bxp<450,scy=inBelly?496:508,shh=inBelly?25:8;
+  ctx.beginPath();
+  for(let k=0;k<=5;k++){
+   const yy=scy-shh+k*(2*shh/5);
+   const xx=bxp+((k>0&&k<5)?(hashRand(Math.floor(now*8)*7+k)-0.5)*9:0);
+   if(k)ctx.lineTo(xx,yy);else ctx.moveTo(xx,yy);
+  }
+  ctx.stroke();ctx.shadowBlur=0;
+  for(let i=0;i<4;i++){ // corruption drips bleeding from his half
+   const dxp=190+((i+0.6)/4.4)*(bxp-190);
+   const ph=((now*0.6)+i*0.29)%1;
+   ctx.fillStyle=shade(oc,1.4);
+   ctx.beginPath();ctx.ellipse(dxp,by+15,2.2,3.5+2*Math.sin(now*2+i),0,0,TAU);ctx.fill();
+   if(ph>0.72){ctx.globalAlpha=1-(ph-0.72)/0.28;ctx.fillRect(dxp-1,by+18+(ph-0.72)*90,2,4);ctx.globalAlpha=1;}
+  }
+ }else{ // clean white-hot frontier notch
+  ctx.save();ctx.translate(bxp,by+5);ctx.rotate(-0.35);
+  ctx.shadowColor="#fff";ctx.shadowBlur=10;
+  ctx.fillStyle="#fff";ctx.fillRect(-2,-13,4,26);ctx.restore();
+ }
+ for(let i=0;i<3;i++){ // sparks dripping off the frontier
+  const ph=((now*2.2)+i*0.37)%1;
+  ctx.globalAlpha=0.8*(1-ph);
+  ctx.fillStyle=i%2?"#ffd080":"#fff";
+  ctx.fillRect(bxp+(hashRand(i+Math.floor(now*3))-0.5)*10,by+14+ph*18,2,2);
+ }
+ ctx.globalAlpha=1;
+ let oI=56+pulse*7,pI=56+pulse*7; // icon sizes — in FINALE the winner LOOMS
+ if(def.cinema){oI=78+40*(1-hShow)+pulse*5;pI=64+36*hShow+pulse*5;}
+ if(health<0.25){oI*=1.08;pI*=1.08;}
+ const sqx=def.cinema?1+pulse*0.20:1,sqy=def.cinema?1-pulse*0.12:1; // beat bop squash
+ const ch=def.cinema?Math.max(0,1-(now-chompT)*5):0; // bite lunge on damage
+ const oIX=def.cinema?126:bxp-oI/2+2,pIX=def.cinema?744:bxp+pI/2-2;
+ const oIcY=def.cinema?by-28:by+6-20,pIcY=def.cinema?by+2:by+6-20;
+ ctx.save();ctx.translate(oIX,oIcY);ctx.rotate(Math.sin(now*3)*0.06-0.08+ch*0.4);
+ ctx.translate(ch*16,0);ctx.scale(sqx,sqy);
+ if(def.cinema&&oState==="win")ctx.translate(6*pulse,0); // he lunges when he tastes it
+ ctx.drawImage(ICONS[oppIconKey+"_"+oState],-oI/2,-oI/2,oI,oI);ctx.restore();
+ ctx.save();ctx.translate(pIX,pIcY);ctx.rotate(Math.sin(now*3+2)*0.06+0.08-ch*0.2);
+ ctx.scale(sqx,sqy);
+ if(pState==="lose")ctx.translate(Math.sin(now*40)*2,0);
+ if(ch>0)ctx.translate(ch*8,0); // recoil from the bite
+ ctx.drawImage(ICONS[(swNow?swNow.plr:(def.plrBot?"optimus":def.plrChar==="bf"?"bf":"kid"))+"_"+pState],-pI/2,-pI/2,pI,pI);ctx.restore();
+ ctx.restore();
+ if(health<0.25){ // danger — the screen itself bleeds
+  ctx.fillStyle="rgba(255,20,10,"+(0.10+0.08*Math.sin(now*9))+")";
+  ctx.fillRect(0,0,W,H);
+ }
+ { // the burning timeline — every song wears it now
+  const pr=Math.min(1,Math.max(0,now/song.total));
+  ctx.fillStyle="rgba(0,0,0,0.72)";rr(ctx,250,10,460,14,7);ctx.fill();
+  ctx.strokeStyle="rgba(255,150,60,0.8)";ctx.lineWidth=2;rr(ctx,250,10,460,14,7);ctx.stroke();
+  if(pr>0.01){
+   const pgr=ctx.createLinearGradient(250,0,710,0);
+   pgr.addColorStop(0,"#ff6a20");pgr.addColorStop(1,"#ffd84a");
+   ctx.fillStyle=pgr;rr(ctx,252,12,456*pr,10,5);ctx.fill();
+  }
+  const mx2=252+456*Math.min(1,Math.max(0,pr));
+  ctx.shadowColor="#ffd84a";ctx.shadowBlur=8;
+  ctx.fillStyle="#fff";ctx.beginPath();ctx.arc(mx2,17,5,0,TAU);ctx.fill();
+  ctx.shadowBlur=0;
+  const rem=Math.max(0,song.total-now);
+  ctx.font="900 12px 'Arial Black',Arial";ctx.textAlign="center";ctx.fillStyle="#ffd8b0";
+  const curName=swNow?swNow.opp.toUpperCase():(preForm?def.preOpp.toUpperCase():(pwrForm?"UNITRON":(def.revealName||def.oppName)));
+  ctx.fillText(def.title+" — vs "+curName+"   "+Math.floor(rem/60)+":"+String(Math.floor(rem%60)).padStart(2,"0"),480,38);
+  // WHO'S WINNING — a duel meter that leans with your last ten seconds
+  recentJ=recentJ.filter(j=>now-j.t<10);
+  let w=0.5;
+  if(recentJ.length){const s3=recentJ.reduce((a,j)=>a+j.q,0)/recentJ.length;w=0.18+s3*0.64;}
+  const wbx=300,wbw=360,wby=def.cinema?523:524;
+  if(!def.cinema){ctx.fillStyle="rgba(0,0,0,0.72)";rr(ctx,wbx-3,wby-3,wbw+6,14,7);ctx.fill();}
+  const gg2=ctx.createLinearGradient(0,wby,0,wby+8);
+  gg2.addColorStop(0,"#ff9a40");gg2.addColorStop(1,"#a83c10");
+  ctx.fillStyle=gg2;rr(ctx,wbx,wby,wbw*(1-w),8,4);ctx.fill();
+  const tg2=ctx.createLinearGradient(0,wby,0,wby+8);
+  tg2.addColorStop(0,"#42e8d8");tg2.addColorStop(1,"#0f7a70");
+  ctx.fillStyle=tg2;rr(ctx,wbx+wbw*(1-w),wby,wbw*w,8,4);ctx.fill();
+  ctx.fillStyle="#fff";rr(ctx,wbx+wbw*(1-w)-1.5,wby-2,3,12,1.5);ctx.fill();
+  ctx.font="900 10px 'Arial Black',Arial";
+  ctx.textAlign="right";ctx.fillStyle=w<0.5?"#ffc890":"#8d8fa0";ctx.fillText(curName,wbx-8,wby+8);
+  ctx.textAlign="left";ctx.fillStyle=w>0.5?"#7df7e8":"#8d8fa0";ctx.fillText("YOU",wbx+wbw+8,wby+8);
+  ctx.textAlign="center";
+ }
  // score line
- ctx.font="bold 15px Arial";ctx.textAlign="center";ctx.fillStyle="#fff";
- ctx.fillText("Score: "+score+"   Combo: "+combo+"   Misses: "+misses,480,536);
+ if(def.cinema){ // the readout from the footage, beneath the knife
+  const accP=accN?(accSum/accN*100):100;
+  const tag=comboBreaks===0?((goods===0&&bads===0&&misses===0)?" [MFC]":" [GFC]"):"";
+  ctx.font="900 11px 'Arial Black',Arial";ctx.textAlign="center";ctx.fillStyle="#4de8e0";
+  ctx.fillText("Score: "+score+" | Combo Breaks: "+comboBreaks+" | Accuracy: "+accP.toFixed(2)+"%"+tag,480,538);
+ }else{
+  ctx.font="900 11px 'Arial Black',Arial";ctx.textAlign="right";ctx.fillStyle="#cbc5dd";
+  ctx.fillText("Score "+score+"  Combo "+combo+"  Miss "+misses,948,38);
+  ctx.textAlign="center";
+ }
  // popups
  popups=popups.filter(p=>now-p.t<0.6);
  for(const p of popups){
@@ -2606,12 +4362,7 @@ function renderPlay(t){
   ctx.strokeStyle="#101018";ctx.lineWidth=4;
   ctx.strokeText(combo+" COMBO",480,336);ctx.fillText(combo+" COMBO",480,336);
  }
- // progress
- ctx.fillStyle="rgba(0,0,0,0.5)";rr(ctx,330,12,300,8,4);ctx.fill();
- ctx.fillStyle="#ffd84a";rr(ctx,330,12,300*Math.min(1,Math.max(0,now/song.total)),8,4);ctx.fill();
- ctx.font="bold 13px Arial";ctx.fillStyle="#ddd";ctx.textAlign="center";
- const rem=Math.max(0,song.total-now);
- ctx.fillText(def.title+" — vs "+def.oppName+"   ("+Math.floor(rem/60)+":"+String(Math.floor(rem%60)).padStart(2,"0")+")",480,34);
+ // (the burning timeline below replaced the old progress bar on every song)
  // pause button (tap/click)
  ctx.fillStyle="rgba(0,0,0,0.55)";rr(ctx,14,10,44,44,10);ctx.fill();
  ctx.strokeStyle="rgba(255,255,255,0.55)";ctx.lineWidth=2;rr(ctx,14,10,44,44,10);ctx.stroke();
@@ -2661,11 +4412,13 @@ function renderGameOver(t){
   ctx.fillStyle="#456";ctx.fillRect(hashRand(i)*W,hashRand(i+9)*H,2,2);
  }
  ctx.globalAlpha=1;
- drawKid(ctx,"down",480,400,1.1,Math.sin(t*4)*3,0.4,0);
+ if(def&&def.plrBot)drawBot(ctx,OPTIMUS,"down",480,430,1.05,Math.sin(t*4)*3,0.4,t,9,-1);
+ else if(def&&def.plrChar==="bf")drawBF(ctx,"down",480,410,1.05,Math.sin(t*4)*3,0.4,-1,false);
+ else drawKid(ctx,"down",480,400,1.1,Math.sin(t*4)*3,0.4,0);
  metalText(ctx,"STASIS LOCK",480,140,52,"#607090","#3050a0");
  ctx.font="bold 18px Arial";ctx.textAlign="center";
  ctx.fillStyle="#aab";
- ctx.fillText('"'+(def&&def.opp==="optimus"?"You fought bravely. Rise, and try again.":def&&def.opp==="shockwave"?"As calculated. Your victory probability remains negligible.":def&&def.opp==="soundwave"?"Soundwave superior. Challenger inferior. Rewind and retry.":def&&def.opp==="duo"?"Two channels. Zero chance. Transmission ends.":def&&def.opp==="megatron"?"You fight for the weak. That is why you lose.":"Not bad, kid — wanna go again?")+'"',480,180);
+ ctx.fillText('"'+(def&&def.opp==="optimus"?"You fought bravely. Rise, and try again.":def&&def.opp==="shockwave"?"As calculated. Your victory probability remains negligible.":def&&def.opp==="soundwave"?"Soundwave superior. Challenger inferior. Rewind and retry.":def&&def.opp==="duo"?"Two channels. Zero chance. Transmission ends.":def&&def.opp==="bumblebee"?"Bzzt — nice try, kid! Wanna run it back?":def&&def.opp==="ironhide"?"Kid, I have dents older than you. Again.":def&&def.opp==="ratchet"?"Diagnosis: rhythm failure. Prescription: practice.":def&&def.opp==="jazz"?"Smooth loses to smoother, my friend. One more time?":def&&def.opp==="decepticons"?"One of you. ALL of us. You were never going to win.":def&&def.opp==="robobf"?"IDENTITY CONFIRMED. YOU WERE THE COPY ALL ALONG.":def&&def.opp==="galvatron"?"Your song ends here, insect. Mine is eternal.":def&&def.opp==="nemesis"?"Every spark casts a shadow, Prime. I am yours.":def&&def.opp==="megatron"?"You fight for the weak. That is why you lose.":"Not bad, kid — wanna go again?")+'"',480,180);
  ctx.font="16px Arial";ctx.fillStyle="#889";
  ctx.fillText(isTouchUI()?"Tap — retry":"Enter — retry    •    Esc — menu",480,480);
 }
